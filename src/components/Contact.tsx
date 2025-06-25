@@ -85,9 +85,36 @@ const Contact = () => {
                 className="w-full max-w-sm mx-auto rounded-lg shadow-lg"
               />
             </div>
-            <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto mb-12">
               {t('contact.welcome.description')}
             </p>
+            
+            {/* Market Manager Contact */}
+            <div className="bg-white rounded-xl shadow-lg p-8 max-w-md mx-auto">
+              <h3 className="text-2xl font-bold text-[#264b69] mb-6">
+                {t('contact.marketManager.title')}
+              </h3>
+              <div className="mb-6">
+                <img
+                  src="/contact1.png"
+                  alt="Market Manager QR Code"
+                  className="w-48 h-48 mx-auto rounded-lg shadow-md"
+                />
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-center justify-center">
+                  <Phone className="w-5 h-5 text-[#4fb1b4] mr-3" />
+                  <span className="text-gray-700">{t('contact.marketManager.phone')}</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-[#4fb1b4] mr-3" />
+                  <span className="text-gray-700">{t('contact.marketManager.email')}</span>
+                </div>
+                <p className="text-sm text-gray-600 mt-4">
+                  {t('contact.marketManager.description')}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

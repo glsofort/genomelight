@@ -224,7 +224,9 @@
         "Unique patented design enables GLSofort® system to have automatic search for latest research findings and intelligent integration capabilities",
         "Significantly reduces gene testing analysis time from weeks to hours",
         "Easier to create clinical reports and analysis, reducing costs by 10-20 times",
-        "Can obtain new discoveries through accumulated clinical and genomic databases"
+        "Can obtain new discoveries through accumulated clinical and genomic databases",
+        "Built-in Algorithm: AI Large Model Multi-dimensional Variant Scoring and Ranking Algorithm",
+        "AI Tool: GLS-AI Ten Million Loci Literature Database"
       ]
     },
     "applications": {
@@ -817,6 +819,12 @@
       "title": "Business Hours",
       "weekdays": "Monday to Friday: 9:00 AM - 6:00 PM",
       "weekends": "Saturday to Sunday: By Appointment"
+    },
+    "marketManager": {
+      "title": "Market Manager Contact",
+      "phone": "+86 15715197117",
+      "email": "geneticist@genomelight.com",
+      "description": "Scan the QR code or contact our market manager directly for product consultation and business cooperation"
     }
   },
   "news": {

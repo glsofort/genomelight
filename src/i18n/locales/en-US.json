@@ -40,7 +40,8 @@
           "Supports WGS/WES/Panel",
           "Virtual Geneticist System",
           "ACMG standards compliance"
-        ]
+        ],
+        "link": "/glsofort"
       },
       "reagent": {
         "title": "Sequencer Reagent Kits",
@@ -50,7 +51,8 @@
           "High-throughput sequencing chips",
           "Excellent performance",
           "Perfect compatibility"
-        ]
+        ],
+        "link": "/reagent"
       },
       "health": {
         "title": "Health Screening",
@@ -60,7 +62,8 @@
           "Carrier screening services",
           "Family genetic counseling",
           "Personalized health recommendations"
-        ]
+        ],
+        "link": "/health"
       },
       "compression": {
         "title": "Data Compression System",
@@ -70,7 +73,8 @@
           "Automated archiving",
           "Object storage protection",
           "Multiple configuration options"
-        ]
+        ],
+        "link": "/compression"
       }
     },
     "button": "Learn More"
@@ -112,6 +116,12 @@
         "Rare Disease Genetic Diagnosis",
         "Carrier Screening",
         "Gene Panel Testing"
+      ],
+      "links": [
+        "/glsofort",
+        "/reagent",
+        "/health",
+        "/compression"
       ]
     },
     "contact": {

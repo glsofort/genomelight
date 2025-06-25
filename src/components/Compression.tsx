@@ -16,6 +16,7 @@ import {
   CheckCircle,
   BarChart3
 } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Compression = () => {
   const { t } = useTranslation()
@@ -49,10 +50,10 @@ const Compression = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-indigo-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
-                {t('compression.hero.buttons.solutions')}
+                <Link to='/contact' className="block w-full ">{t('compression.hero.buttons.solutions')}</Link>
               </button>
               <button className="border-2 border-white text-white hover:bg-white hover:text-indigo-600 px-8 py-3 rounded-lg font-semibold transition-colors">
-                {t('compression.hero.buttons.contact')}
+                <Link to='/contact' className="block w-full ">{t('compression.hero.buttons.contact')}</Link>
               </button>
             </div>
           </div>

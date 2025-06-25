@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Beaker, Cpu, CheckCircle, BarChart3, Dna, Shield } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Reagent = () => {
   const { t } = useTranslation()
@@ -18,10 +19,10 @@ const Reagent = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-[#bf5d60] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
-                {t('reagent.hero.buttons.specifications')}
+                <Link to='/contact' className="block w-full ">{t('reagent.hero.buttons.specifications')}</Link>
               </button>
               <button className="border-2 border-white text-white hover:bg-white hover:text-[#bf5d60] px-8 py-3 rounded-lg font-semibold transition-colors">
-                {t('reagent.hero.buttons.contact')}
+                <Link to='/contact' className="block w-full ">{t('reagent.hero.buttons.contact')}</Link>
               </button>
             </div>
           </div>

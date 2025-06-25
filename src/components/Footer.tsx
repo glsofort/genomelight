@@ -1,5 +1,6 @@
 import { Phone, Mail, Globe, ArrowUp } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   const { t } = useTranslation()
@@ -47,10 +48,10 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-bold mb-6">{t('footer.services.title')}</h3>
               <ul className="space-y-3 text-gray-300">
-                {(t('footer.services.items', { returnObjects: true }) as string[]).map((item: string) => (
+                {(t('footer.services.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                   <li key={item}>
                     <button className="hover:text-[#4fb1b4] transition-colors text-left">
-                      {item}
+                      <Link to={t(`footer.services.links.${index}`)} className="block w-full ">{item}</Link>
                     </button>
                   </li>
                 ))}

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Dna, Brain, Clock, Target, Shield, Cpu } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const GLSofort = () => {
   const { t } = useTranslation()
@@ -18,10 +19,10 @@ const GLSofort = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-[#264b69] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
-                {t('glsofort.hero.buttons.demo')}
+                <Link to='/contact' className="block w-full ">{t('glsofort.hero.buttons.demo')}</Link>
               </button>
               <button className="border-2 border-white text-white hover:bg-white hover:text-[#264b69] px-8 py-3 rounded-lg font-semibold transition-colors">
-                {t('glsofort.hero.buttons.contact')}
+                <Link to='/contact' className="block w-full ">{t('glsofort.hero.buttons.contact')}</Link>
               </button>
             </div>
           </div>

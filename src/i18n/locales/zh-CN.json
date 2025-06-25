@@ -40,7 +40,8 @@
           "支持WGS/WES/Panel",
           "虚拟遗传学家系统",
           "ACMG标准兼容"
-        ]
+        ],
+        "link": "/glsofort"
       },
       "reagent": {
         "title": "测序仪试剂盒",
@@ -50,7 +51,8 @@
           "高通量测序芯片",
           "卓越性能表现",
           "完美兼容适配"
-        ]
+        ],
+        "link": "/reagent"
       },
       "health": {
         "title": "大健康筛查",
@@ -60,7 +62,8 @@
           "携带者筛查服务",
           "家族遗传咨询",
           "个性化健康建议"
-        ]
+        ],
+        "link": "/health"
       },
       "compression": {
         "title": "数据压缩一体机",
@@ -70,10 +73,12 @@
           "自动化归档",
           "对象存储保护",
           "多种配置选择"
-        ]
+        ],
+        "link": "/compression"
       }
     },
-    "button": "了解详情"
+    "button": "了解详情",
+    "link": "/glsofort"
   },
   "genePanels": {
     "title": "GENE PANELS 基因面板",
@@ -112,6 +117,12 @@
         "罕见病基因诊断",
         "携带者筛查",
         "基因面板检测"
+      ],
+      "links": [
+        "/glsofort",
+        "/reagent",
+        "/health",
+        "/compression"
       ]
     },
     "contact": {

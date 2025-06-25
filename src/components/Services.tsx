@@ -1,5 +1,6 @@
 import { Dna, Microscope, Users } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 const Services = () => {
   const { t } = useTranslation()
@@ -70,7 +71,7 @@ const Services = () => {
                 </div>
 
                 <button className="w-full bg-[#264b69] hover:bg-[#1e3a52] text-white py-3 rounded-lg font-semibold transition-colors">
-                  {t('services.button')}
+                  <Link to={t(`services.items.${service.key}.link`)} className="block w-full ">{t('services.button')}</Link>
                 </button>
               </div>
             </div>

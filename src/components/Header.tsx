@@ -1,11 +1,17 @@
 import { Phone, Mail } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
+import { useState } from 'react'
 import LanguageToggle from './LanguageToggle'
 
 const Header = () => {
   const { t } = useTranslation()
   const location = useLocation()
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
 
   return (
     <header className="bg-white shadow-sm">
@@ -42,7 +48,7 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Navigation Menu */}
+          {/* Desktop Navigation Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
@@ -96,12 +102,108 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button */}
-          <button className="md:hidden">
+          <button 
+            className="md:hidden text-[#264b69] hover:text-[#4fb1b4] transition-colors"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+          >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              {isMobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
             </svg>
           </button>
         </div>
+
+        {/* Mobile Navigation Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
+            <div className="flex flex-col space-y-3 pt-4">
+              <Link
+                to="/"
+                className={`font-medium transition-colors ${
+                  location.pathname === '/'
+                    ? 'text-[#4fb1b4]'
+                    : 'text-[#264b69] hover:text-[#4fb1b4]'
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('header.nav.home')}
+              </Link>
+              <Link
+                to="/about"
+                className={`font-medium transition-colors ${
+                  location.pathname === '/about'
+                    ? 'text-[#4fb1b4]'
+                    : 'text-[#264b69] hover:text-[#4fb1b4]'
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('header.nav.about')}
+              </Link>
+              
+              {/* Mobile Services Menu */}
+              <div className="flex flex-col space-y-2">
+                <span className="font-medium text-[#264b69]">{t('header.nav.services')}</span>
+                <div className="pl-4 flex flex-col space-y-2">
+                  <Link 
+                    to="/glsofort" 
+                    className="text-sm text-gray-700 hover:text-[#4fb1b4] transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {t('header.nav.serviceItems.glsofort')}
+                  </Link>
+                  <Link 
+                    to="/reagent" 
+                    className="text-sm text-gray-700 hover:text-[#4fb1b4] transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {t('header.nav.serviceItems.reagent')}
+                  </Link>
+                  <Link 
+                    to="/health" 
+                    className="text-sm text-gray-700 hover:text-[#4fb1b4] transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {t('header.nav.serviceItems.health')}
+                  </Link>
+                  <Link 
+                    to="/compression" 
+                    className="text-sm text-gray-700 hover:text-[#4fb1b4] transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {t('header.nav.serviceItems.compression')}
+                  </Link>
+                </div>
+              </div>
+              
+              <Link
+                to="/news"
+                className={`font-medium transition-colors ${
+                  location.pathname === '/news'
+                    ? 'text-[#4fb1b4]'
+                    : 'text-[#264b69] hover:text-[#4fb1b4]'
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('header.nav.news')}
+              </Link>
+              <Link
+                to="/contact"
+                className={`font-medium transition-colors ${
+                  location.pathname === '/contact'
+                    ? 'text-[#4fb1b4]'
+                    : 'text-[#264b69] hover:text-[#4fb1b4]'
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('header.nav.contact')}
+              </Link>
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   )

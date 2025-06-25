@@ -18,12 +18,12 @@ const Reagent = () => {
               {t('reagent.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#bf5d60] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
-                <Link to='/contact' className="block w-full ">{t('reagent.hero.buttons.specifications')}</Link>
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-[#bf5d60] px-8 py-3 rounded-lg font-semibold transition-colors">
-                <Link to='/contact' className="block w-full ">{t('reagent.hero.buttons.contact')}</Link>
-              </button>
+              <Link to='/contact' className="bg-white text-[#bf5d60] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors block text-center">
+                {t('reagent.hero.buttons.specifications')}
+              </Link>
+              <Link to='/contact' className="border-2 border-white text-white hover:bg-white hover:text-[#bf5d60] px-8 py-3 rounded-lg font-semibold transition-colors block text-center">
+                {t('reagent.hero.buttons.contact')}
+              </Link>
             </div>
           </div>
         </div>
@@ -347,9 +347,9 @@ const Reagent = () => {
           <p className="text-xl mb-8">
             {t('reagent.cta.subtitle')}
           </p>
-          <button className="bg-white text-[#bf5d60] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
+          <Link to='/contact' className="bg-white text-[#bf5d60] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
             {t('reagent.cta.button')}
-          </button>
+          </Link>
         </div>
       </section>
     </div>

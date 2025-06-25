@@ -18,12 +18,12 @@ const Health = () => {
               {t('health.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
-                <Link to='/contact' className="block w-full ">{t('health.hero.buttons.consultation')}</Link>
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-green-600 px-8 py-3 rounded-lg font-semibold transition-colors">
-                <Link to='/contact' className="block w-full ">{t('health.hero.buttons.packages')}</Link>
-              </button>
+              <Link to='/contact' className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors block text-center">
+                {t('health.hero.buttons.consultation')}
+              </Link>
+              <Link to='/contact' className="border-2 border-white text-white hover:bg-white hover:text-green-600 px-8 py-3 rounded-lg font-semibold transition-colors block text-center">
+                {t('health.hero.buttons.packages')}
+              </Link>
             </div>
           </div>
         </div>
@@ -390,9 +390,9 @@ const Health = () => {
           <p className="text-xl mb-8">
             {t('health.cta.subtitle')}
           </p>
-          <button className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
+          <Link to='/contact' className="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
             {t('health.cta.button')}
-          </button>
+          </Link>
         </div>
       </section>
     </div>

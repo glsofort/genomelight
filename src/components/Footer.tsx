@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Form Section */}
-        <div className="bg-[#1e3a52] py-12">
+        {/* <div className="bg-[#1e3a52] py-12">
           <div className="container mx-auto px-4">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-4">{t('footer.form.title')}</h3>
@@ -121,7 +121,7 @@ const Footer = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Bar */}
         <div className="bg-[#1a2f47] py-6">

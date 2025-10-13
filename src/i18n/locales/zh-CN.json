@@ -823,7 +823,7 @@
     },
     "marketManager": {
       "title": "市场经理联系",
-      "phone": "+86 15715197117",
+      "phone": "+86 18823839962",
       "email": "geneticist@genomelight.com",
       "description": "扫描二维码或直接联系我们的市场经理获取产品咨询和业务合作机会"
     }
@@ -848,21 +848,21 @@
           "summary": "我们的AI驱动基因解读平台在准确性和速度方面实现新的里程碑，为临床诊断提供更优质的服务。",
           "date": "2024-12-15",
           "category": "technology",
-          "image": "https://ext.same-assets.com/4081831888/2948968051.jpeg"
+          "image": "/images/2948968051.jpeg"
         },
         {
           "title": "基诺莱与知名医院达成战略合作",
           "summary": "公司与多家三甲医院签署合作协议，共同推进精准医疗在临床实践中的应用。",
           "date": "2024-12-10",
           "category": "company",
-          "image": "https://ext.same-assets.com/4081831888/1224048843.jpeg"
+          "image": "/images/1224048843.jpeg"
         },
         {
           "title": "罕见病基因诊断取得新进展",
           "summary": "我们的研发团队在罕见病基因诊断领域取得重要突破，为患者提供更精准的诊断服务。",
           "date": "2024-12-05",
           "category": "research",
-          "image": "https://ext.same-assets.com/4081831888/1191796784.jpeg"
+          "image": "/images/1191796784.jpeg"
         }
       ]
     },

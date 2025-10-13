@@ -822,7 +822,7 @@
     },
     "marketManager": {
       "title": "Market Manager Contact",
-      "phone": "+86 15715197117",
+      "phone": "+86 18823839962",
       "email": "geneticist@genomelight.com",
       "description": "Scan the QR code or contact our market manager directly for product consultation and business cooperation"
     }
@@ -847,21 +847,21 @@
           "summary": "Our AI-driven gene interpretation platform reaches new milestones in accuracy and speed, providing superior services for clinical diagnosis.",
           "date": "2024-12-15",
           "category": "technology",
-          "image": "https://ext.same-assets.com/4081831888/2948968051.jpeg"
+          "image": "/images/2948968051.jpeg"
         },
         {
           "title": "GenomeLight Partners with Leading Hospitals",
           "summary": "The company signed cooperation agreements with multiple top-tier hospitals to jointly advance precision medicine in clinical practice.",
           "date": "2024-12-10",
           "category": "company",
-          "image": "https://ext.same-assets.com/4081831888/1224048843.jpeg"
+          "image": "/images/1224048843.jpeg"
         },
         {
           "title": "New Progress in Rare Disease Genetic Diagnosis",
           "summary": "Our R&D team achieves important breakthroughs in rare disease genetic diagnosis, providing more precise diagnostic services for patients.",
           "date": "2024-12-05",
           "category": "research",
-          "image": "https://ext.same-assets.com/4081831888/1191796784.jpeg"
+          "image": "/images/1191796784.jpeg"
         }
       ]
     },

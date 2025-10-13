@@ -72,7 +72,7 @@ const Reagent = () => {
 
             <div className="bg-gray-50 rounded-xl p-8">
               <img
-                src="https://ext.same-assets.com/4081831888/1017918516.png"
+                src="/images/1017918516.png"
                 alt="Sequencing Reagent Kit"
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg"
               />

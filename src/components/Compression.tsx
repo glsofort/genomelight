@@ -75,7 +75,7 @@ const Compression = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://ext.same-assets.com/4081831888/2948968051.jpeg"
+                src="/images/2948968051.jpeg"
                 alt="ZipHelix Data Compression System"
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg"
               />

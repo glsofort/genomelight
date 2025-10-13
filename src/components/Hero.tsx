@@ -8,17 +8,17 @@ const Hero = () => {
 
   const slides = [
     {
-      image: "https://ext.same-assets.com/4081831888/753706709.jpeg",
+      image: "/images/753706709.jpeg",
       title: "基因光照亮健康未来",
       subtitle: "专业的基因检测与分析服务"
     },
     {
-      image: "https://ext.same-assets.com/4081831888/542701640.jpeg",
+      image: "/images/542701640.jpeg",
       title: "AI驱动的基因解析",
       subtitle: "融合人工智能与基因组学"
     },
     {
-      image: "https://ext.same-assets.com/4081831888/3495893387.jpeg",
+      image: "/images/3495893387.jpeg",
       title: "罕见病基因诊断",
       subtitle: "精准诊断，个性化治疗"
     }

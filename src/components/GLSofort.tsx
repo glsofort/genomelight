@@ -41,7 +41,7 @@ const GLSofort = () => {
             </p>
             <div className="bg-gray-50 rounded-xl p-8">
               <img
-                src="https://ext.same-assets.com/4081831888/2948968051.jpeg"
+                src="/images/2948968051.jpeg"
                 alt="GLSofort Platform"
                 className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
               />

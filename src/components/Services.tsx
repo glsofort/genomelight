@@ -9,22 +9,22 @@ const Services = () => {
     {
       icon: <Dna className="w-16 h-16 text-[#4fb1b4]" />,
       key: 'glsofort',
-      image: "https://ext.same-assets.com/4081831888/2058622649.png"
+      image: "/images/2058622649.png"
     },
     {
       icon: <Microscope className="w-16 h-16 text-[#bf5d60]" />,
       key: 'reagent',
-      image: "https://ext.same-assets.com/4081831888/1017918516.png"
+      image: "/images/1017918516.png"
     },
     {
       icon: <Users className="w-16 h-16 text-[#cc8b57]" />,
       key: 'health',
-      image: "https://ext.same-assets.com/4081831888/1795410433.png"
+      image: "/images/1795410433.png"
     },
     {
       icon: <Dna className="w-16 h-16 text-[#264b69]" />,
       key: 'compression',
-      image: "https://ext.same-assets.com/4081831888/2058622649.png"
+      image: "/images/2058622649.png"
     }
   ]
 

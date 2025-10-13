@@ -44,7 +44,7 @@ const Health = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://ext.same-assets.com/4081831888/1017918516.png"
+                src="/images/1017918516.png"
                 alt="Health Screening"
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg"
               />

@@ -38,7 +38,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img
-              src="https://ext.same-assets.com/4081831888/1691569958.png"
+              src="/images/1691569958.png"
               alt="GenomeLight Logo"
               className="h-12"
             />

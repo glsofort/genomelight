@@ -15,7 +15,7 @@ const Footer = () => {
       <div
         className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: `url("https://ext.same-assets.com/4081831888/3253282782.png")`,
+          backgroundImage: `url("/images/3253282782.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -32,7 +32,7 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center">
                   <img
-                    src="https://ext.same-assets.com/4081831888/1691569958.png"
+                    src="/images/1691569958.png"
                     alt="GenomeLight Logo"
                     className="h-8 w-8 mr-3"
                   />
@@ -134,7 +134,7 @@ const Footer = () => {
                 <div className="flex items-center space-x-4 mt-2">
                   <button className="flex items-center hover:text-white">
                     <img
-                      src="https://ext.same-assets.com/4081831888/3329168636.png"
+                      src="/images/3329168636.png"
                       alt="公安备案"
                       className="h-4 mr-1"
                     />

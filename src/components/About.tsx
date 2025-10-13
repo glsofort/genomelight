@@ -29,14 +29,14 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="rounded-[36px] overflow-hidden shadow-lg">
               <img
-                src="https://ext.same-assets.com/4081831888/1224048843.jpeg"
+                src="/images/1224048843.jpeg"
                 alt="Company Office 1"
                 className="w-full h-[300px] object-cover"
               />
             </div>
             <div className="rounded-[36px] overflow-hidden shadow-lg">
               <img
-                src="https://ext.same-assets.com/4081831888/1191796784.jpeg"
+                src="/images/1191796784.jpeg"
                 alt="Company Office 2"
                 className="w-full h-[300px] object-cover"
               />

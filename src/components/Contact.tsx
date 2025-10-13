@@ -80,7 +80,7 @@ const Contact = () => {
             </h2>
             <div className="max-w-md mx-auto mb-8">
               <img
-                src="https://ext.same-assets.com/4081831888/4239303297.png"
+                src="/images/4239303297.png"
                 alt="Contact QR Code"
                 className="w-full max-w-sm mx-auto rounded-lg shadow-lg"
               />
@@ -358,7 +358,7 @@ const Contact = () => {
 
           <div className="bg-gray-100 rounded-xl p-8 text-center">
             <img
-              src="https://ext.same-assets.com/4081831888/2299838749.jpeg"
+              src="/images/2299838749.jpeg"
               alt="Office Location Map"
               className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
             />

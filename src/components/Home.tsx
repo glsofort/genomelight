@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <Hero />
       <Services />
-      <GenePanels />
+      {/* <GenePanels /> */}
     </div>
   )
 }

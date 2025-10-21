@@ -112,10 +112,10 @@
     "services": {
       "title": "Main Services",
       "items": [
-        "Gene Sequencing Analysis (GLSofort®)",
-        "Rare Disease Genetic Diagnosis",
-        "Carrier Screening",
-        "Gene Panel Testing"
+        "GLSofort® Analysis Platform",
+        "Sequencer Reagent Kits",
+        "Health Screening",
+        "Data Compression System"
       ],
       "links": [
         "/glsofort",

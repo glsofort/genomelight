@@ -1,13 +1,13 @@
-import { Phone, Mail, Globe, ArrowUp } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
+import { Phone, Mail, Globe, ArrowUp } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <footer className="bg-[#264b69] text-white relative">
@@ -16,8 +16,8 @@ const Footer = () => {
         className="absolute inset-0 opacity-10"
         style={{
           backgroundImage: `url("/images/3253282782.png")`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       />
 
@@ -25,10 +25,11 @@ const Footer = () => {
         {/* Main footer content */}
         <div className="container mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
             {/* Company Info */}
             <div>
-              <h3 className="text-xl font-bold mb-6">{t('footer.company.title')}</h3>
+              <h3 className="text-xl font-bold mb-6">
+                {t("footer.company.title")}
+              </h3>
               <div className="space-y-3">
                 <div className="flex items-center">
                   <img
@@ -36,22 +37,35 @@ const Footer = () => {
                     alt="GenomeLight Logo"
                     className="h-8 w-8 mr-3"
                   />
-                  <span className="font-semibold">{t('footer.company.name')}</span>
+                  <span className="font-semibold pr-2">
+                    {t("footer.company.name")}
+                  </span>
                 </div>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  {t('footer.company.description')}
+                <p className="text-gray-300 text-sm leading-relaxed pr-20">
+                  {t("footer.company.description")}
                 </p>
               </div>
             </div>
 
             {/* Services */}
             <div>
-              <h3 className="text-xl font-bold mb-6">{t('footer.services.title')}</h3>
+              <h3 className="text-xl font-bold mb-6">
+                {t("footer.services.title")}
+              </h3>
               <ul className="space-y-3 text-gray-300">
-                {(t('footer.services.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                {(
+                  t("footer.services.items", {
+                    returnObjects: true,
+                  }) as string[]
+                ).map((item: string, index: number) => (
                   <li key={item}>
                     <button className="hover:text-[#4fb1b4] transition-colors text-left">
-                      <Link to={t(`footer.services.links.${index}`)} className="block w-full ">{item}</Link>
+                      <Link
+                        to={t(`footer.services.links.${index}`)}
+                        className="block w-full "
+                      >
+                        {item}
+                      </Link>
                     </button>
                   </li>
                 ))}
@@ -60,19 +74,27 @@ const Footer = () => {
 
             {/* Contact Info */}
             <div>
-              <h3 className="text-xl font-bold mb-6">{t('footer.contact.title')}</h3>
+              <h3 className="text-xl font-bold mb-6">
+                {t("footer.contact.title")}
+              </h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Phone size={16} className="mr-3 text-[#4fb1b4]" />
-                  <span className="text-gray-300">{t('footer.contact.phone')}</span>
+                  <span className="text-gray-300">
+                    {t("footer.contact.phone")}
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <Mail size={16} className="mr-3 text-[#4fb1b4]" />
-                  <span className="text-gray-300">{t('footer.contact.email')}</span>
+                  <span className="text-gray-300">
+                    {t("footer.contact.email")}
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <Globe size={16} className="mr-3 text-[#4fb1b4]" />
-                  <span className="text-gray-300">{t('footer.contact.website')}</span>
+                  <span className="text-gray-300">
+                    {t("footer.contact.website")}
+                  </span>
                 </div>
               </div>
             </div>
@@ -128,8 +150,11 @@ const Footer = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-gray-400 text-sm mb-4 md:mb-0">
-                <p>{t('footer.bottom.copyright')} |
-                  <button className="hover:text-white ml-2">{t('footer.bottom.privacy')}</button>
+                <p>
+                  {t("footer.bottom.copyright")} |
+                  <button className="hover:text-white ml-2">
+                    {t("footer.bottom.privacy")}
+                  </button>
                 </p>
                 <div className="flex items-center space-x-4 mt-2">
                   <button className="flex items-center hover:text-white">
@@ -138,10 +163,10 @@ const Footer = () => {
                       alt="公安备案"
                       className="h-4 mr-1"
                     />
-                    {t('footer.bottom.police')}
+                    {t("footer.bottom.police")}
                   </button>
                   <button className="hover:text-white">
-                    {t('footer.bottom.icp')}
+                    {t("footer.bottom.icp")}
                   </button>
                 </div>
               </div>
@@ -158,7 +183,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

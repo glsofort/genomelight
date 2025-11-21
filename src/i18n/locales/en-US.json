@@ -106,7 +106,7 @@
   "footer": {
     "company": {
       "title": "Company Information",
-      "name": "Chongqing GenomeLight Biotechnology Co., Ltd.",
+      "name": "Genomelight (Chongqing) Biotechnology Co., LTD.",
       "description": "Specialized in genetic testing and analysis services, committed to providing precise genetic diagnostic solutions for medical institutions and individuals."
     },
     "services": {
@@ -148,7 +148,7 @@
       "submit": "Send Message"
     },
     "bottom": {
-      "copyright": "Copyright © 2021 Chongqing GenomeLight Biotechnology Co., Ltd.",
+      "copyright": "Copyright © 2021 Genomelight (Chongqing) Biotechnology Co., LTD.",
       "privacy": "Privacy Policy & Terms",
       "icp": "Yu ICP No. 2021003762",
       "police": "Yu Public Security No. 50009802001131"
@@ -164,7 +164,7 @@
       }
     },
     "intro": {
-      "title": "Our Company's Proprietary Software Platform Sofort®",
+      "title": "Our Company's Proprietary Software Platform GLSofort®",
       "description": "A pioneer focused on interpreting gene sequencing (NGS) results, supported by artificial intelligence (AI) and deep machine learning (Deep ML) to achieve efficient and precise gene sequencing interpretation, including whole genome (WGS), whole exome (WES) and targeted gene detection (Target gene panel). It is currently an international clinical genomics interpretation support tool that can adapt to various pipelines and tests, greatly improving patient diagnosis quantity, efficiency and accuracy. It can provide support for sequencing laboratories and clinical medicine, achieving comprehensive analysis and integration into a complete solution."
     },
     "serviceRange": {
@@ -395,11 +395,24 @@
     },
     "overview": {
       "title": "Health Screening Services Overview",
-      "description": "We provide comprehensive genetic health screening services from children to adults. Through advanced genetic testing technology, we help you understand disease risks, optimize medication plans, guide lifestyle choices, and achieve personalized health management."
+      "description": "We provide comprehensive genetic health screening services from children to adults. Through advanced genetic testing technology, we help you understand disease risks, optimize medication plans, guide lifestyle choices, and achieve personalized health management.",
+      "healthManagement": {
+        "title": "Full life cycle health management",
+        "description": "From children to adults, we provide personalized health risk assessment and management solutions."
+      },
+      "geneticTesting": {
+        "title": "Precise genetic testing",
+        "description": "Based on advanced gene sequencing technology, it provides accurate disease risk prediction."
+      },
+      "medicationInstruction": {
+        "title": "Guidance on Safe Medication Use",
+        "description": "Individualized medication advice to avoid adverse drug reactions."
+      }
     },
     "packages": {
       "title": "Health Screening Packages",
       "wes": {
+        "title": "Whole exome health assessment package",
         "adult": {
           "title": "Adult Whole Exome Health Assessment Package",
           "description": "Helps us understand our disease risk index and genetic disease carrier status. Through genetic information testing, we can clarify differences in amino acid sequences, structures, and biological functions of proteins related to drug receptors, transport, and metabolism, helping you achieve personalized, refined treatment, reduce toxic side effects/adverse reactions, and comprehensively improve medication efficacy. Through the detection and interpretation of trait-related genetic information, we can help us seek advantages and avoid disadvantages in various physiological processes and social activities, helping us improve quality of life and life achievement."
@@ -410,6 +423,7 @@
         }
       },
       "wgs": {
+        "title": "Whole-genome health assessment package",
         "adult": {
           "title": "Adult Whole Genome Health Assessment Package",
           "description": "The most comprehensive genetic testing with the largest amount of data. One sequencing, lifelong benefits. Having 'personal whole genome data' will be able to link to the latest gene-related interpretations globally, predict disease risks, understand your own DNA code, understand your disease risk index and genetic disease carrier screening, more accurate precision medication to understand your drug metabolism and avoid harm from inappropriate medication"
@@ -420,6 +434,7 @@
         }
       },
       "chip": {
+        "title": "Gene chip screening package",
         "adult": {
           "title": "Adult Gene Chip Screening Package",
           "description": "Based on mature genetic testing technology, testing over 700,000 gene sequence sites, interpretation includes disease risk, precision medication, diet, exercise, nutrition, traits and other related content, providing effective basis for customers' precision health management."
@@ -430,6 +445,7 @@
         }
       },
       "specialized": {
+        "title": "Specialized testing package",
         "cancer": {
           "title": "Male and Female Cancer Seven-Item Panel",
           "description": "Genetic risk assessment for common cancers, providing scientific basis for early prevention and screening."
@@ -548,7 +564,19 @@
     },
     "overview": {
       "title": "ZipHelix Product Overview",
-      "description": "ZipHelix is an efficient compression storage solution designed specifically for gene sequencing data, using innovative compression algorithms to provide safe, efficient, and economical data management services for medical institutions."
+      "description": "ZipHelix is an efficient compression storage solution designed specifically for gene sequencing data, using innovative compression algorithms to provide safe, efficient, and economical data management services for medical institutions.",
+      "compressionTechnique": {
+        "title": "ZipHelix compression technology",
+        "description": "innovative compression algorithm, achieving 2.25 times the compression rate of gzip, significantly saving storage space"
+      },
+      "dataManagement": {
+        "title": "Intelligent data management",
+        "description": "Automated archiving and backup, ensuring data security and efficient management"
+      },
+      "cloudDeployment": {
+        "title": "Cloud deployment",
+        "description": "Supports local, private, and hybrid cloud deployment options"
+      }
     },
     "features": {
       "title": "Core Technical Features",
@@ -573,7 +601,7 @@
       "title": "Multiple Data Analysis Integrated Solutions",
       "items": [
         {
-          "title": "GLSofort™ Cloud Data Analysis",
+          "title": "GLSofort® Cloud Data Analysis",
           "description": "Combined with cloud analysis platform, providing complete data processing and interpretation services"
         },
         {
@@ -813,7 +841,8 @@
     },
     "map": {
       "title": "Office Address",
-      "description": "Welcome to visit our offices, we look forward to face-to-face communication with you."
+      "description": "Welcome to visit our offices, we look forward to face-to-face communication with you.",
+      "mapLocation": "Map of Chongqing Medical University Jyunyun Campus Location"
     },
     "businessHours": {
       "title": "Business Hours",
@@ -828,6 +857,9 @@
     }
   },
   "news": {
+    "search": {
+      "placeholder": "Search news..."
+    },
     "hero": {
       "title": "News & Updates",
       "subtitle": "Stay updated with GenomeLight's latest developments, industry insights, and technological advances in the genetic testing field."
@@ -909,12 +941,18 @@
     "backToList": "Back to List",
     "relatedNews": "Related News",
     "share": "Share",
-    "noResults": "No related news available"
+    "noResults": "No related news available",
+    "newsletter": {
+      "title": "Subscribe to our Newsletter",
+      "description": "Get the latest updates and industry insights delivered straight to your inbox.",
+      "placeholder": "Enter your email address",
+      "subscribe": "Subscribe"
+    }
   },
   "about": {
     "companyIntro": {
       "title": "Company Introduction",
-      "companyName": "Chongqing GenomeLight Biotechnology Co., Ltd. (Genome Light)",
+      "companyName": "Genomelight (Chongqing) Biotechnology Co., LTD. (Genome Light)",
       "description1": "Located in Chongqing Hi-tech Development Zone, we are a high-tech life health enterprise driven by precision medical services and AI big data technology, innovating future medical models.",
       "description2": "Our company's strength lies in focusing on the interpretation, annotation, and analysis of Next-Generation Sequencing (NGS) results, particularly in the bioinformatics interpretation and disease annotation of Whole Genome Sequencing (WGS), Whole Exome Sequencing (WES), and targeted Gene Panel high-throughput testing results in the field of genetic and rare diseases, with significant technical advantages (high accuracy and fast analysis speed). Serving clinical and research needs, based on core technical advantages, we have established a comprehensive testing and analysis technology system, developed products covering gene sequencing interpretation services, genetic disease gene diagnosis, and COVID-19 testing. We can provide precision medical services for domestic genetic disease patients and healthy populations, including carrier gene screening, (large) family screening, and population array analysis, providing comprehensive genomic testing solutions centered on high-throughput sequencing (NGS) for clinical medical workers and researchers."
     },
@@ -938,7 +976,7 @@
       },
       "values": {
         "title": "Core Values",
-        "content": "Innovation: We continuously seek better solutions to meet the needs of patients and healthcare providers. Empathy: We deeply understand patients and medical professionals, caring for and respecting their feelings. Integrity: We adhere to the highest ethical and transparency standards, ensuring data security and confidentiality. Collaboration: We actively collaborate with the medical community, research institutions, and patient communities to jointly improve genetic disease management."
+        "content": "We continuously seek better solutions to meet the needs of patients and healthcare providers. We deeply understand patients and medical professionals, caring for and respecting their feelings. We adhere to the highest ethical and transparency standards, ensuring data security and confidentiality. We actively collaborate with the medical community, research institutions, and patient communities to jointly improve genetic disease management."
       }
     },
     "team": {
@@ -946,7 +984,7 @@
       "description": "Strong technical capabilities are the cornerstone supporting our high-quality products and services. Our core technology R&D team consists of senior scientists and engineers from home and abroad, including advanced talents in genetics, bioinformatics, and artificial intelligence. Our management team comprises experienced professionals who provide momentum for the company's development and operations.",
       "members": {
         "liWenhui": {
-          "name": "Li Wenhui",
+          "name": "Laura Li",
           "title": "FACMGG PhD, CTO",
           "description": "Trained under Nobel Prize winner in Physiology or Medicine and former President of Johns Hopkins University Daniel Nathans. Former Chief Scientist at Illumina, Founder of Breakthrough Genomics, Clinical Geneticist Molecular Biologist Scientist (CGMBS), PhD in Molecular Biology and Genetics from Johns Hopkins University, Postdoc at Caltech, Assistant Professor at USC, certified geneticist by the American College of Medical Genetics.",
           "experience": {
@@ -969,9 +1007,9 @@
           }
         },
         "liuYunwei": {
-          "name": "Liu Yunwei",
+          "name": "Yunwei Liu",
           "title": "CEO, Co-founder & Chairman of GenomeLight",
-          "description": "Founder & Chairman of Chongqing Deqiang Chemical, Bayer Executive EMBA at Swiss IMD Business School, Bachelor's and Master's degrees in Chemistry from Beijing Normal University, mentored by internationally renowned radiation chemist Professor Chen Wenxiu. Former Bayer executive with strong industrialization capabilities and rich market resources.",
+          "description": "Founder & Chairman of Genomelight, mentored by internationally renowned radiation chemist Professor Chen Wenxiu. Former Bayer executive with strong industrialization capabilities and rich market resources.",
           "background": {
             "title": "Educational Background",
             "items": [
@@ -991,9 +1029,9 @@
           }
         },
         "wangJia": {
-          "name": "Wang Jia",
+          "name": "Jia Wang",
           "title": "CIO, Co-founder & CIO of GenomeLight",
-          "description": "Chairman of Shenzhen Qianhai GaDe Capital, Clinical Medicine from Sun Yat-sen University, MBA from Tsinghua University Shenzhen Research Institute. Collaborated with Illumina and Intel Innovation Acceleration to support R&D and growth of technology startups in genetic testing field.",
+          "description": "Chairman of Shenzhen Qianhai GaDe Capital. Collaborated with Illumina and Intel Innovation Acceleration to support R&D and growth of technology startups in genetic testing field.",
           "background": {
             "title": "Educational Background",
             "items": [
@@ -1012,7 +1050,7 @@
           }
         },
         "dingHongyue": {
-          "name": "Ding Hongyue",
+          "name": "Hongyue Ding",
           "title": "Master's from Chongqing Medical University",
           "description": "Participated in the implementation of multiple national multi-center projects, hosted and completed advanced genetics training courses at multiple hospitals including Chongqing Children's Hospital and Sichuan West China Hospital. Long-term engagement in genetic disease diagnosis consultation, genetic counselor training, report interpretation and analysis.",
           "experience": {
@@ -1040,7 +1078,6 @@
       "title": "Privacy",
       "content": "Protecting user privacy and sensitive health information is our top priority. Our software complies with HIPAA, CLIA, dbGaP, US-Europe data privacy safe harbor regulations, China's Cybersecurity Law, and others. Genomic information is stored in the cloud, and software users can securely access this information through web browsers with strict security measures. Patient identifiers (if provided) are stored separately from genomic information to protect privacy and confidentiality. Authorized software users have complete control over their data, including data retention and destruction. Software user data is encrypted during transmission over the internet and cloud to minimize the risk of unauthorized system access."
     },
-
     "cta": {
       "title": "Leading technological breakthroughs, driving industry development; Improving service quality, safeguarding life and health!"
     },

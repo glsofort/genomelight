@@ -1,6 +1,7 @@
 # GenomeLight Clone - Todo List
 
 ## Tasks
+
 - [x] Set up project structure and install dependencies
 - [x] Create header component with navigation and contact info
 - [x] Create hero section with image slider
@@ -25,7 +26,7 @@
 - [x] Update Header with active navigation states
 - [x] **[COMPLETED]** Update About page: Remove news section and enhance team profiles
 - [x] **[COMPLETED]** Create GLSofort product page with detailed features
-- [x] **[COMPLETED]** Create Reagent (测序仪试剂盒) product page
+- [x] **[COMPLETED]** Create Reagent (高通量测序试剂盒) product page
 - [x] Add quality control results table for reagent kits
 - [x] Add technical specifications and application areas
 - [x] Fix all linter errors in GLSofort and Reagent components
@@ -40,6 +41,7 @@
 - [ ] Deploy to production
 
 ## Current Status
+
 - ✅ Complete GenomeLight website clone finished
 - ✅ All linter errors fixed and code optimized
 - ✅ Pixel-perfect design matching original

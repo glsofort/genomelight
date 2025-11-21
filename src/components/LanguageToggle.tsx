@@ -1,16 +1,16 @@
-import { useTranslation } from 'react-i18next'
-import { Globe } from 'lucide-react'
+import { useTranslation } from "react-i18next";
+import { Globe } from "lucide-react";
 
 const LanguageToggle = () => {
-  const { i18n } = useTranslation()
+  const { i18n } = useTranslation();
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'zh-CN' ? 'en-US' : 'zh-CN'
-    i18n.changeLanguage(newLang)
-  }
+    const newLang = i18n.language === "zh-CN" ? "en-US" : "zh-CN";
+    i18n.changeLanguage(newLang);
+  };
 
-  const currentLang = i18n.language === 'zh-CN' ? '中文' : 'English'
-  const nextLang = i18n.language === 'zh-CN' ? 'English' : '中文'
+  const currentLang = i18n.language === "zh-CN" ? "中文" : "English";
+  const nextLang = i18n.language === "zh-CN" ? "English" : "中文";
 
   return (
     <button
@@ -21,7 +21,7 @@ const LanguageToggle = () => {
       <Globe size={16} />
       <span className="text-sm font-medium">{currentLang}</span>
     </button>
-  )
-}
+  );
+};
 
-export default LanguageToggle
+export default LanguageToggle;

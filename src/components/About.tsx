@@ -20,7 +20,7 @@ const About = () => {
                 {t("about.companyIntro.companyName")}
               </h2>
               <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
-                <p>{t("about.companyIntro.description1")}</p>
+                {/* <p>{t("about.companyIntro.description1")}</p> */}
                 <p>{t("about.companyIntro.description2")}</p>
               </div>
             </div>

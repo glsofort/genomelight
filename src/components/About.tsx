@@ -26,7 +26,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
+          {/* <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="rounded-[36px] overflow-hidden shadow-lg">
               <img
                 src="/images/1224048843.jpeg"
@@ -41,7 +41,7 @@ const About = () => {
                 className="w-full h-[300px] object-cover"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -162,7 +162,7 @@ const About = () => {
                           {(
                             t(
                               "about.team.members.liWenhui.achievements.items",
-                              { returnObjects: true }
+                              { returnObjects: true },
                             ) as string[]
                           ).map((item: string) => (
                             <li key={item} className="flex items-start">
@@ -332,7 +332,7 @@ const About = () => {
                           {(
                             t(
                               "about.team.members.dingHongyue.experience.items",
-                              { returnObjects: true }
+                              { returnObjects: true },
                             ) as string[]
                           ).map((item: string) => (
                             <li key={item} className="flex items-start">
@@ -345,14 +345,14 @@ const About = () => {
                       <div>
                         <h4 className="font-semibold text-[#264b69] mb-2">
                           {t(
-                            "about.team.members.dingHongyue.achievements.title"
+                            "about.team.members.dingHongyue.achievements.title",
                           )}
                         </h4>
                         <ul className="space-y-1 text-sm">
                           {(
                             t(
                               "about.team.members.dingHongyue.achievements.items",
-                              { returnObjects: true }
+                              { returnObjects: true },
                             ) as string[]
                           ).map((item: string) => (
                             <li key={item} className="flex items-start">

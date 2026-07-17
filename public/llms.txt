@@ -1,6 +1,6 @@
 # GenomeLight
 
-> GenomeLight provides genomic data interpretation, high-throughput sequencing reagents, genetic risk assessment, and genomic data compression services.
+> GenomeLight provides genomic data interpretation, a universal sequencing reaction kit for NextSeq 500/550, genetic risk assessment, and genomic data compression services.
 
 Canonical site: https://www.genomelight.com/
 
@@ -8,7 +8,7 @@ Canonical site: https://www.genomelight.com/
 
 - [Company and team](https://www.genomelight.com/about)
 - [GLSofort genomic interpretation platform](https://www.genomelight.com/glsofort)
-- [High-throughput sequencing reagents](https://www.genomelight.com/reagent)
+- [Universal sequencing reaction kit for NextSeq 500/550](https://www.genomelight.com/reagent)
 - [Genetic health risk assessment](https://www.genomelight.com/health)
 - [ZipHelix genomic data compression](https://www.genomelight.com/compression)
 - [Contact GenomeLight](https://www.genomelight.com/contact)

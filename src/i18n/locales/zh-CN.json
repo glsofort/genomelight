@@ -13,8 +13,8 @@
       "description": "GLSofort支持WGS、WES和Gene Panel数据的变异筛选、证据整理与报告工作流，辅助专业人员开展基因组数据解读。"
     },
     "reagent": {
-      "title": "高通量测序试剂盒 | GenomeLight",
-      "description": "了解适用于NextSeq 500/550平台的高通量测序试剂盒、展示批次质控数据、技术规格、应用范围与储存条件。"
+      "title": "测序反应通用试剂盒（可逆末端终止测序法） | GenomeLight",
+      "description": "了解适用于NextSeq 500/550平台的测序反应通用试剂盒，包括NMPA备案信息、130M/400M性能参数及NIPT、WES、病原宏基因组等典型运用配置。"
     },
     "health": {
       "title": "遗传风险评估与健康管理参考 | GenomeLight",
@@ -54,7 +54,7 @@
       "services": "产品服务",
       "serviceItems": {
         "glsofort": "GLSofort®解读平台",
-        "reagent": "高通量测序试剂盒",
+        "reagent": "测序反应通用试剂盒",
         "health": "大健康筛查",
         "compression": "数据压缩一体机"
       },
@@ -103,13 +103,13 @@
         "link": "/glsofort"
       },
       "reagent": {
-        "title": "高通量测序试剂盒",
-        "description": "适用于NextSeq 500/550测序仪的高通量测序芯片与试剂，具体性能以产品说明和批次质控结果为准",
+        "title": "测序反应通用试剂盒",
+        "description": "适用于NextSeq 500/550平台，提供130M/400M产出和50/75/300循环配置；具体性能以产品说明、备案凭证和批次质控报告为准",
         "features": [
-          "高质量测序试剂",
-          "高通量测序芯片",
-          "批次质量控制",
-          "平台适配验证"
+          "130M/400M芯片产出",
+          "50/75/300循环",
+          "NMPA备案",
+          "批次质量控制"
         ],
         "link": "/reagent"
       },
@@ -224,7 +224,7 @@
       "title": "主要服务",
       "items": [
         "GLSofort®解读平台",
-        "高通量测序试剂盒",
+        "测序反应通用试剂盒",
         "大健康筛查",
         "数据压缩一体机"
       ],
@@ -376,124 +376,174 @@
     }
   },
   "reagent": {
-    "hero": {
-      "title": "高通量测序试剂盒",
-      "subtitle": "适用于NextSeq 500/550测序仪的高通量测序芯片与试剂盒，技术参数和批次表现以产品说明及质控报告为准",
+    "page": {
+      "eyebrow": "测序试剂 · NextSeq 500/550",
+      "title": "测序反应通用试剂盒",
+      "method": "可逆末端终止测序法",
+      "summary": "采用边合成边测序技术，由测序试剂、测序缓冲液、测序芯片和文库稀释液组成，适用于NextSeq 500/550测序平台。宣传彩页标注产品已完成NMPA备案并可用于临床样本检测；具体用途与适用范围以备案凭证和产品说明书为准。",
+      "registration": {
+        "label": "NMPA备案",
+        "value": "渝高新械备20250033"
+      },
+      "platform": {
+        "label": "适用平台",
+        "value": "NextSeq 500/550"
+      },
+      "composition": {
+        "label": "产品组成",
+        "value": "试剂 / 缓冲液 / 芯片 / 稀释液"
+      },
       "buttons": {
-        "specifications": "查看规格参数",
+        "performance": "查看产品性能",
         "contact": "联系采购"
-      }
-    },
-    "overview": {
-      "title": "产品概述",
-      "description": "高通量测序芯片与试剂盒按批次进行质量检验。页面展示参数和样例数据用于产品交流，实际表现受仪器状态、样本和实验条件影响。",
-      "imageCaption": "品牌实验室工作场景插画，不代表具体产品外观或实验配置。",
-      "reagents": {
-        "title": "测序试剂",
-        "description": "包含测序反应试剂和测序缓冲液，并按既定流程进行批次质控；具体稳定性与一致性以相应批次报告为准。"
       },
-      "chips": {
-        "title": "高通量测序芯片",
-        "description": "高通量测序芯片的标称数据产出为单次运行400M reads，实际产出与质量受运行条件和样本质量影响。"
-      }
-    },
-    "qualityControl": {
-      "title": "质量检验结果",
-      "description": "以下为三个展示批次的质检结果及平行对比数据，仅代表相应样本与运行条件，不构成对所有批次或使用场景的性能保证：",
-      "table": {
-        "headers": {
-          "batch": "批次",
-          "q30": "Q30(%)",
-          "reads": "Reads(M)",
-          "standard": "Illumina质量标准",
-          "result": "对比结果"
-        },
-        "passedStandard": "展示批次达到标示值"
-      }
-    },
-    "applications": {
-      "title": "主要应用领域",
-      "genetic": {
-        "title": "遗传病检测",
-        "items": [
-          "全外显子组测序（WES）",
-          "靶向基因Panel",
-          "新生儿筛查",
-          "遗传病相关基因检测研究"
-        ]
+      "imageAlt": "测序反应通用试剂盒产品实物",
+      "imageCaption": "宣传彩页中的产品实物图，包装与标签以实际交付批次为准。",
+      "nav": {
+        "label": "产品详情章节",
+        "features": "产品特点",
+        "performance": "产品性能",
+        "applications": "运用"
       },
-      "cancer": {
-        "title": "肿瘤基因检测",
+      "features": {
+        "title": "产品特点",
+        "description": "宣传彩页将产品特点归纳为稳定、灵活、快速和准确四个方面；相关指标应结合具体运行配置、批次质控与实验条件理解。",
         "items": [
-          "肿瘤体细胞突变分析",
-          "液体活检",
-          "肿瘤易感基因检测",
-          "药物靶点相关基因研究"
+          {
+            "title": "稳定",
+            "description": "宣传彩页标注采用严格质控以支持稳定测序；具体批次表现以质控报告及实际运行数据为准。"
+          },
+          {
+            "title": "灵活",
+            "description": "提供130M和400M两档芯片产出，以及50、75和300循环配置，覆盖不同数据量与读长需求。"
+          },
+          {
+            "title": "快速",
+            "description": "在宣传彩页列示的130M、50循环配置下，标示测序时间为8小时；其他配置见产品性能表。"
+          },
+          {
+            "title": "准确",
+            "description": "宣传彩页标示测序准确度大于99.9%；实际测序质量应以单次运行数据和批次质控结果为准。"
+          }
         ]
-      },
-      "reproductive": {
-        "title": "生殖健康与产前诊断",
-        "items": [
-          "胚胎植入前遗传学筛查",
-          "无创产前检测",
-          "单基因病携带筛查",
-          "产前检测相关研究"
-        ]
-      },
-      "research": {
-        "title": "科研应用",
-        "items": [
-          "基因组学研究",
-          "转录组学研究",
-          "微生物研究",
-          "传染病研究"
-        ]
-      }
-    },
-    "features": {
-      "title": "产品特色",
-      "quality": {
-        "title": "批次质量控制",
-        "description": "每批次按既定项目进行检验，Q30标示值为≥91%；具体结果以批次质控报告和实际运行数据为准。"
       },
       "performance": {
-        "title": "标称性能参数",
-        "description": "标称单次运行数据产出为400M+ reads；实际产出、质量和成本受样本、仪器及实验条件影响。"
-      },
-      "compatibility": {
-        "title": "平台适配",
-        "description": "针对NextSeq 500/550测序仪进行适配设计，使用前需依据实验室流程完成兼容性确认。"
-      }
-    },
-    "specifications": {
-      "title": "技术规格",
-      "technical": {
-        "title": "技术参数",
-        "items": [
-          "适用平台：NextSeq500/550",
-          "数据产出：400M+ reads",
-          "Q30质量值：≥91%",
-          "测序长度：2×150bp",
-          "运行时间：29小时",
-          "存储条件：-20°C"
-        ]
+        "title": "产品性能",
+        "description": "130M和400M两档芯片产出可搭配50、75或300循环配置。下表为宣传彩页列示的标称数据产量、Q30和测序时间。",
+        "headers": {
+          "reads": "芯片产出（Reads数）",
+          "cycles": "读长",
+          "output": "数据产量",
+          "q30": "测序质量Q30",
+          "time": "测序时间"
+        },
+        "rows": [
+          {
+            "reads": "130M",
+            "cycles": "50循环",
+            "output": "6.5G",
+            "q30": "> 90%",
+            "time": "8h"
+          },
+          {
+            "reads": "130M",
+            "cycles": "75循环",
+            "output": "9.75G",
+            "q30": "> 90%",
+            "time": "10h"
+          },
+          {
+            "reads": "130M",
+            "cycles": "300循环",
+            "output": "39G",
+            "q30": "> 85%",
+            "time": "26h"
+          },
+          {
+            "reads": "400M",
+            "cycles": "50循环",
+            "output": "20G",
+            "q30": "> 90%",
+            "time": "9h"
+          },
+          {
+            "reads": "400M",
+            "cycles": "75循环",
+            "output": "30G",
+            "q30": "> 90%",
+            "time": "11h"
+          },
+          {
+            "reads": "400M",
+            "cycles": "300循环",
+            "output": "120G",
+            "q30": "> 85%",
+            "time": "29h"
+          }
+        ],
+        "note": "以上为宣传彩页标示值。实际表现受仪器状态、文库类型与质量、插入片段大小、上样浓度及实验流程等因素影响；具体以产品说明书、备案凭证和批次质控报告为准。"
       },
       "applications": {
-        "title": "应用范围",
-        "items": [
-          "全外显子组测序(WES)",
-          "靶向基因Panel检测",
-          "肿瘤基因检测",
-          "遗传病诊断",
-          "科研基因组学研究",
-          "转录组学分析"
-        ]
+        "title": "运用",
+        "description": "宣传彩页列示了低深度WGS、靶向捕获/多重检测和小型基因组测序等典型配置，可用于不同研究和检测工作流的方案评估。",
+        "headers": {
+          "method": "方法学",
+          "application": "运用",
+          "readLength": "读长",
+          "dataRequirement": "数据要求",
+          "samples": "样本数/run"
+        },
+        "rows": [
+          {
+            "method": "低深度WGS测序",
+            "application": "NIPT",
+            "readLength": "SE50/75",
+            "dataRequirement": "~10 M reads/样本",
+            "samples": "40"
+          },
+          {
+            "method": "低深度WGS测序",
+            "application": "PGS",
+            "readLength": "SE75",
+            "dataRequirement": "~10 M reads/样本",
+            "samples": "40"
+          },
+          {
+            "method": "靶向捕获/多重检测",
+            "application": "WES",
+            "readLength": "PE150",
+            "dataRequirement": "15G/样本",
+            "samples": "8"
+          },
+          {
+            "method": "靶向捕获/多重检测",
+            "application": "遗传病诊断小panel",
+            "readLength": "PE150",
+            "dataRequirement": "5G/样本",
+            "samples": "24"
+          },
+          {
+            "method": "小型基因组测序",
+            "application": "病原宏基因组",
+            "readLength": "SE50/75",
+            "dataRequirement": "20 M reads/样本",
+            "samples": "20"
+          },
+          {
+            "method": "小型基因组测序",
+            "application": "细菌、病毒WGS测序",
+            "readLength": "PE150",
+            "dataRequirement": "~1 Gb/样本",
+            "samples": "120"
+          }
+        ],
+        "note": "样本数/run为宣传彩页列示的典型配置，不是对所有实验或临床项目的固定承诺。具体方案需结合样本质量、目标数据量、实验室验证和适用要求确定。"
+      },
+      "cta": {
+        "title": "获取产品说明、批次质控与采购信息",
+        "description": "如需确认适用配置、备案资料、交付规格或批次检测信息，请联系GenomeLight产品团队。",
+        "button": "联系产品团队"
       }
-    },
-    "cta": {
-      "title": "高质量测序试剂，助力精准基因检测",
-      "subtitle": "如需了解更多产品信息或采购咨询，请联系我们的专业团队",
-      "button": "联系我们"
     }
   },
   "health": {
@@ -936,7 +986,7 @@
           "placeholder": "请选择您感兴趣的服务",
           "options": [
             "GLSofort®解读平台",
-            "高通量测序试剂盒",
+            "测序反应通用试剂盒",
             "大健康筛查",
             "数据压缩一体机",
             "其他服务咨询"

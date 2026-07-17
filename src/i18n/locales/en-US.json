@@ -13,8 +13,8 @@
       "description": "GLSofort supports variant screening, evidence organization, and reporting workflows for WGS, WES, and Gene Panel data, with qualified professional review."
     },
     "reagent": {
-      "title": "High-Throughput Sequencing Reagents | GenomeLight",
-      "description": "Review high-throughput sequencing reagent kits for NextSeq 500/550, including displayed batch quality data, specifications, application scope, and storage conditions."
+      "title": "Universal Sequencing Reaction Kit | GenomeLight",
+      "description": "Review the NextSeq 500/550 universal sequencing reaction kit, including its NMPA filing, 130M/400M performance matrix, and typical NIPT, WES, and pathogen-metagenomics configurations."
     },
     "health": {
       "title": "Genetic Risk Assessment Information | GenomeLight",
@@ -54,7 +54,7 @@
       "services": "Products & Services",
       "serviceItems": {
         "glsofort": "GLSofort® Analysis Platform",
-        "reagent": "Sequencer Reagent Kits",
+        "reagent": "Universal Sequencing Reaction Kit",
         "health": "Health Screening",
         "compression": "Data Compression System"
       },
@@ -103,13 +103,13 @@
         "link": "/glsofort"
       },
       "reagent": {
-        "title": "Sequencer Reagent Kits",
-        "description": "High-throughput sequencing chips and reagents for NextSeq 500/550; performance is subject to product documentation and batch quality reports",
+        "title": "Universal Sequencing Reaction Kit",
+        "description": "For NextSeq 500/550 platforms with 130M/400M output and 50-, 75-, or 300-cycle configurations; performance is subject to product instructions, filing documents, and batch QC reports",
         "features": [
-          "High-quality sequencing reagents",
-          "High-throughput sequencing chips",
-          "Batch quality control",
-          "Platform compatibility review"
+          "130M/400M chip output",
+          "50/75/300 cycles",
+          "NMPA filing",
+          "Batch quality control"
         ],
         "link": "/reagent"
       },
@@ -223,7 +223,7 @@
       "title": "Main Services",
       "items": [
         "GLSofort® Analysis Platform",
-        "Sequencer Reagent Kits",
+        "Universal Sequencing Reaction Kit",
         "Health Screening",
         "Data Compression System"
       ],
@@ -375,124 +375,174 @@
     }
   },
   "reagent": {
-    "hero": {
-      "title": "Sequencer Reagent Kits",
-      "subtitle": "High-throughput sequencing chips and reagent kits for NextSeq 500/550; specifications and batch performance are subject to product documentation and quality reports",
+    "page": {
+      "eyebrow": "Sequencing reagents · NextSeq 500/550",
+      "title": "Universal Sequencing Reaction Kit",
+      "method": "Reversible terminator sequencing",
+      "summary": "A sequencing-by-synthesis kit comprising sequencing reagents, sequencing buffer, sequencing chips, and library diluent for NextSeq 500/550 platforms. The brochure states that the product has an NMPA filing and may be used for clinical-sample testing; intended use and scope are subject to the filing certificate and product instructions.",
+      "registration": {
+        "label": "NMPA filing",
+        "value": "渝高新械备20250033"
+      },
+      "platform": {
+        "label": "Platform",
+        "value": "NextSeq 500/550"
+      },
+      "composition": {
+        "label": "Components",
+        "value": "Reagents / buffer / chip / diluent"
+      },
       "buttons": {
-        "specifications": "View Specifications",
-        "contact": "Contact for Purchase"
-      }
-    },
-    "overview": {
-      "title": "Product Overview",
-      "description": "High-throughput sequencing chips and reagent kits undergo batch quality testing. Displayed parameters and sample data are for product communication; actual performance depends on instrument, sample, and laboratory conditions.",
-      "imageCaption": "Brand laboratory-workflow illustration; it does not represent a specific product appearance or laboratory configuration.",
-      "reagents": {
-        "title": "Sequencing Reagents",
-        "description": "Contains sequencing reaction reagents and buffer solutions with defined batch quality checks; stability and consistency are subject to the corresponding batch report."
+        "performance": "View performance",
+        "contact": "Purchase inquiry"
       },
-      "chips": {
-        "title": "High-throughput Sequencing Chips",
-        "description": "The high-throughput sequencing chips have a stated output of 400M reads per run; actual output and quality depend on operating and sample conditions."
-      }
-    },
-    "qualityControl": {
-      "title": "Quality Control Results",
-      "description": "The following quality-control and parallel-comparison data are from three displayed batches. They represent those samples and operating conditions and are not a performance guarantee for every batch or use case:",
-      "table": {
-        "headers": {
-          "batch": "Batch",
-          "q30": "Q30(%)",
-          "reads": "Reads(M)",
-          "standard": "Illumina Quality Standard",
-          "result": "Comparison Result"
-        },
-        "passedStandard": "Displayed batch met the stated value"
-      }
-    },
-    "applications": {
-      "title": "Main Application Areas",
-      "genetic": {
-        "title": "Genetic Disease Detection",
-        "items": [
-          "Whole Exome Sequencing (WES)",
-          "Targeted Gene Panels",
-          "Newborn Screening",
-          "Inherited-disease gene testing research"
-        ]
+      "imageAlt": "Universal sequencing reaction kit product package",
+      "imageCaption": "Product image from the supplied brochure; packaging and labels are subject to the delivered batch.",
+      "nav": {
+        "label": "Product detail sections",
+        "features": "Features",
+        "performance": "Performance",
+        "applications": "Applications"
       },
-      "cancer": {
-        "title": "Cancer Gene Testing",
+      "features": {
+        "title": "Product Features",
+        "description": "The supplied brochure groups the product's characteristics into stability, flexibility, speed, and accuracy. The stated values should be interpreted with the selected run configuration, batch quality control, and laboratory conditions.",
         "items": [
-          "Tumor Somatic Mutation Analysis",
-          "Liquid Biopsy",
-          "Cancer Predisposition Gene Testing",
-          "Drug-target gene research"
+          {
+            "title": "Stable",
+            "description": "The brochure states that defined quality control supports stable sequencing. Refer to the batch quality report and actual run data for batch-specific performance."
+          },
+          {
+            "title": "Flexible",
+            "description": "130M and 400M chip-output options with 50-, 75-, and 300-cycle configurations support different data-volume and read-length needs."
+          },
+          {
+            "title": "Fast",
+            "description": "The supplied brochure lists an 8-hour sequencing time for the 130M, 50-cycle configuration. Other configurations are shown in the performance table."
+          },
+          {
+            "title": "Accurate",
+            "description": "The brochure states sequencing accuracy above 99.9%. Actual sequencing quality should be assessed from run data and batch quality-control results."
+          }
         ]
-      },
-      "reproductive": {
-        "title": "Reproductive Health & Prenatal Diagnosis",
-        "items": [
-          "Preimplantation Genetic Screening",
-          "Non-invasive Prenatal Testing",
-          "Single Gene Disease Carrier Screening",
-          "Prenatal testing research"
-        ]
-      },
-      "research": {
-        "title": "Research Applications",
-        "items": [
-          "Genomics Research",
-          "Transcriptomics Research",
-          "Microbial Research",
-          "Infectious Disease Research"
-        ]
-      }
-    },
-    "features": {
-      "title": "Product Features",
-      "quality": {
-        "title": "Batch Quality Control",
-        "description": "Each batch is checked against defined items, with a stated Q30 value of ≥91%. Refer to the batch quality report and actual run data for results."
       },
       "performance": {
-        "title": "Stated Performance Parameters",
-        "description": "The stated output is 400M+ reads per run; actual output, quality, and cost depend on sample, instrument, and laboratory conditions."
-      },
-      "compatibility": {
-        "title": "Platform Compatibility",
-        "description": "Designed for NextSeq 500/550 sequencers. Laboratories should confirm compatibility with their workflow before use."
-      }
-    },
-    "specifications": {
-      "title": "Technical Specifications",
-      "technical": {
-        "title": "Technical Parameters",
-        "items": [
-          "Compatible Platform: NextSeq500/550",
-          "Data Output: 400M+ reads",
-          "Q30 Quality Score: ≥91%",
-          "Sequencing Length: 2×150bp",
-          "Run Time: 29 hours",
-          "Storage Conditions: -20°C"
-        ]
+        "title": "Product Performance",
+        "description": "The 130M and 400M chip-output options can be paired with 50-, 75-, or 300-cycle configurations. The table reproduces the stated output, Q30, and sequencing time from the supplied brochure.",
+        "headers": {
+          "reads": "Chip output (reads)",
+          "cycles": "Read length",
+          "output": "Data output",
+          "q30": "Sequencing quality Q30",
+          "time": "Sequencing time"
+        },
+        "rows": [
+          {
+            "reads": "130M",
+            "cycles": "50 cycles",
+            "output": "6.5G",
+            "q30": "> 90%",
+            "time": "8h"
+          },
+          {
+            "reads": "130M",
+            "cycles": "75 cycles",
+            "output": "9.75G",
+            "q30": "> 90%",
+            "time": "10h"
+          },
+          {
+            "reads": "130M",
+            "cycles": "300 cycles",
+            "output": "39G",
+            "q30": "> 85%",
+            "time": "26h"
+          },
+          {
+            "reads": "400M",
+            "cycles": "50 cycles",
+            "output": "20G",
+            "q30": "> 90%",
+            "time": "9h"
+          },
+          {
+            "reads": "400M",
+            "cycles": "75 cycles",
+            "output": "30G",
+            "q30": "> 90%",
+            "time": "11h"
+          },
+          {
+            "reads": "400M",
+            "cycles": "300 cycles",
+            "output": "120G",
+            "q30": "> 85%",
+            "time": "29h"
+          }
+        ],
+        "note": "These are stated values from the supplied brochure. Actual performance may vary with instrument status, library type and quality, insert size, loading concentration, and laboratory workflow. Refer to the product instructions, filing certificate, and batch quality report."
       },
       "applications": {
-        "title": "Application Range",
-        "items": [
-          "Whole Exome Sequencing (WES)",
-          "Targeted Gene Panel Testing",
-          "Cancer Gene Testing",
-          "Genetic Disease Diagnosis",
-          "Research Genomics",
-          "Transcriptomics Analysis"
-        ]
+        "title": "Applications",
+        "description": "The supplied brochure lists typical configurations for low-depth WGS, targeted capture or multiplex testing, and small-genome sequencing to support workflow evaluation across several research and testing contexts.",
+        "headers": {
+          "method": "Method",
+          "application": "Application",
+          "readLength": "Read length",
+          "dataRequirement": "Data requirement",
+          "samples": "Samples/run"
+        },
+        "rows": [
+          {
+            "method": "Low-depth WGS",
+            "application": "NIPT",
+            "readLength": "SE50/75",
+            "dataRequirement": "~10 M reads/sample",
+            "samples": "40"
+          },
+          {
+            "method": "Low-depth WGS",
+            "application": "PGS",
+            "readLength": "SE75",
+            "dataRequirement": "~10 M reads/sample",
+            "samples": "40"
+          },
+          {
+            "method": "Target capture/multiplex",
+            "application": "WES",
+            "readLength": "PE150",
+            "dataRequirement": "15G/sample",
+            "samples": "8"
+          },
+          {
+            "method": "Target capture/multiplex",
+            "application": "Small inherited-disease panel",
+            "readLength": "PE150",
+            "dataRequirement": "5G/sample",
+            "samples": "24"
+          },
+          {
+            "method": "Small-genome sequencing",
+            "application": "Pathogen metagenomics",
+            "readLength": "SE50/75",
+            "dataRequirement": "20 M reads/sample",
+            "samples": "20"
+          },
+          {
+            "method": "Small-genome sequencing",
+            "application": "Bacterial/viral WGS",
+            "readLength": "PE150",
+            "dataRequirement": "~1 Gb/sample",
+            "samples": "120"
+          }
+        ],
+        "note": "Samples/run values are typical configurations listed in the supplied brochure and are not fixed commitments for every laboratory or clinical project. Confirm the workflow against sample quality, target data volume, laboratory validation, and applicable requirements."
+      },
+      "cta": {
+        "title": "Request product instructions, batch QC, and purchasing information",
+        "description": "Contact the GenomeLight product team to confirm compatible configurations, filing documents, delivery specifications, or batch test information.",
+        "button": "Contact product team"
       }
-    },
-    "cta": {
-      "title": "High-Quality Sequencing Reagents for Precise Genetic Testing",
-      "subtitle": "For more product information or purchasing inquiries, please contact our professional team",
-      "button": "Get Quote"
     }
   },
   "health": {
@@ -935,7 +985,7 @@
           "placeholder": "Please select the service you are interested in",
           "options": [
             "GLSofort® Analysis Platform",
-            "Sequencer Reagent Kits",
+            "Universal Sequencing Reaction Kit",
             "Health Screening",
             "Data Compression System",
             "Other Service Consultation"

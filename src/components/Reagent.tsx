@@ -1,410 +1,402 @@
-import { useTranslation } from "react-i18next";
-import { Beaker, Cpu, CheckCircle, BarChart3, Dna, Shield } from "lucide-react";
-import { Link } from "react-router-dom";
-import ComplianceNotice from "./ComplianceNotice";
+import {
+  ArrowRight,
+  BadgeCheck,
+  Boxes,
+  Clock3,
+  FileCheck2,
+  Gauge,
+  Info,
+  MonitorCog,
+  ShieldCheck,
+  SlidersHorizontal
+} from 'lucide-react'
+import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
+import ComplianceNotice from './ComplianceNotice'
+
+type ProductFeature = {
+  title: string
+  description: string
+}
+
+type PerformanceRow = {
+  reads: string
+  cycles: string
+  output: string
+  q30: string
+  time: string
+}
+
+type ApplicationRow = {
+  method: string
+  application: string
+  readLength: string
+  dataRequirement: string
+  samples: string
+}
+
+const featureIcons = [ShieldCheck, SlidersHorizontal, Clock3, BadgeCheck]
 
 const Reagent = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
+  const features = t('reagent.page.features.items', {
+    returnObjects: true
+  }) as ProductFeature[]
+  const performanceRows = t('reagent.page.performance.rows', {
+    returnObjects: true
+  }) as PerformanceRow[]
+  const applicationRows = t('reagent.page.applications.rows', {
+    returnObjects: true
+  }) as ApplicationRow[]
 
   return (
     <div className="bg-white">
-      {/* Hero Section */}
-      <section className="bg-[#713f45] py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center text-white">
-            <h1 className="text-5xl font-bold mb-6">
-              {t("reagent.hero.title")}
-            </h1>
-            <p className="text-xl mb-8 max-w-5xl mx-auto leading-relaxed">
-              {t("reagent.hero.subtitle")}
+      <section
+        className="overflow-hidden border-b border-[#d5e1df] bg-[#f2f7f6]"
+        aria-labelledby="reagent-title"
+      >
+        <div className="container relative mx-auto px-5 pb-10 pt-12 md:px-8 lg:min-h-[580px] lg:pb-0 lg:pt-0">
+          <div className="relative z-10 max-w-2xl lg:flex lg:min-h-[580px] lg:flex-col lg:justify-center lg:py-14">
+            <p className="mb-5 flex items-center gap-3 text-xs font-bold uppercase text-[#9d4f59]">
+              <span className="h-px w-10 bg-[#9d4f59]" aria-hidden="true" />
+              {t('reagent.page.eyebrow')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <h1
+              id="reagent-title"
+              className="max-w-xl text-4xl font-semibold leading-[1.18] text-[#173449] md:text-5xl"
+            >
+              {t('reagent.page.title')}
+            </h1>
+            <p className="mt-4 text-lg font-semibold text-[#9d4f59]">
+              {t('reagent.page.method')}
+            </p>
+            <p className="mt-5 max-w-xl text-base leading-7 text-[#526a73] md:text-lg">
+              {t('reagent.page.summary')}
+            </p>
+
+            <dl className="mt-7 flex max-w-2xl flex-wrap gap-x-6 gap-y-3 border-y border-[#c8d8d6] py-4 text-sm">
+              <div className="flex items-center gap-2">
+                <FileCheck2
+                  className="h-4 w-4 text-[#247c7f]"
+                  aria-hidden="true"
+                />
+                <dt className="text-[#71858b]">
+                  {t('reagent.page.registration.label')}
+                </dt>
+                <dd className="font-semibold text-[#173449]">
+                  {t('reagent.page.registration.value')}
+                </dd>
+              </div>
+              <div className="flex items-center gap-2">
+                <MonitorCog
+                  className="h-4 w-4 text-[#247c7f]"
+                  aria-hidden="true"
+                />
+                <dt className="text-[#71858b]">
+                  {t('reagent.page.platform.label')}
+                </dt>
+                <dd className="font-semibold text-[#173449]">
+                  {t('reagent.page.platform.value')}
+                </dd>
+              </div>
+              <div className="flex items-center gap-2">
+                <Boxes className="h-4 w-4 text-[#247c7f]" aria-hidden="true" />
+                <dt className="text-[#71858b]">
+                  {t('reagent.page.composition.label')}
+                </dt>
+                <dd className="font-semibold text-[#173449]">
+                  {t('reagent.page.composition.value')}
+                </dd>
+              </div>
+            </dl>
+
+            <div className="mt-7 flex gap-3">
+              <a
+                href="#performance"
+                className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 bg-[#173449] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#245f70] sm:flex-none"
+              >
+                {t('reagent.page.buttons.performance')}
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </a>
               <Link
                 to="/contact"
-                className="bg-white text-[#bf5d60] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors block text-center"
+                className="inline-flex min-h-12 flex-1 items-center justify-center border border-[#9bb2b8] bg-white/65 px-5 py-3 font-semibold text-[#173449] transition-colors hover:border-[#173449] hover:bg-white sm:flex-none"
               >
-                {t("reagent.hero.buttons.specifications")}
-              </Link>
-              <Link
-                to="/contact"
-                className="border-2 border-white text-white hover:bg-white hover:text-[#bf5d60] px-8 py-3 rounded-lg font-semibold transition-colors block text-center"
-              >
-                {t("reagent.hero.buttons.contact")}
+                {t('reagent.page.buttons.contact')}
               </Link>
             </div>
           </div>
+
+          <figure className="relative mx-auto mt-8 w-[280px] lg:absolute lg:bottom-16 lg:right-10 lg:mt-0 lg:w-[470px]">
+            <img
+              src="/images/reagent-kit-product.jpeg"
+              alt={t('reagent.page.imageAlt')}
+              width="447"
+              height="282"
+              decoding="async"
+              className="h-auto w-full mix-blend-multiply"
+            />
+            <figcaption className="mt-3 text-center text-xs leading-5 text-[#71858b]">
+              {t('reagent.page.imageCaption')}
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       <ComplianceNotice />
 
-      {/* Product Overview */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#264b69] mb-8 border-b-4 border-[#4fb1b4] inline-block pb-2">
-              {t("reagent.overview.title")}
-            </h2>
-            <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto text-left pr-4">
-              {t("reagent.overview.description")}
-            </p>
-          </div>
+      <nav
+        className="border-b border-[#d5e1df] bg-white"
+        aria-label={t('reagent.page.nav.label')}
+      >
+        <div className="container mx-auto grid grid-cols-3 px-5 md:px-8">
+          {(['features', 'performance', 'applications'] as const).map(
+            (section, index) => (
+              <a
+                key={section}
+                href={`#${section}`}
+                className="flex min-h-16 items-center justify-center gap-2 border-r border-[#e0e8e7] text-sm font-semibold text-[#385665] transition-colors first:border-l hover:bg-[#f2f7f6] hover:text-[#247c7f]"
+              >
+                <span className="text-xs text-[#2d8f91]">0{index + 1}</span>
+                {t(`reagent.page.nav.${section}`)}
+              </a>
+            )
+          )}
+        </div>
+      </nav>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section
+        id="features"
+        className="scroll-mt-32 py-20 md:py-28"
+        aria-labelledby="features-title"
+      >
+        <div className="container mx-auto px-5 md:px-8">
+          <div className="grid gap-5 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
             <div>
-              <div className="space-y-8">
-                <div className="flex items-start">
-                  <Beaker className="w-12 h-12 text-[#bf5d60] mr-6 mt-2" />
-                  <div>
-                    <h3 className="text-2xl font-bold text-[#264b69] mb-4">
-                      {t("reagent.overview.reagents.title")}
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed pr-24">
-                      {t("reagent.overview.reagents.description")}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <Cpu className="w-12 h-12 text-[#cc8b57] mr-6 mt-2" />
-                  <div>
-                    <h3 className="text-2xl font-bold text-[#264b69] mb-4">
-                      {t("reagent.overview.chips.title")}
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed pr-24">
-                      {t("reagent.overview.chips.description")}
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <p className="mb-3 text-xs font-bold uppercase text-[#9d4f59]">
+                01 / FEATURES
+              </p>
+              <h2
+                id="features-title"
+                className="text-3xl font-semibold text-[#173449] md:text-4xl"
+              >
+                {t('reagent.page.features.title')}
+              </h2>
             </div>
-
-            <figure className="bg-gray-50 rounded-xl p-8">
-              <img
-                src="/images/3253282782.png"
-                alt={t("reagent.overview.title")}
-                width="1910"
-                height="248"
-                loading="lazy"
-                decoding="async"
-                className="mx-auto h-64 w-full object-cover object-center"
-              />
-              <figcaption className="mt-4 text-sm leading-6 text-gray-600">
-                {t("reagent.overview.imageCaption")}
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      {/* Quality Control Results */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-[#264b69] mb-4 text-center border-b-4 border-[#4fb1b4] inline-block pb-2">
-            {t("reagent.qualityControl.title")}
-          </h2>
-
-          <div className="mb-4 max-w-6xl mx-auto">
-            <p className="text-lg text-gray-700 leading-relaxed max-w-4xl text-left">
-              {t("reagent.qualityControl.description")}
+            <p className="max-w-3xl text-base leading-7 text-[#586e77] md:text-lg">
+              {t('reagent.page.features.description')}
             </p>
           </div>
 
-          <div className="max-w-6xl mx-auto">
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <table className="w-full">
-                <thead className="bg-[#bf5d60] text-white">
-                  <tr>
-                    <th className="px-6 py-4 text-left font-bold text-lg">
-                      {t("reagent.qualityControl.table.headers.batch")}
-                    </th>
-                    <th className="px-6 py-4 text-center font-bold text-lg">
-                      {t("reagent.qualityControl.table.headers.q30")}
-                    </th>
-                    <th className="px-6 py-4 text-center font-bold text-lg">
-                      {t("reagent.qualityControl.table.headers.reads")}
-                    </th>
-                    <th className="px-6 py-4 text-center font-bold text-lg">
-                      {t("reagent.qualityControl.table.headers.standard")}
-                    </th>
-                    <th className="px-6 py-4 text-center font-bold text-lg">
-                      {t("reagent.qualityControl.table.headers.result")}
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="bg-gray-50">
-                    <td className="px-6 py-4 font-medium">GL0120241001</td>
-                    <td className="px-6 py-4 text-center text-green-600 font-bold">
-                      91.52%
-                    </td>
-                    <td className="px-6 py-4 text-center text-blue-600 font-bold">
-                      489.65M
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm" rowSpan={3}>
-                      <div className="space-y-1">
-                        <div>Q30 &gt; 80%</div>
-                        <div>reads &gt; 400M</div>
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 text-center">
-                      <div className="flex items-center justify-center">
-                        <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                        <span className="text-green-600 font-semibold">
-                          {t("reagent.qualityControl.table.passedStandard")}
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="bg-white">
-                    <td className="px-6 py-4 font-medium">GL0120241201</td>
-                    <td className="px-6 py-4 text-center text-green-600 font-bold">
-                      92.73%
-                    </td>
-                    <td className="px-6 py-4 text-center text-blue-600 font-bold">
-                      432.98M
-                    </td>
-                    <td className="px-6 py-4 text-center">
-                      <div className="flex items-center justify-center">
-                        <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                        <span className="text-green-600 font-semibold">
-                          {t("reagent.qualityControl.table.passedStandard")}
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="px-6 py-4 font-medium">GL0120250101</td>
-                    <td className="px-6 py-4 text-center text-green-600 font-bold">
-                      91.20%
-                    </td>
-                    <td className="px-6 py-4 text-center text-blue-600 font-bold">
-                      414.27M
-                    </td>
-                    <td className="px-6 py-4 text-center">
-                      <div className="flex items-center justify-center">
-                        <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                        <span className="text-green-600 font-semibold">
-                          {t("reagent.qualityControl.table.passedStandard")}
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Applications */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-[#264b69] mb-16 text-center border-b-4 border-[#4fb1b4] inline-block pb-2">
-            {t("reagent.applications.title")}
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#bf5d60] to-[#cc8b57] rounded-full flex items-center justify-center mb-6">
-                <Dna className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-[#264b69] mb-4 text-left">
-                {t("reagent.applications.genetic.title")}
-              </h3>
-              <ul className="text-gray-700 text-sm space-y-2">
-                {(
-                  t("reagent.applications.genetic.items", {
-                    returnObjects: true,
-                  }) as string[]
-                ).map((item: string) => (
-                  <li key={item} className="flex items-start text-left">
-                    <span className="w-2 h-2 bg-[#4fb1b4] rounded-full mt-2 mr-2 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#bf5d60] to-[#cc8b57] rounded-full flex items-center justify-center mb-6">
-                <Shield className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-[#264b69] mb-4 text-left">
-                {t("reagent.applications.cancer.title")}
-              </h3>
-              <ul className="text-gray-700 text-sm space-y-2">
-                {(
-                  t("reagent.applications.cancer.items", {
-                    returnObjects: true,
-                  }) as string[]
-                ).map((item: string) => (
-                  <li key={item} className="flex items-start text-left">
-                    <span className="w-2 h-2 bg-[#4fb1b4] rounded-full mt-2 mr-2 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#bf5d60] to-[#cc8b57] rounded-full flex items-center justify-center mb-6">
-                <CheckCircle className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-[#264b69] mb-4 text-left">
-                {t("reagent.applications.reproductive.title")}
-              </h3>
-              <ul className="text-gray-700 text-sm space-y-2">
-                {(
-                  t("reagent.applications.reproductive.items", {
-                    returnObjects: true,
-                  }) as string[]
-                ).map((item: string) => (
-                  <li key={item} className="flex items-start text-left">
-                    <span className="w-2 h-2 bg-[#4fb1b4] rounded-full mt-2 mr-2 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#bf5d60] to-[#cc8b57] rounded-full flex items-center justify-center mb-6">
-                <BarChart3 className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-[#264b69] mb-4 text-left">
-                {t("reagent.applications.research.title")}
-              </h3>
-              <ul className="text-gray-700 text-sm space-y-2">
-                {(
-                  t("reagent.applications.research.items", {
-                    returnObjects: true,
-                  }) as string[]
-                ).map((item: string) => (
-                  <li key={item} className="flex items-start text-left">
-                    <span className="w-2 h-2 bg-[#4fb1b4] rounded-full mt-2 mr-2 flex-shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-[#264b69] mb-16 text-center border-b-4 border-[#4fb1b4] inline-block pb-2">
-            {t("reagent.features.title")}
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl shadow-lg p-7 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <CheckCircle className="w-12 h-12 text-[#bf5d60] mr-4" />
-                <h3 className="text-xl font-bold text-[#264b69]">
-                  {t("reagent.features.quality.title")}
-                </h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                {t("reagent.features.quality.description")}
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-7 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <BarChart3 className="w-12 h-12 text-[#bf5d60] mr-4" />
-                <h3 className="text-xl font-bold text-[#264b69]">
-                  {t("reagent.features.performance.title")}
-                </h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                {t("reagent.features.performance.description")}
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-7 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <Shield className="w-12 h-12 text-[#bf5d60] mr-4" />
-                <h3 className="text-xl font-bold text-[#264b69]">
-                  {t("reagent.features.compatibility.title")}
-                </h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                {t("reagent.features.compatibility.description")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Specifications */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-[#264b69] mb-16 text-center border-b-4 border-[#4fb1b4] inline-block pb-2">
-            {t("reagent.specifications.title")}
-          </h2>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl shadow-lg p-8">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="text-2xl font-bold text-[#264b69] mb-6">
-                    {t("reagent.specifications.technical.title")}
+          <div className="mt-12 grid border-y border-[#c8d8d6] md:grid-cols-4">
+            {features.map((feature, index) => {
+              const Icon = featureIcons[index] ?? Gauge
+              return (
+                <article
+                  key={feature.title}
+                  className="border-b border-[#c8d8d6] py-8 md:border-b-0 md:border-r md:px-7 md:last:border-r-0"
+                >
+                  <div className="flex items-center justify-between">
+                    <Icon
+                      className="h-7 w-7 text-[#9d4f59]"
+                      aria-hidden="true"
+                    />
+                    <span className="text-xs text-[#8a9da2]">0{index + 1}</span>
+                  </div>
+                  <h3 className="mt-6 text-xl font-semibold text-[#173449]">
+                    {feature.title}
                   </h3>
-                  <ul className="space-y-4">
-                    {(
-                      t("reagent.specifications.technical.items", {
-                        returnObjects: true,
-                      }) as string[]
-                    ).map((item: string) => (
-                      <li key={item} className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-2xl font-bold text-[#264b69] mb-6">
-                    {t("reagent.specifications.applications.title")}
-                  </h3>
-                  <ul className="space-y-4">
-                    {(
-                      t("reagent.specifications.applications.items", {
-                        returnObjects: true,
-                      }) as string[]
-                    ).map((item: string) => (
-                      <li key={item} className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
+                  <p className="mt-3 text-sm leading-6 text-[#63777f]">
+                    {feature.description}
+                  </p>
+                </article>
+              )
+            })}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-[#bf5d60] text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-3xl font-bold mb-8">{t("reagent.cta.title")}</h3>
-          <p className="text-xl mb-8">{t("reagent.cta.subtitle")}</p>
+      <section
+        id="performance"
+        className="scroll-mt-32 border-y border-[#d5e1df] bg-[#f2f7f6] py-20 md:py-28"
+        aria-labelledby="performance-title"
+      >
+        <div className="container mx-auto px-5 md:px-8">
+          <div className="grid gap-5 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
+            <div>
+              <p className="mb-3 text-xs font-bold uppercase text-[#2d8f91]">
+                02 / PERFORMANCE
+              </p>
+              <h2
+                id="performance-title"
+                className="text-3xl font-semibold text-[#173449] md:text-4xl"
+              >
+                {t('reagent.page.performance.title')}
+              </h2>
+            </div>
+            <p className="max-w-3xl text-base leading-7 text-[#586e77] md:text-lg">
+              {t('reagent.page.performance.description')}
+            </p>
+          </div>
+
+          <div className="mt-12 overflow-x-auto border border-[#c8d8d6] bg-white">
+            <table className="w-full min-w-[760px] border-collapse text-left">
+              <caption className="sr-only">
+                {t('reagent.page.performance.title')}
+              </caption>
+              <thead className="bg-[#173449] text-white">
+                <tr>
+                  {(['reads', 'cycles', 'output', 'q30', 'time'] as const).map(
+                    (header) => (
+                      <th
+                        key={header}
+                        scope="col"
+                        className="px-5 py-4 text-sm font-semibold"
+                      >
+                        {t(`reagent.page.performance.headers.${header}`)}
+                      </th>
+                    )
+                  )}
+                </tr>
+              </thead>
+              <tbody>
+                {performanceRows.map((row) => (
+                  <tr
+                    key={`${row.reads}-${row.cycles}`}
+                    className="border-b border-[#dbe5e4] last:border-b-0 even:bg-[#f7faf9]"
+                  >
+                    <td className="px-5 py-4 font-semibold text-[#173449]">
+                      {row.reads}
+                    </td>
+                    <td className="px-5 py-4 text-[#4f6670]">{row.cycles}</td>
+                    <td className="px-5 py-4 font-semibold text-[#247c7f]">
+                      {row.output}
+                    </td>
+                    <td className="px-5 py-4 text-[#4f6670]">{row.q30}</td>
+                    <td className="px-5 py-4 text-[#4f6670]">{row.time}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <p className="mt-5 flex max-w-5xl items-start gap-3 text-sm leading-6 text-[#63777f]">
+            <Info
+              className="mt-0.5 h-5 w-5 shrink-0 text-[#9d4f59]"
+              aria-hidden="true"
+            />
+            {t('reagent.page.performance.note')}
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="applications"
+        className="scroll-mt-32 py-20 md:py-28"
+        aria-labelledby="applications-title"
+      >
+        <div className="container mx-auto px-5 md:px-8">
+          <div className="grid gap-5 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
+            <div>
+              <p className="mb-3 text-xs font-bold uppercase text-[#9d4f59]">
+                03 / APPLICATIONS
+              </p>
+              <h2
+                id="applications-title"
+                className="text-3xl font-semibold text-[#173449] md:text-4xl"
+              >
+                {t('reagent.page.applications.title')}
+              </h2>
+            </div>
+            <p className="max-w-3xl text-base leading-7 text-[#586e77] md:text-lg">
+              {t('reagent.page.applications.description')}
+            </p>
+          </div>
+
+          <div className="mt-12 overflow-x-auto border border-[#c8d8d6] bg-white">
+            <table className="w-full min-w-[940px] border-collapse text-left">
+              <caption className="sr-only">
+                {t('reagent.page.applications.title')}
+              </caption>
+              <thead className="bg-[#173449] text-white">
+                <tr>
+                  {(
+                    [
+                      'method',
+                      'application',
+                      'readLength',
+                      'dataRequirement',
+                      'samples'
+                    ] as const
+                  ).map((header) => (
+                    <th
+                      key={header}
+                      scope="col"
+                      className="px-5 py-4 text-sm font-semibold"
+                    >
+                      {t(`reagent.page.applications.headers.${header}`)}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {applicationRows.map((row) => (
+                  <tr
+                    key={`${row.method}-${row.application}`}
+                    className="border-b border-[#dbe5e4] last:border-b-0 even:bg-[#f7faf9]"
+                  >
+                    <td className="px-5 py-4 font-semibold text-[#173449]">
+                      {row.method}
+                    </td>
+                    <td className="px-5 py-4 text-[#4f6670]">
+                      {row.application}
+                    </td>
+                    <td className="px-5 py-4 text-[#4f6670]">
+                      {row.readLength}
+                    </td>
+                    <td className="px-5 py-4 text-[#4f6670]">
+                      {row.dataRequirement}
+                    </td>
+                    <td className="px-5 py-4 font-semibold text-[#247c7f]">
+                      {row.samples}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <p className="mt-5 flex max-w-5xl items-start gap-3 text-sm leading-6 text-[#63777f]">
+            <Info
+              className="mt-0.5 h-5 w-5 shrink-0 text-[#9d4f59]"
+              aria-hidden="true"
+            />
+            {t('reagent.page.applications.note')}
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-[#173449] py-16 text-white">
+        <div className="container mx-auto flex flex-col gap-7 px-5 md:flex-row md:items-center md:justify-between md:px-8">
+          <div className="max-w-3xl">
+            <h2 className="text-2xl font-semibold md:text-3xl">
+              {t('reagent.page.cta.title')}
+            </h2>
+            <p className="mt-3 text-base leading-7 text-white/72">
+              {t('reagent.page.cta.description')}
+            </p>
+          </div>
           <Link
             to="/contact"
-            className="bg-white text-[#bf5d60] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
+            className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 bg-white px-6 py-3 font-semibold text-[#173449] transition-colors hover:bg-[#e7f2f0]"
           >
-            {t("reagent.cta.button")}
+            {t('reagent.page.cta.button')}
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Reagent;
+export default Reagent

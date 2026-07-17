@@ -10,10 +10,12 @@ import Compression from './components/Compression'
 import Contact from './components/Contact'
 import News from './components/News'
 import Footer from './components/Footer'
+import Seo from './components/Seo'
 
 function App() {
   return (
     <Router>
+      <Seo />
       <div className="min-h-screen bg-white">
         <Header />
         <main>

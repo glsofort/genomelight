@@ -1,206 +1,205 @@
-import { Phone, Mail } from 'lucide-react'
+import { ChevronDown, Mail, Menu, Phone, X } from 'lucide-react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
-import { useState } from 'react'
 import LanguageToggle from './LanguageToggle'
+
+const serviceLinks = [
+  { path: '/glsofort', key: 'glsofort' },
+  { path: '/reagent', key: 'reagent' },
+  { path: '/health', key: 'health' },
+  { path: '/compression', key: 'compression' }
+]
 
 const Header = () => {
   const { t } = useTranslation()
   const location = useLocation()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
+  useEffect(() => {
+    setIsMobileMenuOpen(false)
+  }, [location.pathname])
+
+  const navClass = (path: string) =>
+    `inline-flex min-h-12 items-center border-b-2 px-1 text-sm font-semibold transition-colors ${
+      location.pathname === path
+        ? 'border-[#2d8f91] text-[#245f70]'
+        : 'border-transparent text-[#314b5b] hover:text-[#2d8f91]'
+    }`
+
+  const servicesActive = serviceLinks.some(
+    (service) => location.pathname === service.path
+  )
 
   return (
-    <header className="bg-white shadow-sm">
-      {/* Top contact bar */}
-      <div className="bg-[#264b69] text-white py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
+    <header className="sticky top-0 z-50 border-b border-[#dce4e5] bg-white/95 shadow-[0_1px_8px_rgba(18,48,65,0.05)] backdrop-blur">
+      <div className="hidden bg-[#123247] text-white md:block">
+        <div className="container mx-auto flex min-h-9 items-center justify-between px-4 text-xs md:px-8">
           <LanguageToggle />
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2">
-              <Phone size={14} />
-              <span>{t('footer.contact.phone')}</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Mail size={14} />
+          <div className="flex items-center gap-5 text-white/80">
+            <a
+              href={`tel:${t('footer.contact.phone')}`}
+              className="inline-flex items-center gap-2 hover:text-white"
+            >
+              <Phone className="h-3.5 w-3.5" aria-hidden="true" />
+              <span className="hidden sm:inline">
+                {t('footer.contact.phone')}
+              </span>
+            </a>
+            <a
+              href={`mailto:${t('footer.contact.email')}`}
+              className="hidden items-center gap-2 hover:text-white sm:inline-flex"
+            >
+              <Mail className="h-3.5 w-3.5" aria-hidden="true" />
               <span>{t('footer.contact.email')}</span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
 
-      {/* Main navigation */}
-      <nav className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+      <nav
+        className="container mx-auto px-4 md:px-8"
+        aria-label={t('header.nav.primaryLabel')}
+      >
+        <div className="flex min-h-[70px] items-center justify-between md:min-h-[78px]">
+          <Link
+            to="/"
+            className="flex min-w-0 items-center"
+            aria-label={t('header.nav.homeLabel')}
+          >
             <img
               src="/images/1691569958.png"
-              alt="GenomeLight Logo"
-              className="h-12"
+              alt=""
+              width="115"
+              height="40"
+              className="h-9 w-auto md:h-11"
             />
-            <div>
-              <h1 className="text-xl font-bold text-[#264b69]">{t('header.companyName')}</h1>
-              <p className="text-sm text-gray-600">{t('header.tagline')}</p>
-            </div>
           </Link>
 
-          {/* Desktop Navigation Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden items-center gap-7 lg:flex">
             <Link
               to="/"
-              className={`font-medium transition-colors ${
-                location.pathname === '/'
-                  ? 'text-[#4fb1b4]'
-                  : 'text-[#264b69] hover:text-[#4fb1b4]'
-              }`}
+              className={navClass('/')}
+              aria-current={location.pathname === '/' ? 'page' : undefined}
             >
               {t('header.nav.home')}
             </Link>
             <Link
               to="/about"
-              className={`font-medium transition-colors ${
-                location.pathname === '/about'
-                  ? 'text-[#4fb1b4]'
-                  : 'text-[#264b69] hover:text-[#4fb1b4]'
-              }`}
+              className={navClass('/about')}
+              aria-current={location.pathname === '/about' ? 'page' : undefined}
             >
               {t('header.nav.about')}
             </Link>
-            <div className="relative group">
-              <button className="text-[#264b69] hover:text-[#4fb1b4] font-medium">{t('header.nav.services')}</button>
-              <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
-                <Link to="/glsofort" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">{t('header.nav.serviceItems.glsofort')}</Link>
-                <Link to="/reagent" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">{t('header.nav.serviceItems.reagent')}</Link>
-                <Link to="/health" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">{t('header.nav.serviceItems.health')}</Link>
-                <Link to="/compression" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left">{t('header.nav.serviceItems.compression')}</Link>
+
+            <div className="group relative">
+              <button
+                type="button"
+                className={`${navClass('/__services')} gap-1 ${servicesActive ? 'border-[#2d8f91] text-[#245f70]' : ''}`}
+                aria-haspopup="true"
+              >
+                {t('header.nav.services')}
+                <ChevronDown className="h-4 w-4" aria-hidden="true" />
+              </button>
+              <div className="invisible absolute left-1/2 top-full w-72 -translate-x-1/2 border border-[#d7e0e1] bg-white p-2 opacity-0 shadow-[0_14px_36px_rgba(23,52,73,0.14)] transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                {serviceLinks.map((service) => (
+                  <Link
+                    key={service.path}
+                    to={service.path}
+                    className="block border-b border-[#edf1f1] px-4 py-3 text-sm font-medium text-[#314b5b] last:border-b-0 hover:bg-[#f1f6f5] hover:text-[#2d8f91]"
+                  >
+                    {t(`header.nav.serviceItems.${service.key}`)}
+                  </Link>
+                ))}
               </div>
             </div>
+
             <Link
               to="/news"
-              className={`font-medium transition-colors ${
-                location.pathname === '/news'
-                  ? 'text-[#4fb1b4]'
-                  : 'text-[#264b69] hover:text-[#4fb1b4]'
-              }`}
+              className={navClass('/news')}
+              aria-current={location.pathname === '/news' ? 'page' : undefined}
             >
               {t('header.nav.news')}
             </Link>
             <Link
               to="/contact"
-              className={`font-medium transition-colors ${
-                location.pathname === '/contact'
-                  ? 'text-[#4fb1b4]'
-                  : 'text-[#264b69] hover:text-[#4fb1b4]'
-              }`}
+              className="inline-flex min-h-11 items-center bg-[#173449] px-5 text-sm font-semibold text-white transition-colors hover:bg-[#245f70]"
+              aria-current={
+                location.pathname === '/contact' ? 'page' : undefined
+              }
             >
               {t('header.nav.contact')}
             </Link>
           </div>
 
-          {/* Mobile menu button */}
-          <button 
-            className="md:hidden text-[#264b69] hover:text-[#4fb1b4] transition-colors"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle mobile menu"
+          <button
+            type="button"
+            className="flex h-12 w-12 items-center justify-center text-[#173449] lg:hidden"
+            onClick={() => setIsMobileMenuOpen((open) => !open)}
+            aria-label={
+              isMobileMenuOpen
+                ? t('header.nav.closeMenu')
+                : t('header.nav.openMenu')
+            }
+            aria-expanded={isMobileMenuOpen}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {isMobileMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
+            {isMobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
 
-        {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
-            <div className="flex flex-col space-y-3 pt-4">
-              <Link
-                to="/"
-                className={`font-medium transition-colors ${
-                  location.pathname === '/'
-                    ? 'text-[#4fb1b4]'
-                    : 'text-[#264b69] hover:text-[#4fb1b4]'
-                }`}
-                onClick={() => setIsMobileMenuOpen(false)}
+          <div className="border-t border-[#dce4e5] pb-5 pt-3 lg:hidden">
+            <Link
+              to="/"
+              className="block min-h-12 py-3 font-semibold text-[#314b5b]"
+            >
+              {t('header.nav.home')}
+            </Link>
+            <Link
+              to="/about"
+              className="block min-h-12 py-3 font-semibold text-[#314b5b]"
+            >
+              {t('header.nav.about')}
+            </Link>
+            <p className="pt-3 text-xs font-bold uppercase text-[#7b8c93]">
+              {t('header.nav.services')}
+            </p>
+            <div className="mt-2 border-l-2 border-[#8fc7c3] pl-4">
+              {serviceLinks.map((service) => (
+                <Link
+                  key={service.path}
+                  to={service.path}
+                  className="block min-h-12 py-3 text-sm font-medium text-[#405967]"
+                >
+                  {t(`header.nav.serviceItems.${service.key}`)}
+                </Link>
+              ))}
+            </div>
+            <Link
+              to="/news"
+              className="block min-h-12 py-3 font-semibold text-[#314b5b]"
+            >
+              {t('header.nav.news')}
+            </Link>
+            <Link
+              to="/contact"
+              className="block min-h-12 py-3 font-semibold text-[#314b5b]"
+            >
+              {t('header.nav.contact')}
+            </Link>
+            <div className="mt-3 flex items-center justify-between bg-[#123247] px-3 py-1 text-white md:hidden">
+              <LanguageToggle />
+              <a
+                href={`tel:${t('footer.contact.phone')}`}
+                className="inline-flex min-h-11 items-center gap-2 text-xs text-white/80"
               >
-                {t('header.nav.home')}
-              </Link>
-              <Link
-                to="/about"
-                className={`font-medium transition-colors ${
-                  location.pathname === '/about'
-                    ? 'text-[#4fb1b4]'
-                    : 'text-[#264b69] hover:text-[#4fb1b4]'
-                }`}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t('header.nav.about')}
-              </Link>
-              
-              {/* Mobile Services Menu */}
-              <div className="flex flex-col space-y-2">
-                <span className="font-medium text-[#264b69]">{t('header.nav.services')}</span>
-                <div className="pl-4 flex flex-col space-y-2">
-                  <Link 
-                    to="/glsofort" 
-                    className="text-sm text-gray-700 hover:text-[#4fb1b4] transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {t('header.nav.serviceItems.glsofort')}
-                  </Link>
-                  <Link 
-                    to="/reagent" 
-                    className="text-sm text-gray-700 hover:text-[#4fb1b4] transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {t('header.nav.serviceItems.reagent')}
-                  </Link>
-                  <Link 
-                    to="/health" 
-                    className="text-sm text-gray-700 hover:text-[#4fb1b4] transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {t('header.nav.serviceItems.health')}
-                  </Link>
-                  <Link 
-                    to="/compression" 
-                    className="text-sm text-gray-700 hover:text-[#4fb1b4] transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {t('header.nav.serviceItems.compression')}
-                  </Link>
-                </div>
-              </div>
-              
-              <Link
-                to="/news"
-                className={`font-medium transition-colors ${
-                  location.pathname === '/news'
-                    ? 'text-[#4fb1b4]'
-                    : 'text-[#264b69] hover:text-[#4fb1b4]'
-                }`}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t('header.nav.news')}
-              </Link>
-              <Link
-                to="/contact"
-                className={`font-medium transition-colors ${
-                  location.pathname === '/contact'
-                    ? 'text-[#4fb1b4]'
-                    : 'text-[#264b69] hover:text-[#4fb1b4]'
-                }`}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t('header.nav.contact')}
-              </Link>
+                <Phone className="h-3.5 w-3.5" aria-hidden="true" />
+                {t('footer.contact.phone')}
+              </a>
             </div>
           </div>
         )}

@@ -11,6 +11,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import ComplianceNotice from "./ComplianceNotice";
 
 const Health = () => {
   const { t } = useTranslation();
@@ -18,7 +19,7 @@ const Health = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-green-600 to-blue-600">
+      <section className="bg-[#1f5b52] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
             <h1 className="text-5xl font-bold mb-6">
@@ -45,6 +46,8 @@ const Health = () => {
         </div>
       </section>
 
+      <ComplianceNotice />
+
       {/* Overview Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -61,7 +64,11 @@ const Health = () => {
             <div>
               <img
                 src="/images/1017918516.png"
-                alt="Health Screening"
+                alt={t("health.overview.title")}
+                width="800"
+                height="800"
+                loading="lazy"
+                decoding="async"
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg"
               />
             </div>
@@ -450,7 +457,7 @@ const Health = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-green-600 to-blue-600 text-white">
+      <section className="bg-[#1f5b52] py-16 text-white">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-3xl font-bold mb-8">{t("health.cta.title")}</h3>
           <p className="text-xl mb-8">{t("health.cta.subtitle")}</p>

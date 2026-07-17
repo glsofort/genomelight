@@ -1,0 +1,24 @@
+# GenomeLight
+
+> GenomeLight provides genomic data interpretation, high-throughput sequencing reagents, genetic risk assessment, and genomic data compression services.
+
+Canonical site: https://www.genomelight.com/
+
+## Main pages
+
+- [Company and team](https://www.genomelight.com/about)
+- [GLSofort genomic interpretation platform](https://www.genomelight.com/glsofort)
+- [High-throughput sequencing reagents](https://www.genomelight.com/reagent)
+- [Genetic health risk assessment](https://www.genomelight.com/health)
+- [ZipHelix genomic data compression](https://www.genomelight.com/compression)
+- [Contact GenomeLight](https://www.genomelight.com/contact)
+
+## Use note
+
+Website content is for product and technical communication. It is not medical diagnosis, treatment, or medication advice. Genetic testing and interpretation results should be reviewed with clinical information by qualified professionals. Product scope and performance are subject to confirmed documentation and actual reports.
+
+## Contact
+
+- Organization: Genomelight (Chongqing) Biotechnology Co., Ltd.
+- Email: info@genomelight.com
+- Phone: +86 19936076456

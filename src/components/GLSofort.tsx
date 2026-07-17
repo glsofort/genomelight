@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Dna, Brain, Clock, Target, Shield, Cpu } from "lucide-react";
 import { Link } from "react-router-dom";
+import ComplianceNotice from "./ComplianceNotice";
 
 const GLSofort = () => {
   const { t } = useTranslation();
@@ -8,7 +9,7 @@ const GLSofort = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-[#264b69] to-[#4fb1b4]">
+      <section className="bg-[#173449] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
             <h1 className="text-5xl font-bold mb-6">
@@ -35,6 +36,8 @@ const GLSofort = () => {
         </div>
       </section>
 
+      <ComplianceNotice />
+
       {/* Introduction Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -44,13 +47,20 @@ const GLSofort = () => {
           <p className="text-lg text-gray-700 leading-relaxed mb-8 text-left">
             {t("glsofort.intro.description")}
           </p>
-          <div className="bg-gray-50 rounded-xl p-8">
+          <figure className="bg-gray-50 rounded-xl p-8">
             <img
               src="/images/2948968051.jpeg"
-              alt="GLSofort Platform"
+              alt={t("glsofort.intro.title")}
+              width="1600"
+              height="900"
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
             />
-          </div>
+            <figcaption className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-gray-600">
+              {t("home.workflow.caption")}
+            </figcaption>
+          </figure>
         </div>
       </section>
 

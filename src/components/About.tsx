@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const { t } = useTranslation();
@@ -46,11 +47,11 @@ const About = () => {
       </section>
 
       {/* Company Culture Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="privacy" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-[#264b69] mb-16 text-center border-b-4 border-[#4fb1b4] inline-block pb-2">
+          <h2 className="text-4xl font-bold text-[#264b69] mb-16 text-center border-b-4 border-[#4fb1b4] inline-block pb-2">
             {t("about.culture.title")}
-          </h1>
+          </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
@@ -103,9 +104,9 @@ const About = () => {
       {/* Team Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-[#264b69] mb-16 text-center border-b-4 border-[#4fb1b4] inline-block pb-2">
+          <h2 className="text-4xl font-bold text-[#264b69] mb-16 text-center border-b-4 border-[#4fb1b4] inline-block pb-2">
             {t("about.team.title")}
-          </h1>
+          </h2>
 
           <div className="mb-16">
             <p className="text-gray-700 text-lg leading-relaxed text-left max-w-4xl mx-auto">
@@ -119,9 +120,15 @@ const About = () => {
             <div className="bg-white rounded-xl shadow-lg p-8">
               <div className="flex flex-col lg:flex-row gap-8">
                 <div className="lg:w-1/4 text-center">
-                  <div className="w-48 h-48 rounded-full mx-auto mb-4 bg-gradient-to-br from-[#264b69] to-[#4fb1b4] flex items-center justify-center">
-                    <span className="text-6xl font-bold text-white">李</span>
-                  </div>
+                  <img
+                    src="/nbl5tzs1ss0-image.png"
+                    alt={t("about.team.members.liWenhui.name")}
+                    width="235"
+                    height="234"
+                    loading="lazy"
+                    decoding="async"
+                    className="mx-auto mb-4 h-48 w-48 rounded-full object-cover"
+                  />
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold text-[#264b69]">
                       {t("about.team.members.liWenhui.name")}
@@ -372,11 +379,11 @@ const About = () => {
       </section>
 
       {/* Privacy Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="privacy" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-[#264b69] mb-16 text-center border-b-4 border-[#4fb1b4] inline-block pb-2">
+          <h2 className="text-4xl font-bold text-[#264b69] mb-16 text-center border-b-4 border-[#4fb1b4] inline-block pb-2">
             {t("about.privacy.title")}
-          </h1>
+          </h2>
 
           <div className="max-w-4xl mx-auto">
             <p className="text-gray-700 text-lg leading-relaxed">
@@ -398,15 +405,18 @@ const About = () => {
       {/* Contact Section */}
       <section className="py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold text-[#264b69] mb-8 border-b-4 border-[#4fb1b4] inline-block pb-2">
+          <h2 className="text-4xl font-bold text-[#264b69] mb-8 border-b-4 border-[#4fb1b4] inline-block pb-2">
             {t("about.contact.title")}
-          </h1>
+          </h2>
           <p className="text-xl text-gray-600 mb-8">
             {t("about.contact.description")}
           </p>
-          <button className="bg-[#4fb1b4] hover:bg-[#3a9a9d] text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+          <Link
+            to="/contact"
+            className="inline-block rounded-md bg-[#4fb1b4] px-8 py-3 font-semibold text-white transition-colors hover:bg-[#3a9a9d]"
+          >
             {t("about.contact.button")}
-          </button>
+          </Link>
         </div>
       </section>
     </div>

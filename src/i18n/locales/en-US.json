@@ -1,9 +1,55 @@
 {
+  "seo": {
+    "home": {
+      "title": "Genomic Data Interpretation Services | GenomeLight",
+      "description": "GenomeLight provides genomic data interpretation, sequencing reagents, genetic risk assessment, and genomic data compression for healthcare, research, and personal health contexts."
+    },
+    "about": {
+      "title": "About GenomeLight | Genomic Data Analysis Team",
+      "description": "Learn about the GenomeLight team, genomic data analysis capabilities, service scope, and privacy principles supporting healthcare and research workflows."
+    },
+    "glsofort": {
+      "title": "GLSofort Genomic Interpretation Platform | GenomeLight",
+      "description": "GLSofort supports variant screening, evidence organization, and reporting workflows for WGS, WES, and Gene Panel data, with qualified professional review."
+    },
+    "reagent": {
+      "title": "High-Throughput Sequencing Reagents | GenomeLight",
+      "description": "Review high-throughput sequencing reagent kits for NextSeq 500/550, including displayed batch quality data, specifications, application scope, and storage conditions."
+    },
+    "health": {
+      "title": "Genetic Risk Assessment Information | GenomeLight",
+      "description": "Explore WES, WGS, and gene-chip services for genetic risk associations, carrier screening, and pharmacogenomic information, including scope, process, and limitations."
+    },
+    "compression": {
+      "title": "ZipHelix Genomic Data Compression | GenomeLight",
+      "description": "ZipHelix provides lossless compression, archiving, object storage, and retrieval for genomic sequencing data, with on-premise, private, and hybrid cloud deployment."
+    },
+    "contact": {
+      "title": "Contact GenomeLight | Product and Technical Enquiries",
+      "description": "Contact the GenomeLight teams in Chongqing and Shenzhen about genomic interpretation, sequencing reagents, genetic risk assessment, or data compression products."
+    },
+    "news": {
+      "title": "GenomeLight News and Updates",
+      "description": "GenomeLight news content is being reviewed and updated. This page is currently excluded from search engine indexing."
+    },
+    "notFound": {
+      "title": "Page Not Found | GenomeLight",
+      "description": "The requested page does not exist. Return to the GenomeLight homepage for products, services, and contact information."
+    }
+  },
+  "compliance": {
+    "title": "Medical information notice",
+    "description": "This page is for product and technical communication only. It is not medical diagnosis, treatment, or medication advice. Testing and interpretation results require review by qualified professionals with relevant clinical information; product scope and performance are subject to confirmed documentation and actual reports."
+  },
   "header": {
     "companyName": "GenomeLight",
     "tagline": "Empowering a healthy future",
     "nav": {
       "home": "Home",
+      "primaryLabel": "Primary navigation",
+      "homeLabel": "GenomeLight home",
+      "openMenu": "Open navigation menu",
+      "closeMenu": "Close navigation menu",
       "about": "About Us",
       "services": "Products & Services",
       "serviceItems": {
@@ -18,23 +64,36 @@
   },
   "hero": {
     "title": "GenomeLight",
-    "subtitle": "Empowering a healthy future",
+    "eyebrow": "Genomic data analysis · Products and services",
+    "subtitle": "Genetic testing and genomic data analysis services",
     "description1": "Genome Light illuminates a healthy future",
-    "description2": "Professional AI-powered genetic testing and analysis services",
+    "description2": "Genomic data interpretation and related technical services for healthcare, research, and personal health contexts",
     "description3": "Covering Next-Generation Sequencing (NGS), Whole Genome Sequencing (WGS), Whole Exome Sequencing (WES), Gene Panels, and more",
-    "description4": "Comprehensive NGS data analysis workflow for precise genomic insights",
+    "description4": "Standardized analysis workflows for next-generation sequencing (NGS) data",
+    "scope": [
+      "WGS / WES / Gene Panel",
+      "Machine-learning-assisted analysis",
+      "Professional review"
+    ],
+    "visualNote": "Genomic analysis scenario illustration",
     "buttons": {
       "learnMore": "Learn More",
       "contact": "Contact Us"
+    },
+    "controls": {
+      "previous": "Previous image",
+      "next": "Next image",
+      "goTo": "Go to image {{slide}}"
     }
   },
   "services": {
+    "eyebrow": "Core capabilities",
     "title": "Products & Services",
-    "subtitle": "GenomeLight is committed to providing professional and precise genetic testing and analysis products and services for medical institutions and individuals",
+    "subtitle": "Genomic data analysis products and services for healthcare organizations, research teams, and personal health contexts",
     "items": {
       "glsofort": {
         "title": "GLSofort® Analysis Platform",
-        "description": "AI and deep learning powered automated genomic data interpretation platform providing efficient and precise gene sequencing result analysis services",
+        "description": "A genomic interpretation platform combining machine learning and knowledge bases for screening, evidence organization, and professional review",
         "features": [
           "AI-driven intelligent interpretation",
           "Supports WGS/WES/Panel",
@@ -45,18 +104,18 @@
       },
       "reagent": {
         "title": "Sequencer Reagent Kits",
-        "description": "Self-developed high-throughput sequencing chips and reagents for NextSeq500/550 sequencers with performance comparable to original consumables",
+        "description": "High-throughput sequencing chips and reagents for NextSeq 500/550; performance is subject to product documentation and batch quality reports",
         "features": [
           "High-quality sequencing reagents",
           "High-throughput sequencing chips",
-          "Excellent performance",
-          "Perfect compatibility"
+          "Batch quality control",
+          "Platform compatibility review"
         ],
         "link": "/reagent"
       },
       "health": {
         "title": "Health Screening",
-        "description": "Comprehensive genetic risk screening and personalized health management services for healthy populations, enabling precision medicine and scientific prevention",
+        "description": "Genetic risk association assessment and personalized health management information, interpreted by professionals in the relevant context",
         "features": [
           "Genetic disease risk assessment",
           "Carrier screening services",
@@ -78,6 +137,57 @@
       }
     },
     "button": "Learn More"
+  },
+  "home": {
+    "workflow": {
+      "eyebrow": "GLSOFORT WORKFLOW",
+      "title": "From sequencing data to reviewable output",
+      "description": "Bring automated analysis, evidence organization, and professional review into one workflow so scope, sources, and limitations are easier to inspect.",
+      "steps": [
+        {
+          "title": "Data intake",
+          "description": "Receive WGS, WES, or Gene Panel data according to project configuration and review data quality and analysis scope."
+        },
+        {
+          "title": "Assisted analysis",
+          "description": "Use bioinformatics workflows, knowledge bases, and machine-learning methods for variant screening and evidence organization."
+        },
+        {
+          "title": "Professional review",
+          "description": "Qualified professionals review outputs with clinical information, applicable guidance, and evidence levels."
+        }
+      ],
+      "link": "Explore the GLSofort platform",
+      "imageAlt": "GLSofort genomic data interpretation workflow diagram",
+      "caption": "Platform workflow illustration. Actual inputs, outputs, and integrations depend on project configuration and confirmed technical documentation."
+    },
+    "principles": {
+      "eyebrow": "Working principles",
+      "title": "Explainable workflows for professional judgment",
+      "description": "High-quality genomic data services require more than algorithms: clear scope, human review, and careful management of sensitive information are essential.",
+      "items": [
+        {
+          "title": "Traceable evidence",
+          "description": "Preserve source, version, and applicability information so professionals can inspect the evidence behind an output."
+        },
+        {
+          "title": "Results require review",
+          "description": "Automated output assists analysis and does not replace qualified professional judgment or clinical decisions."
+        },
+        {
+          "title": "Data managed by agreement",
+          "description": "Confirm permissions, data location, retention, and applicable requirements before deployment and apply agreed protections."
+        }
+      ],
+      "illustrationAlt": "GenomeLight genomic laboratory and data analysis illustration"
+    },
+    "team": {
+      "eyebrow": "Professional review",
+      "title": "Place automated analysis in professional context",
+      "description": "The GenomeLight team spans genetics, bioinformatics, laboratory workflows, and product implementation. Defined review points keep platform output within professional workflows instead of treating algorithmic results as diagnostic conclusions.",
+      "link": "Meet the team and review their backgrounds",
+      "imageAlt": "Portrait of a GenomeLight core team member"
+    }
   },
   "genePanels": {
     "title": "GENE PANELS",
@@ -107,7 +217,7 @@
     "company": {
       "title": "Company Information",
       "name": "Genomelight (Chongqing) Biotechnology Co., LTD.",
-      "description": "Specialized in genetic testing and analysis services, committed to providing precise genetic diagnostic solutions for medical institutions and individuals."
+      "description": "Genomic data analysis and related product services supporting healthcare organizations, research teams, and individuals."
     },
     "services": {
       "title": "Main Services",
@@ -148,7 +258,7 @@
       "submit": "Send Message"
     },
     "bottom": {
-      "copyright": "Copyright © 2021 Genomelight (Chongqing) Biotechnology Co., LTD.",
+      "copyright": "Copyright © 2026 Genomelight (Chongqing) Biotechnology Co., LTD.",
       "privacy": "Privacy Policy & Terms",
       "icp": "Yu ICP No. 2021003762",
       "police": "Yu Public Security No. 50009802001131"
@@ -157,7 +267,7 @@
   "glsofort": {
     "hero": {
       "title": "GLSofort® Gene Sequencing Analysis Service",
-      "subtitle": "Industry-leading automated genomic data interpretation platform powered by deep machine learning, designed by Illumina team with AI scientists, integrating and maturely applying clinical expertise such as ACMG and CAP/CLIA (one of the few successful AI models in the industry) - Virtual Geneticist System 'VG'",
+      "subtitle": "An assisted interpretation platform for WGS, WES, and Gene Panel data, combining machine learning, knowledge bases, and professional review for variant screening and reporting workflows.",
       "buttons": {
         "demo": "Experience Demo",
         "contact": "Contact Us"
@@ -165,7 +275,7 @@
     },
     "intro": {
       "title": "Our Company's Proprietary Software Platform GLSofort®",
-      "description": "A pioneer focused on interpreting gene sequencing (NGS) results, supported by artificial intelligence (AI) and deep machine learning (Deep ML) to achieve efficient and precise gene sequencing interpretation, including whole genome (WGS), whole exome (WES) and targeted gene detection (Target gene panel). It is currently an international clinical genomics interpretation support tool that can adapt to various pipelines and tests, greatly improving patient diagnosis quantity, efficiency and accuracy. It can provide support for sequencing laboratories and clinical medicine, achieving comprehensive analysis and integration into a complete solution."
+      "description": "GLSofort® assists with interpretation of next-generation sequencing (NGS) data across whole genome (WGS), whole exome (WES), and targeted Gene Panel workflows. It supports variant screening, evidence organization, and reporting; outputs require professional review with sample quality, clinical information, and applicable guidance."
     },
     "serviceRange": {
       "title": "Gene Sequencing Analysis Service Range",
@@ -177,15 +287,15 @@
         "rows": {
           "panel": {
             "type": "Disease Gene Panel Sequencing Analysis",
-            "scope": "Multiple cancer types\nAny disease gene panel"
+            "scope": "Cancer- and inherited-disease-related panels\nGenes and scope depend on project configuration"
           },
           "wes": {
             "type": "Whole Exome Sequencing Analysis",
-            "scope": "All cancer types\nAll genetic diseases: 7000+ hereditary disease screening"
+            "scope": "Cancer- and inherited-disease-related exonic regions\nInterpretation depends on data quality and available evidence"
           },
           "wgs": {
             "type": "Whole Genome Sequencing Analysis",
-            "scope": "All cancer types\nAll genetic diseases: 7000+ hereditary disease screening"
+            "scope": "Cancer- and inherited-disease-related whole-genome data\nInterpretation depends on data quality and available evidence"
           }
         }
       }
@@ -194,36 +304,36 @@
       "title": "Core Technical Features",
       "ai": {
         "title": "Virtual Geneticist System",
-        "description": "GLSofort® combines first-class bioinformatics systems with virtual geneticist technology applications, achieving intelligent gene interpretation through AI and deep machine learning."
+        "description": "GLSofort® combines bioinformatics workflows, knowledge bases, and machine-learning methods to assist genomic data interpretation."
       },
       "speed": {
-        "title": "Ultra-high Efficiency Analysis Speed",
-        "description": "Significantly reduces gene testing analysis time from weeks to hours, dramatically improving clinical diagnostic efficiency."
+        "title": "Automated Analysis Workflow",
+        "description": "When data quality and project requirements are met, parts of the analysis can move from a weeks-scale to an hours-scale workflow; actual time depends on data volume and review requirements."
       },
       "accuracy": {
-        "title": "Precision Advantage",
-        "description": "Greatly improves patient diagnosis quantity, efficiency and accuracy, providing reliable gene interpretation results for clinical use."
+        "title": "Evidence-Assisted Interpretation",
+        "description": "Variant screening, evidence organization, and rule-based workflows support interpretation; qualified professionals make the final assessment."
       },
       "compliance": {
         "title": "Clinical Standards Compliance",
-        "description": "Strictly follows international clinical standards such as ACMG and CAP/CLIA, ensuring the authority and reliability of diagnostic results."
+        "description": "Supports evidence organization using relevant ACMG guidance and can complement an institution's quality system; the implementing organization confirms regulatory suitability."
       },
       "integration": {
         "title": "Intelligent Integration Function",
-        "description": "Unique patented design enables GLSofort® system to have automatic search for latest research findings and intelligent integration capabilities."
+        "description": "Features can assist with research-evidence retrieval and structured organization; coverage and update frequency depend on configuration."
       },
       "discovery": {
         "title": "New Discovery Capability",
-        "description": "Can obtain new discoveries through accumulated clinical and genomic databases, continuously improving interpretation capabilities and accuracy."
+        "description": "Authorized data and knowledge bases can be updated to help professionals refine interpretations as evidence evolves."
       }
     },
     "advantages": {
       "title": "Product Advantages",
       "items": [
-        "GLSofort® is designed for medical genetics to simplify genomic analysis workflows, combining first-class bioinformatics systems with virtual geneticist technology applications",
-        "Unique patented design enables GLSofort® system to have automatic search for latest research findings and intelligent integration capabilities",
-        "Significantly reduces gene testing analysis time from weeks to hours",
-        "Easier to create clinical reports and analysis, reducing costs by 10-20 times",
+        "GLSofort® supports medical genetics workflows with bioinformatics systems, knowledge bases, and assisted analysis functions",
+        "Supports research-evidence retrieval and structured organization, with coverage and update frequency depending on configuration",
+        "When data quality and project requirements are met, parts of the analysis can move from a weeks-scale to an hours-scale workflow",
+        "Assists with evidence organization for reporting; efficiency and cost depend on project scale and review requirements",
         "Can obtain new discoveries through accumulated clinical and genomic databases",
         "Built-in Algorithm: AI Large Model Multi-dimensional Variant Scoring and Ranking Algorithm",
         "AI Tool: GLS-AI Ten Million Loci Literature Database"
@@ -238,19 +348,19 @@
         },
         {
           "title": "Maternal and Child Health",
-          "description": "Focus on prevention and early diagnosis of hereditary diseases in women and children"
+          "description": "Assisted genomic interpretation information for inherited-disease assessment in women and children"
         },
         {
           "title": "Prenatal Screening",
-          "description": "Precise prenatal genetic testing and genetic counseling services"
+          "description": "Data-analysis support for prenatal testing and genetic counseling workflows"
         },
         {
           "title": "Neonatal ICU",
-          "description": "Rapid and accurate genetic diagnostic support for critically ill newborns"
+          "description": "Genomic data-analysis support for inherited-disease assessment in critically ill newborns; timing depends on sample and project workflow"
         },
         {
           "title": "Pediatric Rare Diseases",
-          "description": "Professional diagnosis and treatment plan development for pediatric rare genetic diseases"
+          "description": "Assisted genomic interpretation information for professional assessment of pediatric rare genetic diseases"
         },
         {
           "title": "Health Prevention",
@@ -259,7 +369,7 @@
       ]
     },
     "cta": {
-      "title": "Focus on interpreting gene sequencing (NGS) results, achieving efficient and precise gene sequencing interpretation through AI and deep machine learning support!",
+      "title": "Discuss a GLSofort® genomic interpretation workflow",
       "subtitle": "If you have trial and cooperation intentions, please don't hesitate to contact us.",
       "button": "Online Message"
     }
@@ -267,7 +377,7 @@
   "reagent": {
     "hero": {
       "title": "Sequencer Reagent Kits",
-      "subtitle": "Self-developed high-throughput sequencing chips and sequencing reagents, providing complete kits for NextSeq500/550 sequencers with performance comparable to Illumina original consumables",
+      "subtitle": "High-throughput sequencing chips and reagent kits for NextSeq 500/550; specifications and batch performance are subject to product documentation and quality reports",
       "buttons": {
         "specifications": "View Specifications",
         "contact": "Contact for Purchase"
@@ -275,19 +385,20 @@
     },
     "overview": {
       "title": "Product Overview",
-      "description": "Our self-developed high-throughput sequencing chips and sequencing reagents provide high-quality, cost-effective solutions for genetic testing. Products undergo strict quality control and multi-batch validation to ensure each batch meets or exceeds industry standards.",
+      "description": "High-throughput sequencing chips and reagent kits undergo batch quality testing. Displayed parameters and sample data are for product communication; actual performance depends on instrument, sample, and laboratory conditions.",
+      "imageCaption": "Brand laboratory-workflow illustration; it does not represent a specific product appearance or laboratory configuration.",
       "reagents": {
         "title": "Sequencing Reagents",
-        "description": "Contains sequencing reaction reagents and sequencing buffer solutions, carefully formulated and strictly quality controlled to ensure stability and consistency of sequencing reactions."
+        "description": "Contains sequencing reaction reagents and buffer solutions with defined batch quality checks; stability and consistency are subject to the corresponding batch report."
       },
       "chips": {
         "title": "High-throughput Sequencing Chips",
-        "description": "Self-developed high-throughput sequencing chips capable of producing 400M reads per run, with stable performance and excellent data quality."
+        "description": "The high-throughput sequencing chips have a stated output of 400M reads per run; actual output and quality depend on operating and sample conditions."
       }
     },
     "qualityControl": {
       "title": "Quality Control Results",
-      "description": "Sequencing reagent kits have undergone multi-batch testing and all passed validation with high quality. Data output and quality compared with Illumina reagent kits all meet standards and above. The following are quality control results from three batches:",
+      "description": "The following quality-control and parallel-comparison data are from three displayed batches. They represent those samples and operating conditions and are not a performance guarantee for every batch or use case:",
       "table": {
         "headers": {
           "batch": "Batch",
@@ -296,7 +407,7 @@
           "standard": "Illumina Quality Standard",
           "result": "Comparison Result"
         },
-        "passedStandard": "Meets Standards and Above"
+        "passedStandard": "Displayed batch met the stated value"
       }
     },
     "applications": {
@@ -307,7 +418,7 @@
           "Whole Exome Sequencing (WES)",
           "Targeted Gene Panels",
           "Newborn Screening",
-          "7000+ Genetic Disease Diagnosis"
+          "Inherited-disease gene testing research"
         ]
       },
       "cancer": {
@@ -316,7 +427,7 @@
           "Tumor Somatic Mutation Analysis",
           "Liquid Biopsy",
           "Cancer Predisposition Gene Testing",
-          "Targeted Therapy Gene Testing"
+          "Drug-target gene research"
         ]
       },
       "reproductive": {
@@ -325,7 +436,7 @@
           "Preimplantation Genetic Screening",
           "Non-invasive Prenatal Testing",
           "Single Gene Disease Carrier Screening",
-          "Prenatal Diagnosis"
+          "Prenatal testing research"
         ]
       },
       "research": {
@@ -341,16 +452,16 @@
     "features": {
       "title": "Product Features",
       "quality": {
-        "title": "High Quality Assurance",
-        "description": "Strict quality control system ensures every batch undergoes comprehensive testing, guaranteeing Q30 values ≥91% with stable and reliable data output."
+        "title": "Batch Quality Control",
+        "description": "Each batch is checked against defined items, with a stated Q30 value of ≥91%. Refer to the batch quality report and actual run data for results."
       },
       "performance": {
-        "title": "Excellent Performance",
-        "description": "Single run produces 400M+ high-quality reads, performance comparable to Illumina original consumables with more cost advantages."
+        "title": "Stated Performance Parameters",
+        "description": "The stated output is 400M+ reads per run; actual output, quality, and cost depend on sample, instrument, and laboratory conditions."
       },
       "compatibility": {
-        "title": "Perfect Compatibility",
-        "description": "Specifically designed for NextSeq500/550 sequencers, fully compatible with existing experimental workflows without additional equipment investment."
+        "title": "Platform Compatibility",
+        "description": "Designed for NextSeq 500/550 sequencers. Laboratories should confirm compatibility with their workflow before use."
       }
     },
     "specifications": {
@@ -387,7 +498,7 @@
   "health": {
     "hero": {
       "title": "Health Screening",
-      "subtitle": "Based on mature genetic testing technology, we provide comprehensive health risk assessment and personalized health management solutions to help you achieve precision medicine and scientific prevention",
+      "subtitle": "Genetic risk association assessment and personalized health management information; results are not a diagnosis, prediction, or treatment recommendation",
       "buttons": {
         "consultation": "Health Consultation",
         "packages": "View Packages"
@@ -395,18 +506,18 @@
     },
     "overview": {
       "title": "Health Screening Services Overview",
-      "description": "We provide comprehensive genetic health screening services from children to adults. Through advanced genetic testing technology, we help you understand disease risks, optimize medication plans, guide lifestyle choices, and achieve personalized health management.",
+      "description": "Services cover selected genetic risks, carrier status, and pharmacogenomic information for children and adults. Results describe associations and require interpretation with family history, lifestyle, and clinical information.",
       "healthManagement": {
-        "title": "Full life cycle health management",
-        "description": "From children to adults, we provide personalized health risk assessment and management solutions."
+        "title": "Age-Appropriate Health Information",
+        "description": "Genetic risk association and health management information for children and adults, within each project's stated scope."
       },
       "geneticTesting": {
-        "title": "Precise genetic testing",
-        "description": "Based on advanced gene sequencing technology, it provides accurate disease risk prediction."
+        "title": "Genetic Information Analysis",
+        "description": "Assesses associations between selected genetic factors and health risks; it is not diagnosis or deterministic prediction."
       },
       "medicationInstruction": {
-        "title": "Guidance on Safe Medication Use",
-        "description": "Individualized medication advice to avoid adverse drug reactions."
+        "title": "Medication-Related Genetic Information",
+        "description": "Provides pharmacogenomic information. A physician must decide prescriptions, doses, and medication changes."
       }
     },
     "packages": {
@@ -415,29 +526,29 @@
         "title": "Whole exome health assessment package",
         "adult": {
           "title": "Adult Whole Exome Health Assessment Package",
-          "description": "Helps us understand our disease risk index and genetic disease carrier status. Through genetic information testing, we can clarify differences in amino acid sequences, structures, and biological functions of proteins related to drug receptors, transport, and metabolism, helping you achieve personalized, refined treatment, reduce toxic side effects/adverse reactions, and comprehensively improve medication efficacy. Through the detection and interpretation of trait-related genetic information, we can help us seek advantages and avoid disadvantages in various physiological processes and social activities, helping us improve quality of life and life achievement."
+          "description": "Assesses selected inherited-disease risks, carrier status, and pharmacogenomic variants. Results present probabilities and evidence levels, do not provide a diagnosis or treatment decision, and require professional interpretation with clinical information."
         },
         "child": {
           "title": "Pediatric Whole Exome Health Assessment Package",
-          "description": "Whole exome health assessment designed specifically for children, early detection of genetic disease risks, providing scientific guidance for healthy child development."
+          "description": "Provides information about selected genetic risks and carrier status in children. Testing requires informed guardian involvement and does not replace pediatric assessment or routine care."
         }
       },
       "wgs": {
         "title": "Whole-genome health assessment package",
         "adult": {
           "title": "Adult Whole Genome Health Assessment Package",
-          "description": "The most comprehensive genetic testing with the largest amount of data. One sequencing, lifelong benefits. Having 'personal whole genome data' will be able to link to the latest gene-related interpretations globally, predict disease risks, understand your own DNA code, understand your disease risk index and genetic disease carrier screening, more accurate precision medication to understand your drug metabolism and avoid harm from inappropriate medication"
+          "description": "Analyzes selected variants across the whole genome for genetic risk, carrier status, and pharmacogenomic information. Interpretation depends on data quality, available evidence, and knowledge-base updates."
         },
         "child": {
           "title": "Pediatric Whole Genome Health Assessment Package",
-          "description": "The most comprehensive children's genetic testing service, one test for lifelong benefits, providing comprehensive genetic information support for children's healthy growth."
+          "description": "Analyzes selected variants across a child's whole genome. Results reflect current genetic evidence and cannot predict ability, achievement, or future health with certainty."
         }
       },
       "chip": {
         "title": "Gene chip screening package",
         "adult": {
           "title": "Adult Gene Chip Screening Package",
-          "description": "Based on mature genetic testing technology, testing over 700,000 gene sequence sites, interpretation includes disease risk, precision medication, diet, exercise, nutrition, traits and other related content, providing effective basis for customers' precision health management."
+          "description": "Analyzes more than 700,000 sequence sites according to project configuration, with information that may cover risk associations, pharmacogenomics, diet, exercise, nutrition, and traits. Refer to the report for included sites and evidence levels."
         },
         "child": {
           "title": "Pediatric Gene Chip Screening Package",
@@ -448,19 +559,19 @@
         "title": "Specialized testing package",
         "cancer": {
           "title": "Male and Female Cancer Seven-Item Panel",
-          "description": "Genetic risk assessment for common cancers, providing scientific basis for early prevention and screening."
+          "description": "Assesses selected inherited susceptibility factors for common cancers to support discussion of screening with a professional; it does not replace routine or clinical screening."
         },
         "childMedicine": {
           "title": "Pediatric Safe Medication (115 Items)",
-          "description": "Referring to clinical guidelines such as CPIC, Guidelines for Genetic Testing Technology of Drug Metabolizing Enzymes and Drug Target Genes (Trial), and pharmacogenomics database PharmGKB, with real-time updates, providing gene-level reference for children, conducting individualized precision medication guidance, and avoiding drug toxicity harm to children."
+          "description": "Uses sources such as CPIC guidance and PharmGKB to provide pediatric pharmacogenomic information. A physician must consider age, weight, condition, and other medicines when prescribing."
         },
         "healthReport": {
           "title": "Personal Health Check-up 78-Item Genetic Testing Report",
-          "description": "Comprehensive analysis of genetic factors in current common health problems, providing health solutions, and guiding users in scientific and precise disease prevention. Scientific assessment of disease risk, providing personalized prevention recommendations for users, helping customers adjust lifestyle, choose appropriate diet and proper physical examination."
+          "description": "Analyzes selected genetic factors associated with common health concerns as a reference for health-management discussions. Lifestyle, diet, and screening decisions require appropriate professional advice."
         },
         "childTraits": {
           "title": "Pediatric Growth Traits Genetic Testing Product",
-          "description": "Through testing and interpretation of genetic information in six major dimensions and 65 growth-related interpretation items, help you better understand your child's growth traits, further enhancing your understanding of children in six directions: child development, nutritional metabolism, sports fitness, health management, daily care, and potential development"
+          "description": "Presents selected genetic associations related to growth traits. These traits are influenced by genetics, environment, education, and other factors; results must not be used to judge a child's potential or ability."
         }
       }
     },
@@ -471,16 +582,16 @@
         "description": "From children to adults, from disease risks to personality traits, providing full life-cycle genetic health management services."
       },
       "precision": {
-        "title": "Precise Analysis",
-        "description": "Based on the latest genomics research findings, providing accurate risk assessment and personalized recommendations."
+        "title": "Evidence-Based Analysis",
+        "description": "Uses published research and databases for risk-association analysis; evidence level and applicability are described in the report."
       },
       "safety": {
         "title": "Safe Medication",
-        "description": "Through pharmacogenomics testing, avoid adverse reactions caused by inappropriate medication, achieving individualized precision medication."
+        "description": "Provides pharmacogenomic information for physician review and must not be used to stop, switch, or change the dose of medication without medical advice."
       },
       "lifelong": {
-        "title": "Lifelong Benefits",
-        "description": "One test, lifelong benefits. Genetic information remains unchanged, continuously obtaining the latest scientific interpretations and health guidance."
+        "title": "Updated Interpretation",
+        "description": "With authorization and available data, selected interpretations may be updated as research and databases evolve; scope and timing follow the service agreement."
       }
     },
     "applications": {
@@ -498,7 +609,7 @@
         "title": "Health-Conscious Individuals",
         "items": [
           "Want to understand personal disease risks",
-          "Need precision medication guidance",
+          "Want medication-related genetic information",
           "Focus on nutrition and exercise guidance",
           "Pursue quality of life improvement"
         ]
@@ -509,14 +620,14 @@
           "Safe medication genetic testing",
           "Growth traits genetic testing",
           "Nutritional metabolism genetic analysis",
-          "Potential development guidance"
+          "Growth-trait information for reference"
         ]
       },
       "seniors": {
         "title": "Middle-aged and Elderly",
         "items": [
           "Chronic disease risk assessment",
-          "Precision medication guidance",
+          "Medication-related genetic information",
           "Health management plans",
           "Lifestyle adjustments"
         ]
@@ -531,11 +642,11 @@
         },
         {
           "title": "Sample Collection",
-          "description": "Simple and convenient saliva collection, non-invasive and painless, suitable for all ages"
+          "description": "Saliva or another sample type is selected according to project requirements; guardian involvement is required for children"
         },
         {
           "title": "Laboratory Testing",
-          "description": "Using advanced gene sequencing technology to ensure accuracy and reliability of test results"
+          "description": "Testing follows defined laboratory and quality-control processes, with quality metrics and limitations stated in the report"
         },
         {
           "title": "Data Analysis",
@@ -548,8 +659,8 @@
       ]
     },
     "cta": {
-      "title": "Start Your Personalized Health Management Journey",
-      "subtitle": "One test, lifelong benefits. Let genetic science safeguard your health",
+      "title": "Explore a Genetic Risk Assessment That Fits Your Needs",
+      "subtitle": "Confirm the scope, sample requirements, and result limitations before deciding to test",
       "button": "Consult Now"
     }
   },
@@ -564,14 +675,14 @@
     },
     "overview": {
       "title": "ZipHelix Product Overview",
-      "description": "ZipHelix is an efficient compression storage solution designed specifically for gene sequencing data, using innovative compression algorithms to provide safe, efficient, and economical data management services for medical institutions.",
+      "description": "ZipHelix provides lossless compression, archiving, and storage-management functions for genomic sequencing data. Results depend on data, hardware, and deployment configuration.",
       "compressionTechnique": {
         "title": "ZipHelix compression technology",
-        "description": "innovative compression algorithm, achieving 2.25 times the compression rate of gzip, significantly saving storage space"
+        "description": "Supports lossless compression for FASTQ and related data; actual compression and space savings depend on data characteristics and test conditions"
       },
       "dataManagement": {
         "title": "Intelligent data management",
-        "description": "Automated archiving and backup, ensuring data security and efficient management"
+        "description": "Supports automated archiving and backup alongside configured access-control and recovery policies"
       },
       "cloudDeployment": {
         "title": "Cloud deployment",
@@ -581,8 +692,8 @@
     "features": {
       "title": "Core Technical Features",
       "compression": {
-        "title": "Innovative Compression Algorithm",
-        "description": "ZipHelix's innovative fastq file compression algorithm achieves 2.25 times the compression rate of gzip, saving more than half the storage space and reducing cost investment by more than half"
+        "title": "Sequencing Data Compression",
+        "description": "ZipHelix provides lossless compression for FASTQ files; actual compression, space, and cost changes depend on data, hardware, and deployment conditions"
       },
       "automation": {
         "title": "Automated Archiving",
@@ -590,7 +701,7 @@
       },
       "storage": {
         "title": "Object Storage Protection",
-        "description": "Data is stored in object storage, ensuring no data loss in case of hard disk damage. After new hard disk installation, data is automatically restored without manual operation"
+        "description": "Data can be written to object storage with configured redundancy and recovery policies, reducing single-disk data-loss risk; recovery depends on deployment and backup state"
       },
       "flexible": {
         "title": "Multiple Configurations",
@@ -622,8 +733,8 @@
       "title": "Product Advantages",
       "items": [
         {
-          "title": "Support All Data Types and Species",
-          "description": "Wide compatibility with various sequencing data formats and species types",
+          "title": "Support Multiple Data Types and Species",
+          "description": "Can be configured for multiple sequencing formats and species; refer to product documentation for the supported list",
           "icon": "Database"
         },
         {
@@ -638,12 +749,12 @@
         },
         {
           "title": "Lossless Compression",
-          "description": "Ensuring data integrity while achieving efficient compression",
+          "description": "Maintains data consistency when compression and decompression verification succeeds",
           "icon": "Archive"
         },
         {
-          "title": "Faster Transmission",
-          "description": "Significantly improved data transmission speed after compression",
+          "title": "Reduced Transfer Volume",
+          "description": "Smaller files can reduce network transfer volume; actual speed depends on the network and storage environment",
           "icon": "Zap"
         },
         {
@@ -657,8 +768,8 @@
           "icon": "Clock"
         },
         {
-          "title": "Improved NGS Quality Scores",
-          "description": "Enhanced accuracy of sequencing data quality assessment",
+          "title": "Preserved NGS Quality Information",
+          "description": "Lossless compression and decompression do not change original quality scores when consistency checks pass",
           "icon": "TrendingUp"
         },
         {
@@ -673,7 +784,7 @@
         },
         {
           "title": "Cost Savings",
-          "description": "Significantly reduce storage and operational costs",
+          "description": "Can reduce some storage usage; actual cost changes depend on data volume and deployment",
           "icon": "DollarSign"
         }
       ]
@@ -683,9 +794,9 @@
       "compression": {
         "title": "Compression Performance",
         "items": [
-          "Compression Rate: 2.25x of gzip",
-          "Storage Space Savings: Over 50%",
-          "Cost Reduction: Over 50%",
+          "Compression Method: Lossless",
+          "Compression Rate: Depends on data and test conditions",
+          "Space and Cost Changes: Subject to deployment assessment",
           "Supported Formats: FASTQ, BAM, SAM, etc."
         ]
       },
@@ -754,7 +865,7 @@
         },
         {
           "title": "Secure Storage",
-          "description": "Store to object storage system, ensuring data security"
+          "description": "Write to object storage with configured permissions, redundancy, and backup policies"
         },
         {
           "title": "Intelligent Archiving",
@@ -768,7 +879,7 @@
     },
     "cta": {
       "title": "ZipHelix - Your Gene Data Storage Expert",
-      "subtitle": "Reduce storage costs, improve data management efficiency, and provide optimal solutions for your gene data",
+      "subtitle": "Assess compression and archiving options based on data volume, format, and deployment environment",
       "button": "Get Solution"
     }
   },
@@ -836,7 +947,7 @@
         }
       },
       "submit": "Send Message",
-      "success": "Thank you for your message! We will contact you within 24 hours.",
+      "success": "An email draft has been prepared. Please review and send it in your email app, or contact us using the address shown on this page if no app opens.",
       "error": "Sending failed, please try again later or contact us directly by phone."
     },
     "map": {
@@ -873,64 +984,11 @@
     },
     "featured": {
       "title": "Featured News",
-      "items": [
-        {
-          "title": "GLSofort® Platform Achieves Major Technological Breakthrough",
-          "summary": "Our AI-driven gene interpretation platform reaches new milestones in accuracy and speed, providing superior services for clinical diagnosis.",
-          "date": "2024-12-15",
-          "category": "technology",
-          "image": "/images/2948968051.jpeg"
-        },
-        {
-          "title": "GenomeLight Partners with Leading Hospitals",
-          "summary": "The company signed cooperation agreements with multiple top-tier hospitals to jointly advance precision medicine in clinical practice.",
-          "date": "2024-12-10",
-          "category": "company",
-          "image": "/images/1224048843.jpeg"
-        },
-        {
-          "title": "New Progress in Rare Disease Genetic Diagnosis",
-          "summary": "Our R&D team achieves important breakthroughs in rare disease genetic diagnosis, providing more precise diagnostic services for patients.",
-          "date": "2024-12-05",
-          "category": "research",
-          "image": "/images/1191796784.jpeg"
-        }
-      ]
+      "items": []
     },
     "recent": {
       "title": "Latest News",
-      "items": [
-        {
-          "title": "Analysis of Genetic Testing Industry Development Trends",
-          "summary": "In-depth analysis of the development status, technological trends, and market prospects of the genetic testing industry in 2024.",
-          "date": "2024-12-12",
-          "category": "industry"
-        },
-        {
-          "title": "ZipHelix Data Compression Technology White Paper Released",
-          "summary": "Detailed introduction to our innovative gene data compression algorithm and its advantages in clinical applications.",
-          "date": "2024-12-08",
-          "category": "technology"
-        },
-        {
-          "title": "Company Participates in International Genomics Conference",
-          "summary": "We showcased our latest technological achievements at the conference and engaged in in-depth exchanges with international peers.",
-          "date": "2024-12-03",
-          "category": "company"
-        },
-        {
-          "title": "Pediatric Genetic Testing Service Officially Launched",
-          "summary": "Comprehensive genetic health assessment service designed specifically for children is now officially available to safeguard children's health.",
-          "date": "2024-11-28",
-          "category": "company"
-        },
-        {
-          "title": "Next-Generation Sequencing Reagent Kit Passes Quality Certification",
-          "summary": "Our self-developed sequencing reagent kit has passed rigorous quality certification, achieving international advanced performance levels.",
-          "date": "2024-11-25",
-          "category": "technology"
-        }
-      ]
+      "items": []
     },
     "pagination": {
       "previous": "Previous",
@@ -947,6 +1005,12 @@
       "description": "Get the latest updates and industry insights delivered straight to your inbox.",
       "placeholder": "Enter your email address",
       "subscribe": "Subscribe"
+    },
+    "review": {
+      "title": "Content review in progress",
+      "description": "Previous sample updates have been taken offline to avoid publishing items without verified sources, dates, or accountable authorship. Future content will be published after factual review with a publication date and author or source.",
+      "home": "Return Home",
+      "contact": "Contact the Team"
     }
   },
   "about": {
@@ -954,17 +1018,17 @@
       "title": "Company Introduction",
       "companyName": "Genomelight (Chongqing) Biotechnology Co., LTD. (Genome Light)",
       "description1": "Located in Chongqing Hi-tech Development Zone, we are a high-tech life health enterprise driven by precision medical services and AI big data technology, innovating future medical models.",
-      "description2": "Our company's strength lies in focusing on the interpretation, annotation, and analysis of Next-Generation Sequencing (NGS) results, particularly in the bioinformatics interpretation and disease annotation of Whole Genome Sequencing (WGS), Whole Exome Sequencing (WES), and targeted Gene Panel high-throughput testing results in the field of genetic and rare diseases, with significant technical advantages (high accuracy and fast analysis speed). Serving clinical and research needs, based on core technical advantages, we have established a comprehensive testing and analysis technology system, developed products covering gene sequencing interpretation services, genetic disease gene diagnosis, and COVID-19 testing. We can provide precision medical services for domestic genetic disease patients and healthy populations, including carrier gene screening, (large) family screening, and population array analysis, providing comprehensive genomic testing solutions centered on high-throughput sequencing (NGS) for clinical medical workers and researchers."
+      "description2": "The company focuses on interpretation, annotation, and analysis of next-generation sequencing (NGS) data across whole genome (WGS), whole exome (WES), and targeted Gene Panel workflows. Products and services support healthcare organizations, research teams, and personal health contexts; qualified professionals must review outputs within the project's scope and relevant clinical information."
     },
     "culture": {
       "title": "Company Culture",
       "mission": {
         "title": "Mission",
-        "content": "Work closely with the medical community to support reliable and accurate diagnosis."
+        "content": "Work closely with the medical community to provide careful data-analysis support for professional judgment."
       },
       "vision": {
         "title": "Vision",
-        "content": "Drive excellence with AI, precisely serving genetic disease patients and families."
+        "content": "Use data-analysis technology to support inherited-disease healthcare and research needs."
       },
       "product": {
         "title": "Product Philosophy",
@@ -1076,10 +1140,10 @@
     },
     "privacy": {
       "title": "Privacy",
-      "content": "Protecting user privacy and sensitive health information is our top priority. Our software complies with HIPAA, CLIA, dbGaP, US-Europe data privacy safe harbor regulations, China's Cybersecurity Law, and others. Genomic information is stored in the cloud, and software users can securely access this information through web browsers with strict security measures. Patient identifiers (if provided) are stored separately from genomic information to protect privacy and confidentiality. Authorized software users have complete control over their data, including data retention and destruction. Software user data is encrypted during transmission over the internet and cloud to minimize the risk of unauthorized system access."
+      "content": "We treat genomic data and sensitive health information with care. Depending on the contract and deployment, projects may use access controls, encryption in transit, separation of identifiers, and data-retention policies. Applicable laws, industry requirements, data location, and user permissions must be confirmed before implementation."
     },
     "cta": {
-      "title": "Leading technological breakthroughs, driving industry development; Improving service quality, safeguarding life and health!"
+      "title": "Providing genomic data analysis and technical support with care and transparency"
     },
     "contact": {
       "title": "Contact Us",

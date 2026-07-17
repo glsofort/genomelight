@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Beaker, Cpu, CheckCircle, BarChart3, Dna, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
+import ComplianceNotice from "./ComplianceNotice";
 
 const Reagent = () => {
   const { t } = useTranslation();
@@ -8,7 +9,7 @@ const Reagent = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-[#bf5d60] to-[#cc8b57]">
+      <section className="bg-[#713f45] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
             <h1 className="text-5xl font-bold mb-6">
@@ -34,6 +35,8 @@ const Reagent = () => {
           </div>
         </div>
       </section>
+
+      <ComplianceNotice />
 
       {/* Product Overview */}
       <section className="py-20">
@@ -76,13 +79,20 @@ const Reagent = () => {
               </div>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-8">
+            <figure className="bg-gray-50 rounded-xl p-8">
               <img
-                src="/images/1017918516.png"
-                alt="Sequencing Reagent Kit"
-                className="w-full max-w-md mx-auto rounded-lg shadow-lg"
+                src="/images/3253282782.png"
+                alt={t("reagent.overview.title")}
+                width="1910"
+                height="248"
+                loading="lazy"
+                decoding="async"
+                className="mx-auto h-64 w-full object-cover object-center"
               />
-            </div>
+              <figcaption className="mt-4 text-sm leading-6 text-gray-600">
+                {t("reagent.overview.imageCaption")}
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

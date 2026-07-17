@@ -1,116 +1,82 @@
-import { useState, useEffect } from 'react'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ArrowRight, Check, MessageCircle } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   const { t } = useTranslation()
-  const [currentSlide, setCurrentSlide] = useState(0)
-
-  const slides = [
-    {
-      image: "/images/753706709.jpeg",
-      title: "基因光照亮健康未来",
-      subtitle: "专业的基因检测与分析服务"
-    },
-    {
-      image: "/images/542701640.jpeg",
-      title: "AI驱动的基因解析",
-      subtitle: "融合人工智能与基因组学"
-    },
-    {
-      image: "/images/3495893387.jpeg",
-      title: "罕见病基因诊断",
-      subtitle: "精准诊断，个性化治疗"
-    }
-  ]
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length)
-    }, 5000)
-
-    return () => clearInterval(timer)
-  }, [])
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length)
-  }
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-  }
+  const scope = t('hero.scope', { returnObjects: true }) as string[]
 
   return (
-    <section className="relative h-[600px] overflow-hidden">
-      {/* Background Images */}
-      {slides.map((slide, index) => (
-        <div
-          key={slide.title}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
+    <section
+      className="overflow-hidden border-b border-[#d7e3e1] bg-[#f4f8f7]"
+      aria-labelledby="home-hero-title"
+    >
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-x-0 top-0 h-px bg-[#d7e3e1]" />
+        <div className="container relative mx-auto min-h-[740px] px-5 pb-[270px] pt-12 md:px-8 lg:min-h-[620px] lg:pb-0 lg:pt-0">
           <img
-            src={slide.image}
-            alt={slide.title}
-            className="w-full h-full object-cover"
+            src="/images/genomelight-hero-scene.png"
+            alt={t('home.principles.illustrationAlt')}
+            width="1220"
+            height="520"
+            decoding="async"
+            className="pointer-events-none absolute bottom-0 left-1/2 w-[610px] max-w-none -translate-x-1/2 object-contain object-bottom lg:bottom-5 lg:left-auto lg:right-[-2rem] lg:w-[64%] lg:max-w-[780px] lg:translate-x-0"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-10" />
-        </div>
-      ))}
 
-      {/* Content Overlay */}
-      {/* <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center text-white max-w-4xl px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            {t('hero.title')}
-          </h1>
-          <p className="text-xl md:text-2xl mb-4">
-            {t('hero.subtitle')}
-          </p>
-          <div className="text-lg md:text-xl mb-8 space-y-2">
-            <p>{t('hero.description1')}</p>
-            <p>{t('hero.description2')}</p>
-            <p>{t('hero.description3')}</p>
-            <p>{t('hero.description4')}</p>
+          <div className="relative z-10 max-w-[34rem] lg:flex lg:min-h-[620px] lg:flex-col lg:justify-center lg:py-14">
+            <p className="mb-5 flex items-center gap-3 text-xs font-bold uppercase text-[#247c7f]">
+              <span className="h-px w-10 bg-[#247c7f]" aria-hidden="true" />
+              {t('hero.eyebrow')}
+            </p>
+            <h1
+              id="home-hero-title"
+              className="mb-5 text-5xl font-semibold leading-[1.04] text-[#123247] md:text-6xl"
+            >
+              {t('hero.title')}
+            </h1>
+            <p className="max-w-2xl text-xl font-semibold leading-8 text-[#1e465b] md:text-2xl md:leading-9">
+              {t('hero.subtitle')}
+            </p>
+            <p className="mt-4 max-w-2xl text-base leading-7 text-[#526b75] md:text-lg">
+              {t('hero.description2')}
+            </p>
+
+            <ul className="mt-6 flex max-w-2xl flex-wrap gap-x-5 gap-y-3 text-sm text-[#385665]">
+              {scope.map((item, index) => (
+                <li
+                  key={item}
+                  className="flex items-center gap-2 border-l border-[#8fc0bc] pl-3"
+                >
+                  <Check
+                    className="h-4 w-4 shrink-0 text-[#247c7f]"
+                    aria-hidden="true"
+                  />
+                  <span className="text-[11px] font-semibold text-[#2d8f91]">
+                    0{index + 1}
+                  </span>
+                  <span className="font-medium">{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Link
+                to="/about"
+                className="inline-flex min-h-12 items-center justify-center gap-2 bg-[#173449] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#245f70]"
+              >
+                {t('hero.buttons.learnMore')}
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+              <Link
+                to="/contact"
+                className="inline-flex min-h-12 items-center justify-center gap-2 border border-[#9bb2b8] bg-white/60 px-6 py-3 font-semibold text-[#173449] transition-colors hover:border-[#173449] hover:bg-white"
+              >
+                <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                {t('hero.buttons.contact')}
+              </Link>
+            </div>
           </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[#4fb1b4] hover:bg-[#3a9a9d] text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-              {t('hero.buttons.learnMore')}
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-[#264b69] px-8 py-3 rounded-lg font-semibold transition-colors">
-              {t('hero.buttons.contact')}
-            </button>
-          </div>
         </div>
-      </div> */}
-
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all"
-      >
-        <ChevronLeft size={24} />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all"
-      >
-        <ChevronRight size={24} />
-      </button>
-
-      {/* Slide Indicators */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {slides.map((slide, index) => (
-          <button
-            key={slide.title}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              index === currentSlide ? 'bg-white' : 'bg-white bg-opacity-50'
-            }`}
-          />
-        ))}
       </div>
     </section>
   )

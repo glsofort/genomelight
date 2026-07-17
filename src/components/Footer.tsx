@@ -35,7 +35,11 @@ const Footer = () => {
                   <img
                     src="/images/1691569958.png"
                     alt="GenomeLight Logo"
-                    className="h-8 w-8 mr-3"
+                    width="92"
+                    height="32"
+                    loading="lazy"
+                    decoding="async"
+                    className="mr-3 h-8 w-auto"
                   />
                   <span className="font-semibold pr-2">
                     {t("footer.company.name")}
@@ -59,14 +63,12 @@ const Footer = () => {
                   }) as string[]
                 ).map((item: string, index: number) => (
                   <li key={item}>
-                    <button className="hover:text-[#4fb1b4] transition-colors text-left">
-                      <Link
-                        to={t(`footer.services.links.${index}`)}
-                        className="block w-full "
-                      >
-                        {item}
-                      </Link>
-                    </button>
+                    <Link
+                      to={t(`footer.services.links.${index}`)}
+                      className="block transition-colors hover:text-[#4fb1b4]"
+                    >
+                      {item}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -152,22 +154,26 @@ const Footer = () => {
               <div className="text-gray-400 text-sm mb-4 md:mb-0">
                 <p>
                   {t("footer.bottom.copyright")} |
-                  <button className="hover:text-white ml-2">
+                  <Link to="/about#privacy" className="ml-2 hover:text-white">
                     {t("footer.bottom.privacy")}
-                  </button>
+                  </Link>
                 </p>
                 <div className="flex items-center space-x-4 mt-2">
-                  <button className="flex items-center hover:text-white">
+                  <span className="flex items-center">
                     <img
                       src="/images/3329168636.png"
                       alt="公安备案"
+                      width="16"
+                      height="16"
+                      loading="lazy"
+                      decoding="async"
                       className="h-4 mr-1"
                     />
                     {t("footer.bottom.police")}
-                  </button>
-                  <button className="hover:text-white">
+                  </span>
+                  <span>
                     {t("footer.bottom.icp")}
-                  </button>
+                  </span>
                 </div>
               </div>
 

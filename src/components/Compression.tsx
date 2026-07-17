@@ -39,7 +39,7 @@ const Compression = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-indigo-600 to-purple-600">
+      <section className="bg-[#273b52] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
             <h1 className="text-5xl font-bold mb-6">
@@ -81,8 +81,12 @@ const Compression = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/images/2948968051.jpeg"
-                alt="ZipHelix Data Compression System"
+                src="/images/1795410433.png"
+                alt={t("compression.overview.title")}
+                width="800"
+                height="800"
+                loading="lazy"
+                decoding="async"
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg"
               />
             </div>
@@ -452,7 +456,7 @@ const Compression = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-indigo-600 to-purple-600 text-white">
+      <section className="bg-[#273b52] py-16 text-white">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-3xl font-bold mb-8">
             {t("compression.cta.title")}

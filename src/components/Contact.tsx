@@ -38,33 +38,34 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setSubmitStatus("success");
-      setFormData({
-        name: "",
-        company: "",
-        phone: "",
-        email: "",
-        service: "",
-        message: "",
-      });
-    } catch (error) {
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-    }
+    const subject = encodeURIComponent(
+      `[GenomeLight] ${formData.service || t("contact.form.title")}`,
+    );
+    const body = encodeURIComponent(
+      [
+        `${t("contact.form.fields.name.label")}: ${formData.name}`,
+        `${t("contact.form.fields.company.label")}: ${formData.company}`,
+        `${t("contact.form.fields.phone.label")}: ${formData.phone}`,
+        `${t("contact.form.fields.email.label")}: ${formData.email}`,
+        `${t("contact.form.fields.service.label")}: ${formData.service}`,
+        "",
+        formData.message,
+      ].join("\n"),
+    );
+
+    window.location.href = `mailto:${t("contact.info.email")}?subject=${subject}&body=${body}`;
+    setSubmitStatus("success");
+    setIsSubmitting(false);
   };
 
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-[#264b69] to-[#4fb1b4]">
+      <section className="bg-[#173449] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center text-white">
             <h1 className="text-5xl font-bold mb-6">
@@ -87,7 +88,11 @@ const Contact = () => {
             <div className="max-w-md mx-auto mb-8">
               <img
                 src="/images/4239303297.png"
-                alt="Contact QR Code"
+                alt={t("contact.welcome.title")}
+                width="512"
+                height="512"
+                loading="lazy"
+                decoding="async"
                 className="w-full max-w-sm mx-auto rounded-lg shadow-lg"
               />
             </div>
@@ -103,7 +108,11 @@ const Contact = () => {
               <div className="mb-6">
                 <img
                   src="/contact1.png"
-                  alt="Market Manager QR Code"
+                  alt={t("contact.marketManager.title")}
+                  width="713"
+                  height="700"
+                  loading="lazy"
+                  decoding="async"
                   className="w-48 h-48 mx-auto rounded-lg shadow-md"
                 />
               </div>
@@ -395,7 +404,11 @@ const Contact = () => {
           <div className="bg-gray-100 rounded-xl p-8 text-center">
             <img
               src="/images/2299838749.jpeg"
-              alt="Office Location Map"
+              alt={t("contact.map.mapLocation")}
+              width="2800"
+              height="800"
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
             />
             <p className="mt-4 text-gray-600">{t("contact.map.mapLocation")}</p>

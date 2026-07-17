@@ -1,15 +1,15 @@
-import Hero from './Hero'
-import Services from './Services'
-import GenePanels from './GenePanels'
+import Hero from "./Hero";
+import HomeStory from "./HomeStory";
+import Services from "./Services";
 
 const Home = () => {
   return (
     <div>
       <Hero />
       <Services />
-      {/* <GenePanels /> */}
+      <HomeStory />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

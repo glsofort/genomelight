@@ -36,10 +36,14 @@ type ApplicationRow = {
 }
 
 const featureIcons = [ShieldCheck, SlidersHorizontal, Clock3, BadgeCheck]
+const developmentIcons = [MonitorCog, BadgeCheck, Gauge]
 
 const Reagent = () => {
   const { t } = useTranslation()
   const features = t('reagent.page.features.items', {
+    returnObjects: true
+  }) as ProductFeature[]
+  const development = t('reagent.page.development.items', {
     returnObjects: true
   }) as ProductFeature[]
   const performanceRows = t('reagent.page.performance.rows', {
@@ -149,21 +153,76 @@ const Reagent = () => {
         className="border-b border-[#d5e1df] bg-white"
         aria-label={t('reagent.page.nav.label')}
       >
-        <div className="container mx-auto grid grid-cols-3 px-5 md:px-8">
-          {(['features', 'performance', 'applications'] as const).map(
-            (section, index) => (
-              <a
-                key={section}
-                href={`#${section}`}
-                className="flex min-h-16 items-center justify-center gap-2 border-r border-[#e0e8e7] text-sm font-semibold text-[#385665] transition-colors first:border-l hover:bg-[#f2f7f6] hover:text-[#247c7f]"
-              >
-                <span className="text-xs text-[#2d8f91]">0{index + 1}</span>
-                {t(`reagent.page.nav.${section}`)}
-              </a>
-            )
-          )}
+        <div className="container mx-auto grid grid-cols-2 px-5 sm:grid-cols-4 md:px-8">
+          {(
+            ['development', 'features', 'performance', 'applications'] as const
+          ).map((section, index) => (
+            <a
+              key={section}
+              href={`#${section}`}
+              className="flex min-h-16 items-center justify-center gap-2 border-r border-[#e0e8e7] text-sm font-semibold text-[#385665] transition-colors first:border-l hover:bg-[#f2f7f6] hover:text-[#247c7f]"
+            >
+              <span className="text-xs text-[#2d8f91]">0{index + 1}</span>
+              {t(`reagent.page.nav.${section}`)}
+            </a>
+          ))}
         </div>
       </nav>
+
+      <section
+        id="development"
+        className="scroll-mt-32 border-b border-[#d5e1df] bg-[#f2f7f6] py-20 md:py-28"
+        aria-labelledby="development-title"
+      >
+        <div className="container mx-auto px-5 md:px-8">
+          <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+            <div>
+              <p className="mb-3 text-xs font-bold uppercase text-[#9d4f59]">
+                01 / DEVELOPMENT & COMPATIBILITY
+              </p>
+              <h2
+                id="development-title"
+                className="text-3xl font-semibold text-[#173449] md:text-4xl"
+              >
+                {t('reagent.page.development.title')}
+              </h2>
+            </div>
+            <p className="text-lg leading-8 text-[#586f78]">
+              {t('reagent.page.development.description')}
+            </p>
+          </div>
+
+          <div className="mt-12 grid border-y border-[#c8d8d6] md:grid-cols-3">
+            {development.map((item, index) => {
+              const Icon = developmentIcons[index] ?? Gauge
+              return (
+                <article
+                  key={item.title}
+                  className="border-b border-[#c8d8d6] py-8 md:border-b-0 md:border-r md:px-8 md:last:border-r-0"
+                >
+                  <div className="flex items-center justify-between">
+                    <Icon
+                      className="h-7 w-7 text-[#2d8f91]"
+                      aria-hidden="true"
+                    />
+                    <span className="text-xs text-[#8a9da2]">0{index + 1}</span>
+                  </div>
+                  <h3 className="mt-6 text-xl font-semibold text-[#173449]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-[#63777f]">
+                    {item.description}
+                  </p>
+                </article>
+              )
+            })}
+          </div>
+
+          <p className="mt-7 border-l-2 border-[#9d4f59] pl-5 text-sm leading-7 text-[#63777f]">
+            {t('reagent.page.development.note')}
+          </p>
+        </div>
+      </section>
 
       <section
         id="features"
@@ -174,7 +233,7 @@ const Reagent = () => {
           <div>
             <div>
               <p className="mb-3 text-xs font-bold uppercase text-[#9d4f59]">
-                01 / FEATURES
+                02 / FEATURES
               </p>
               <h2
                 id="features-title"
@@ -222,7 +281,7 @@ const Reagent = () => {
           <div>
             <div>
               <p className="mb-3 text-xs font-bold uppercase text-[#2d8f91]">
-                02 / PERFORMANCE
+                03 / PERFORMANCE
               </p>
               <h2
                 id="performance-title"
@@ -293,7 +352,7 @@ const Reagent = () => {
           <div>
             <div>
               <p className="mb-3 text-xs font-bold uppercase text-[#9d4f59]">
-                03 / APPLICATIONS
+                04 / APPLICATIONS
               </p>
               <h2
                 id="applications-title"

@@ -1,10 +1,20 @@
 import { useTranslation } from 'react-i18next'
-import { Dna, Brain, Clock, Target, Shield, Cpu } from 'lucide-react'
+import { Brain, Cpu, Database, Dna, FileText } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import ComplianceNotice from './ComplianceNotice'
 
+type ContentItem = {
+  title: string
+  description: string
+}
+
+const aiCapabilityIcons = [Cpu, Database, Brain, FileText]
+
 const GLSofort = () => {
   const { t } = useTranslation()
+  const aiCapabilities = t('glsofort.aiCapabilities.items', {
+    returnObjects: true
+  }) as ContentItem[]
 
   return (
     <div className="bg-white">
@@ -116,86 +126,58 @@ const GLSofort = () => {
         </div>
       </section>
 
-      {/* Key Features Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-[#264b69] mb-16 text-center border-b-4 border-[#4fb1b4] inline-block pb-2">
-            {t('glsofort.features.title')}
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <Brain className="w-12 h-12 text-[#4fb1b4] mr-4" />
-                <h3 className="text-xl font-bold text-[#264b69]">
-                  {t('glsofort.features.ai.title')}
-                </h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                {t('glsofort.features.ai.description')}
+      <section
+        id="ai-capabilities"
+        className="scroll-mt-28 border-y border-[#d5e1df] bg-[#f2f7f6] py-20 md:py-28"
+        aria-labelledby="ai-capabilities-title"
+      >
+        <div className="container mx-auto px-5 md:px-8">
+          <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
+            <div>
+              <p className="text-xs font-bold uppercase text-[#9d4f59]">
+                AI / CLOSED-LOOP ANALYSIS
               </p>
+              <h2
+                id="ai-capabilities-title"
+                className="mt-4 text-3xl font-semibold text-[#173449] md:text-4xl"
+              >
+                {t('glsofort.aiCapabilities.title')}
+              </h2>
             </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <Clock className="w-12 h-12 text-[#4fb1b4] mr-4" />
-                <h3 className="text-xl font-bold text-[#264b69]">
-                  {t('glsofort.features.speed.title')}
-                </h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                {t('glsofort.features.speed.description')}
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <Target className="w-12 h-12 text-[#4fb1b4] mr-4" />
-                <h3 className="text-xl font-bold text-[#264b69]">
-                  {t('glsofort.features.accuracy.title')}
-                </h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                {t('glsofort.features.accuracy.description')}
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <Shield className="w-12 h-12 text-[#4fb1b4] mr-4" />
-                <h3 className="text-xl font-bold text-[#264b69]">
-                  {t('glsofort.features.compliance.title')}
-                </h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                {t('glsofort.features.compliance.description')}
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <Cpu className="w-12 h-12 text-[#4fb1b4] mr-4" />
-                <h3 className="text-xl font-bold text-[#264b69]">
-                  {t('glsofort.features.integration.title')}
-                </h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                {t('glsofort.features.integration.description')}
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex items-center mb-6">
-                <Dna className="w-12 h-12 text-[#4fb1b4] mr-4" />
-                <h3 className="text-xl font-bold text-[#264b69]">
-                  {t('glsofort.features.discovery.title')}
-                </h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                {t('glsofort.features.discovery.description')}
-              </p>
-            </div>
+            <p className="text-lg leading-8 text-[#586f78]">
+              {t('glsofort.aiCapabilities.description')}
+            </p>
           </div>
+
+          <div className="mt-12 grid border-y border-[#c8d8d6] md:grid-cols-2 lg:grid-cols-4">
+            {aiCapabilities.map((item, index) => {
+              const Icon = aiCapabilityIcons[index] ?? Brain
+              return (
+                <article
+                  key={item.title}
+                  className="border-b border-[#c8d8d6] py-8 md:border-r md:px-7 lg:border-b-0 lg:last:border-r-0"
+                >
+                  <div className="flex items-center justify-between">
+                    <Icon
+                      className="h-7 w-7 text-[#2d8f91]"
+                      aria-hidden="true"
+                    />
+                    <span className="text-xs text-[#8a9da2]">0{index + 1}</span>
+                  </div>
+                  <h3 className="mt-6 text-xl font-semibold text-[#173449]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-[#60747b]">
+                    {item.description}
+                  </p>
+                </article>
+              )
+            })}
+          </div>
+
+          <p className="mt-7 border-l-2 border-[#9d4f59] pl-5 text-sm leading-7 text-[#60747b]">
+            {t('glsofort.aiCapabilities.note')}
+          </p>
         </div>
       </section>
 

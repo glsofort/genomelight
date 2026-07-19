@@ -6,15 +6,15 @@
     },
     "about": {
       "title": "About GenomeLight | Integrated NGS Solutions & Team",
-      "description": "Learn about GenomeLight's integrated NGS portfolio across sequencing reagents, GLSofort genomic analysis, and LIMS laboratory management, along with the core team and implementation capabilities."
+      "description": "Learn about GenomeLight NGS interpretation, AI-assisted WGS, WES and Gene Panel analysis, universal sequencing reagents, LIMS, and professional review capabilities."
     },
     "glsofort": {
-      "title": "GLSofort Genomic Interpretation Platform | GenomeLight",
-      "description": "GLSofort supports variant screening, evidence organization, and reporting workflows for WGS, WES, and Gene Panel data, with qualified professional review."
+      "title": "GLSofort AI Genomic Analysis & Assisted Interpretation | GenomeLight",
+      "description": "GLSofort connects GPU secondary analysis, multidimensional annotation, local knowledge bases, AI variant prioritization, HPO matching, and reporting workflows for WGS, WES, and Gene Panels."
     },
     "reagent": {
       "title": "Universal Sequencing Reaction Kit | GenomeLight",
-      "description": "Review the NextSeq 500/550 universal sequencing reaction kit, including its NMPA filing, 130M/400M performance matrix, and typical NIPT, WES, and pathogen-metagenomics configurations."
+      "description": "Review the universal sequencing reaction kit for NextSeq 500/550, China Class I filing No. 渝高新械备20250033, 130M/400M performance data, and typical NIPT and mNGS configurations."
     },
     "health": {
       "title": "Genetic Risk Assessment Information | GenomeLight",
@@ -94,22 +94,22 @@
     "items": {
       "glsofort": {
         "title": "GLSofort® Analysis Platform",
-        "description": "A genomic interpretation platform combining machine learning and knowledge bases for screening, evidence organization, and professional review",
+        "description": "An AI-enabled closed-loop genomics platform connecting GPU secondary analysis, multidimensional annotation, HPO matching, variant prioritization, and reporting collaboration",
         "features": [
-          "AI-driven intelligent interpretation",
-          "Supports WGS/WES/Panel",
-          "Virtual Geneticist System",
-          "ACMG standards compliance"
+          "GPU secondary analysis",
+          "AI variant prioritization",
+          "Automated HPO matching",
+          "Professional review"
         ],
         "link": "/glsofort"
       },
       "reagent": {
         "title": "Universal Sequencing Reaction Kit",
-        "description": "For NextSeq 500/550 platforms with 130M/400M output and 50-, 75-, or 300-cycle configurations; performance is subject to product instructions, filing documents, and batch QC reports",
+        "description": "A universal sequencing reaction kit developed for NextSeq 500/550 with 130M/400M output and 50-, 75-, or 300-cycle configurations",
         "features": [
+          "Filing No. 渝高新械备20250033",
           "130M/400M chip output",
           "50/75/300 cycles",
-          "NMPA filing",
           "Batch quality control"
         ],
         "link": "/reagent"
@@ -262,8 +262,8 @@
   },
   "glsofort": {
     "hero": {
-      "title": "GLSofort® Gene Sequencing Analysis Service",
-      "subtitle": "An assisted interpretation platform for WGS, WES, and Gene Panel data, combining machine learning, knowledge bases, and professional review for variant screening and reporting workflows.",
+      "title": "GLSofort® AI Genomic Analysis & Assisted Interpretation Platform",
+      "subtitle": "A closed-loop bioinformatics platform for NGS laboratories, connecting GPU-accelerated secondary analysis, multidimensional annotation, local knowledge bases, AI-assisted variant screening, HPO phenotype matching, and reporting collaboration.",
       "buttons": {
         "demo": "Experience Demo",
         "contact": "Contact Us"
@@ -271,7 +271,7 @@
     },
     "intro": {
       "title": "GLSofort® Genomic Analysis & Assisted Interpretation Platform",
-      "description": "GLSofort® supports whole-genome (WGS), whole-exome (WES), and targeted Gene Panel workflows across secondary analysis, variant screening, evidence organization, tertiary assisted interpretation, and reporting collaboration. Platform output assists professional work and requires review against sample quality, project scope, clinical information, and applicable guidance.",
+      "description": "GLSofort® connects FASTQ raw data and VCF variant calling with annotation, screening, evidence organization, and report-draft workflows for whole-genome (WGS), whole-exome (WES), and targeted Gene Panel projects. Platform output assists research and clinical analysis and requires review against sample quality, project scope, clinical information, and applicable guidance.",
       "imageCaption": "Example of the GLSofort® analysis interface. Fields, data, and functionality vary by project configuration and software version and do not represent an individual test result."
     },
     "serviceRange": {
@@ -297,33 +297,6 @@
         }
       }
     },
-    "features": {
-      "title": "Core Technical Features",
-      "ai": {
-        "title": "Virtual Geneticist System",
-        "description": "GLSofort® combines bioinformatics workflows, knowledge bases, and machine-learning methods to assist genomic data interpretation."
-      },
-      "speed": {
-        "title": "Automated Analysis Workflow",
-        "description": "When data quality and project requirements are met, parts of the analysis can move from a weeks-scale to an hours-scale workflow; actual time depends on data volume and review requirements."
-      },
-      "accuracy": {
-        "title": "Evidence-Assisted Interpretation",
-        "description": "Variant screening, evidence organization, and rule-based workflows support interpretation; qualified professionals make the final assessment."
-      },
-      "compliance": {
-        "title": "Clinical Standards Compliance",
-        "description": "Supports evidence organization using relevant ACMG guidance and can complement an institution's quality system; the implementing organization confirms regulatory suitability."
-      },
-      "integration": {
-        "title": "Intelligent Integration Function",
-        "description": "Features can assist with research-evidence retrieval and structured organization; coverage and update frequency depend on configuration."
-      },
-      "discovery": {
-        "title": "New Discovery Capability",
-        "description": "Authorized data and knowledge bases can be updated to help professionals refine interpretations as evidence evolves."
-      }
-    },
     "advantages": {
       "title": "Product Advantages",
       "items": [
@@ -333,7 +306,8 @@
         "Assists with evidence organization for reporting; efficiency and cost depend on project scale and review requirements",
         "Can obtain new discoveries through accumulated clinical and genomic databases",
         "Built-in Algorithm: AI Large Model Multi-dimensional Variant Scoring and Ranking Algorithm",
-        "Noetica"
+        "Noetica",
+        "Literature database covering tens of millions of variant sites"
       ]
     },
     "applications": {
@@ -369,6 +343,29 @@
       "title": "Discuss a GLSofort® genomic interpretation workflow",
       "subtitle": "If you have trial and cooperation intentions, please don't hesitate to contact us.",
       "button": "Online Message"
+    },
+    "aiCapabilities": {
+      "title": "An AI-enabled closed-loop analysis workflow",
+      "description": "Bring compute, bioinformatics, structured knowledge, and clinical phenotype information into one analysis chain to reduce tool switching and preserve traceable data and evidence for professional review.",
+      "items": [
+        {
+          "title": "GPU-Accelerated Secondary Analysis",
+          "description": "Parallel computing supports FASTQ-to-VCF variant calling and can reduce WGS and WES processing wait times. Actual timing depends on data volume, hardware, and analysis parameters."
+        },
+        {
+          "title": "Multidimensional Annotation & Local Knowledge",
+          "description": "Automate VCF annotation and combine population frequency, pathogenic-variant, and authorized institutional data according to project configuration for local retrieval and evidence updates."
+        },
+        {
+          "title": "AI Screening & HPO Matching",
+          "description": "Assist extraction of HPO terms from clinical descriptions and use machine-learning methods to prioritize candidate genes and variants as structured leads for rare-disease and inherited-disease analysis."
+        },
+        {
+          "title": "Reporting & Genetic Counseling Collaboration",
+          "description": "Generate structured preliminary report drafts using project templates and ACMG-related evidence frameworks so clinicians and genetic counselors can review evidence, document judgment, and complete professional review."
+        }
+      ],
+      "note": "GLSofort® provides analysis and decision support and does not replace qualified professional judgment. Candidate ranking, HPO matching, and report drafts require review against clinical information, validation results, and applicable standards."
     }
   },
   "reagent": {
@@ -376,7 +373,7 @@
       "eyebrow": "Sequencing reagents · NextSeq 500/550",
       "title": "Universal Sequencing Reaction Kit",
       "method": "Reversible terminator sequencing",
-      "summary": "A sequencing-by-synthesis kit comprising sequencing reagents, sequencing buffer, sequencing chips, and library diluent for NextSeq 500/550 platforms. The brochure states that the product has an NMPA filing and may be used for clinical-sample testing; intended use and scope are subject to the filing certificate and product instructions.",
+      "summary": "To support broader access to high-throughput sequencing, GenomeLight developed a universal sequencing reaction kit for NextSeq 500/550. The product comprises sequencing reagents, sequencing buffer, sequencing chips, and library diluent and has obtained a Class I medical-device filing in China. Intended use, scope, and performance remain subject to the filing certificate, product instructions, and batch QC documentation.",
       "registration": {
         "label": "NMPA filing",
         "value": "渝高新械备20250033"
@@ -399,7 +396,8 @@
         "label": "Product detail sections",
         "features": "Features",
         "performance": "Performance",
-        "applications": "Applications"
+        "applications": "Applications",
+        "development": "Development & Compatibility"
       },
       "features": {
         "title": "Product Features",
@@ -536,6 +534,25 @@
         "title": "Request product instructions, batch QC, and purchasing information",
         "description": "Contact the GenomeLight product team to confirm compatible configurations, filing documents, delivery specifications, or batch test information.",
         "button": "Contact product team"
+      },
+      "development": {
+        "title": "Developed to help manage the total cost of NGS workflows",
+        "description": "GenomeLight develops universal sequencing reagent kits around compatibility, throughput configuration, and quality-control needs on mainstream sequencing platforms. The product gives hospitals, research teams, and independent clinical laboratories an additional option alongside original-platform reagents. Instrument status, library type, laboratory validation, and applicable requirements must be evaluated before implementation.",
+        "items": [
+          {
+            "title": "Platform-Oriented Design",
+            "description": "Developed for NextSeq 500/550 workflows with sequencing reagents, buffer, chips, and library diluent supplied as a coordinated configuration."
+          },
+          {
+            "title": "Performance Evidence",
+            "description": "The brochure lists nominal 130M/400M chip output, Q30, and sequencing-time metrics. Interpret performance against the selected configuration, run data, and batch QC."
+          },
+          {
+            "title": "Multiple Workflow Scenarios",
+            "description": "Can be evaluated for NIPT, pathogen metagenomic sequencing, and tumor-related targeted sequencing workflows, subject to validation by the implementing laboratory."
+          }
+        ],
+        "note": "The Class I medical-device filing number is 渝高新械备20250033. The filing does not constitute one performance commitment for every library, instrument condition, or clinical use. Confirm the filing certificate and product instructions before use."
       }
     }
   },
@@ -879,7 +896,7 @@
       "title": "Company Introduction",
       "companyName": "Genomelight (Chongqing) Biotechnology Co., LTD. (Genome Light)",
       "description1": "Located in Chongqing Hi-tech Development Zone, we are a high-tech life health enterprise driven by precision medical services and AI big data technology, innovating future medical models.",
-      "description2": "Founded in 2021, GenomeLight focuses on integrated next-generation sequencing (NGS) solutions. The company brings together sequencing reagents for NextSeq 500/550, GLSofort® genomic analysis and assisted interpretation, LIMS laboratory information management, and professional technical services for healthcare organizations, research teams, and medical laboratories. Testing, analysis, and interpretation outputs require professional review within their intended scope.",
+      "description2": "GenomeLight focuses on interpretation, annotation, and analysis of next-generation sequencing (NGS) data across whole-genome (WGS), whole-exome (WES), and targeted Gene Panel workflows. GLSofort® combines GPU acceleration, knowledge bases, and AI-assisted phenotype matching from raw data to report drafts. To help reduce the overall cost of NGS workflows, the company also develops universal sequencing reagent kits for relevant platforms and has obtained a Class I medical-device filing in China. Products and services support healthcare organizations, research teams, and personal health contexts; qualified professionals must review outputs within the project scope and relevant clinical information.",
       "facts": [
         {
           "title": "Founded in 2021",
@@ -989,11 +1006,11 @@
       "items": {
         "reagent": {
           "title": "Sequencing Reagents",
-          "description": "Sequencing-reaction reagents and chip configurations for NextSeq 500/550. Performance depends on product instructions, lot QC, and run conditions."
+          "description": "A universal sequencing reaction kit developed for NextSeq 500/550 with a Class I medical-device filing in China; performance depends on product instructions, batch QC, and run conditions."
         },
         "glsofort": {
           "title": "GLSofort® Platform",
-          "description": "WGS, WES, and Gene Panel processing, variant screening, evidence organization, and reporting workflows."
+          "description": "GPU acceleration, knowledge bases, AI-assisted variant screening, and HPO phenotype matching for WGS, WES, Gene Panel, and reporting workflows."
         },
         "lims": {
           "title": "LIMS Management",

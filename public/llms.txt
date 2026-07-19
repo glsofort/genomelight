@@ -1,6 +1,6 @@
 # GenomeLight
 
-> Founded in 2021, GenomeLight provides integrated NGS solutions across sequencing reagents for NextSeq 500/550, GLSofort genomic analysis and assisted interpretation, LIMS laboratory information management, and professional technical services.
+> Founded in 2021, GenomeLight provides integrated NGS solutions across universal sequencing reagents for NextSeq 500/550, GLSofort AI-assisted genomic analysis and interpretation, LIMS laboratory information management, and professional technical services.
 
 Canonical site: https://www.genomelight.com/
 

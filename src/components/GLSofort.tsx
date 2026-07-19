@@ -59,10 +59,10 @@ const GLSofort = () => {
           </p>
           <figure className="bg-gray-50 rounded-xl p-8">
             <img
-              src="/images/glsofort/platform-interface.jpeg"
+              src="/images/glsofort/platform-interface.png"
               alt={t('glsofort.intro.title')}
-              width="2527"
-              height="1002"
+              width="1165"
+              height="328"
               loading="lazy"
               decoding="async"
               className="mx-auto w-full max-w-5xl border border-[#cad9d7] object-contain"

@@ -171,7 +171,7 @@ const Reagent = () => {
         aria-labelledby="features-title"
       >
         <div className="container mx-auto px-5 md:px-8">
-          <div className="grid gap-5 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
+          <div>
             <div>
               <p className="mb-3 text-xs font-bold uppercase text-[#9d4f59]">
                 01 / FEATURES
@@ -183,9 +183,6 @@ const Reagent = () => {
                 {t('reagent.page.features.title')}
               </h2>
             </div>
-            <p className="max-w-3xl text-base leading-7 text-[#586e77] md:text-lg">
-              {t('reagent.page.features.description')}
-            </p>
           </div>
 
           <div className="mt-12 grid border-y border-[#c8d8d6] md:grid-cols-4">
@@ -222,7 +219,7 @@ const Reagent = () => {
         aria-labelledby="performance-title"
       >
         <div className="container mx-auto px-5 md:px-8">
-          <div className="grid gap-5 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
+          <div>
             <div>
               <p className="mb-3 text-xs font-bold uppercase text-[#2d8f91]">
                 02 / PERFORMANCE
@@ -234,9 +231,6 @@ const Reagent = () => {
                 {t('reagent.page.performance.title')}
               </h2>
             </div>
-            <p className="max-w-3xl text-base leading-7 text-[#586e77] md:text-lg">
-              {t('reagent.page.performance.description')}
-            </p>
           </div>
 
           <div className="mt-12 overflow-x-auto border border-[#c8d8d6] bg-white">
@@ -296,7 +290,7 @@ const Reagent = () => {
         aria-labelledby="applications-title"
       >
         <div className="container mx-auto px-5 md:px-8">
-          <div className="grid gap-5 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
+          <div>
             <div>
               <p className="mb-3 text-xs font-bold uppercase text-[#9d4f59]">
                 03 / APPLICATIONS
@@ -308,9 +302,6 @@ const Reagent = () => {
                 {t('reagent.page.applications.title')}
               </h2>
             </div>
-            <p className="max-w-3xl text-base leading-7 text-[#586e77] md:text-lg">
-              {t('reagent.page.applications.description')}
-            </p>
           </div>
 
           <div className="mt-12 overflow-x-auto border border-[#c8d8d6] bg-white">

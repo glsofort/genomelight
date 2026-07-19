@@ -1,8 +1,8 @@
 import {
   ArrowUpRight,
   BrainCircuit,
+  ClipboardList,
   Database,
-  DatabaseZap,
   HeartPulse,
   ScanSearch,
   TestTube2,
@@ -36,12 +36,12 @@ const serviceDefinitions = [
     signals: ['WES / WGS', 'PRO REVIEW']
   },
   {
-    key: 'compression',
-    image: '/images/1795410433.png',
-    width: 800,
-    height: 800,
-    icon: DatabaseZap,
-    signals: ['FASTQ / BAM / SAM', 'LOSSLESS']
+    key: 'lims',
+    image: '/images/lims/genomelight-lims-workflow.png',
+    width: 741,
+    height: 497,
+    icon: ClipboardList,
+    signals: ['SAMPLE / SOP / QC', 'HIS / LIS / API']
   }
 ]
 

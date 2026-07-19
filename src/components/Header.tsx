@@ -8,7 +8,7 @@ const serviceLinks = [
   { path: '/glsofort', key: 'glsofort' },
   { path: '/reagent', key: 'reagent' },
   { path: '/health', key: 'health' },
-  { path: '/compression', key: 'compression' }
+  { path: '/lims', key: 'lims' }
 ]
 
 const Header = () => {

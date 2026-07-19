@@ -1,12 +1,12 @@
 {
   "seo": {
     "home": {
-      "title": "Genomic Data Interpretation Services | GenomeLight",
-      "description": "GenomeLight provides genomic data interpretation, sequencing reagents, genetic risk assessment, and genomic data compression for healthcare, research, and personal health contexts."
+      "title": "Integrated NGS Sequencing & Genomic Analysis | GenomeLight",
+      "description": "GenomeLight provides sequencing reagents, GLSofort genomic analysis and assisted interpretation, LIMS laboratory management, and technical services for healthcare organizations, research teams, and medical laboratories."
     },
     "about": {
-      "title": "About GenomeLight | Genomic Data Analysis Team",
-      "description": "Learn about the GenomeLight team, genomic data analysis capabilities, service scope, and privacy principles supporting healthcare and research workflows."
+      "title": "About GenomeLight | Integrated NGS Solutions & Team",
+      "description": "Learn about GenomeLight's integrated NGS portfolio across sequencing reagents, GLSofort genomic analysis, and LIMS laboratory management, along with the core team and implementation capabilities."
     },
     "glsofort": {
       "title": "GLSofort Genomic Interpretation Platform | GenomeLight",
@@ -20,21 +20,21 @@
       "title": "Genetic Risk Assessment Information | GenomeLight",
       "description": "Explore WES, WGS, and gene-chip services for genetic risk associations, carrier screening, and pharmacogenomic information, including scope, process, and limitations."
     },
-    "compression": {
-      "title": "ZipHelix Genomic Data Compression | GenomeLight",
-      "description": "ZipHelix provides lossless compression, archiving, object storage, and retrieval for genomic sequencing data, with on-premise, private, and hybrid cloud deployment."
-    },
     "contact": {
       "title": "Contact GenomeLight | Product and Technical Enquiries",
-      "description": "Contact the GenomeLight teams in Chongqing and Shenzhen about genomic interpretation, sequencing reagents, genetic risk assessment, or data compression products."
+      "description": "Contact the GenomeLight teams in Chongqing and Shenzhen about genomic interpretation, sequencing reagents, genetic risk assessment, or the LIMS laboratory information management system."
     },
     "news": {
-      "title": "GenomeLight News and Updates",
-      "description": "GenomeLight news content is being reviewed and updated. This page is currently excluded from search engine indexing."
+      "title": "Clinical Phenotype-to-HPO Conversion: GLSofort AI Update | GenomeLight",
+      "description": "The GLSofort AI update adds clinical-language understanding, batch HPO extraction, and candidate-gene association to support more efficient genetics workflows."
     },
     "notFound": {
       "title": "Page Not Found | GenomeLight",
       "description": "The requested page does not exist. Return to the GenomeLight homepage for products, services, and contact information."
+    },
+    "lims": {
+      "title": "LIMS Laboratory Information Management System | GenomeLight",
+      "description": "GenomeLight LIMS connects sample lifecycle management, SOP execution, instrument data, QC review, reporting, inventory, equipment, and HIS/LIS integration."
     }
   },
   "compliance": {
@@ -56,7 +56,7 @@
         "glsofort": "GLSofort® Analysis Platform",
         "reagent": "Universal Sequencing Reaction Kit",
         "health": "Health Screening",
-        "compression": "Data Compression System"
+        "lims": "LIMS Laboratory Management"
       },
       "news": "News & Updates",
       "contact": "Contact Us"
@@ -65,14 +65,15 @@
   "hero": {
     "title": "GenomeLight",
     "eyebrow": "Genomic data analysis · Products and services",
-    "subtitle": "Genetic testing and genomic data analysis services",
+    "subtitle": "Integrated NGS sequencing, analysis, and laboratory digitalization",
     "description1": "Genome Light illuminates a healthy future",
-    "description2": "Genomic data interpretation and related technical services for healthcare, research, and personal health contexts",
+    "description2": "Sequencing reagents, GLSofort® genomic analysis and assisted interpretation, LIMS laboratory management, and professional technical services for healthcare organizations, research teams, and medical laboratories.",
     "description3": "Covering Next-Generation Sequencing (NGS), Whole Genome Sequencing (WGS), Whole Exome Sequencing (WES), Gene Panels, and more",
     "description4": "Standardized analysis workflows for next-generation sequencing (NGS) data",
     "scope": [
-      "WGS / WES / Gene Panel",
-      "Machine-learning-assisted analysis",
+      "Sequencing reagents",
+      "GLSofort® assisted analysis",
+      "LIMS laboratory management",
       "Professional review"
     ],
     "visualNote": "Genomic analysis scenario illustration",
@@ -88,8 +89,8 @@
   },
   "services": {
     "eyebrow": "Core capabilities",
-    "title": "Products & Services",
-    "subtitle": "Genomic data analysis products and services for healthcare organizations, research teams, and personal health contexts",
+    "title": "NGS Products & Technical Services",
+    "subtitle": "Composable products and project support across sequencing, data analysis, professional review, and laboratory management",
     "items": {
       "glsofort": {
         "title": "GLSofort® Analysis Platform",
@@ -124,16 +125,16 @@
         ],
         "link": "/health"
       },
-      "compression": {
-        "title": "Data Compression System",
-        "description": "ZipHelix comprehensive data solution designed specifically for gene sequencing data with efficient compression storage system",
+      "lims": {
+        "title": "LIMS Laboratory Management",
+        "description": "A traceable digital workflow for samples, tasks, SOPs, quality control, reporting, and laboratory operations",
         "features": [
-          "Innovative compression algorithm",
-          "Automated archiving",
-          "Object storage protection",
-          "Multiple configuration options"
+          "Sample lifecycle",
+          "SOP and QC traceability",
+          "Inventory and equipment",
+          "System integrations"
         ],
-        "link": "/compression"
+        "link": "/lims"
       }
     },
     "button": "Learn More"
@@ -217,7 +218,7 @@
     "company": {
       "title": "Company Information",
       "name": "Genomelight (Chongqing) Biotechnology Co., LTD.",
-      "description": "Genomic data analysis and related product services supporting healthcare organizations, research teams, and individuals."
+      "description": "Sequencing reagents, genomic data analysis, LIMS laboratory management, and related technical services."
     },
     "services": {
       "title": "Main Services",
@@ -225,14 +226,9 @@
         "GLSofort® Analysis Platform",
         "Universal Sequencing Reaction Kit",
         "Health Screening",
-        "Data Compression System"
+        "LIMS Laboratory Management"
       ],
-      "links": [
-        "/glsofort",
-        "/reagent",
-        "/health",
-        "/compression"
-      ]
+      "links": ["/glsofort", "/reagent", "/health", "/lims"]
     },
     "contact": {
       "title": "Contact Information",
@@ -274,8 +270,9 @@
       }
     },
     "intro": {
-      "title": "Our Company's Proprietary Software Platform GLSofort®",
-      "description": "GLSofort® assists with interpretation of next-generation sequencing (NGS) data across whole genome (WGS), whole exome (WES), and targeted Gene Panel workflows. It supports variant screening, evidence organization, and reporting; outputs require professional review with sample quality, clinical information, and applicable guidance."
+      "title": "GLSofort® Genomic Analysis & Assisted Interpretation Platform",
+      "description": "GLSofort® supports whole-genome (WGS), whole-exome (WES), and targeted Gene Panel workflows across secondary analysis, variant screening, evidence organization, tertiary assisted interpretation, and reporting collaboration. Platform output assists professional work and requires review against sample quality, project scope, clinical information, and applicable guidance.",
+      "imageCaption": "Example of the GLSofort® analysis interface. Fields, data, and functionality vary by project configuration and software version and do not represent an individual test result."
     },
     "serviceRange": {
       "title": "Gene Sequencing Analysis Service Range",
@@ -336,7 +333,7 @@
         "Assists with evidence organization for reporting; efficiency and cost depend on project scale and review requirements",
         "Can obtain new discoveries through accumulated clinical and genomic databases",
         "Built-in Algorithm: AI Large Model Multi-dimensional Variant Scoring and Ranking Algorithm",
-        "AI Tool: GLS-AI Ten Million Loci Literature Database"
+        "Noetica"
       ]
     },
     "applications": {
@@ -406,7 +403,6 @@
       },
       "features": {
         "title": "Product Features",
-        "description": "The supplied brochure groups the product's characteristics into stability, flexibility, speed, and accuracy. The stated values should be interpreted with the selected run configuration, batch quality control, and laboratory conditions.",
         "items": [
           {
             "title": "Stable",
@@ -428,7 +424,6 @@
       },
       "performance": {
         "title": "Product Performance",
-        "description": "The 130M and 400M chip-output options can be paired with 50-, 75-, or 300-cycle configurations. The table reproduces the stated output, Q30, and sequencing time from the supplied brochure.",
         "headers": {
           "reads": "Chip output (reads)",
           "cycles": "Read length",
@@ -484,7 +479,6 @@
       },
       "applications": {
         "title": "Applications",
-        "description": "The supplied brochure lists typical configurations for low-depth WGS, targeted capture or multiplex testing, and small-genome sequencing to support workflow evaluation across several research and testing contexts.",
         "headers": {
           "method": "Method",
           "application": "Application",
@@ -714,225 +708,6 @@
       "button": "Consult Now"
     }
   },
-  "compression": {
-    "hero": {
-      "title": "Data Compression System",
-      "subtitle": "ZipHelix massive data integrated solution system, solving sequencing data storage problems. GenomeLight introduces ZipHelix massive data integrated solution system, which can perform orderly archiving and lossless compression of raw data from the source. Multiple configurations meet the needs of different medical institutions and provide professional after-sales service to create a comprehensive gene data storage solution.",
-      "buttons": {
-        "solutions": "View Solutions",
-        "contact": "Contact Consultation"
-      }
-    },
-    "overview": {
-      "title": "ZipHelix Product Overview",
-      "description": "ZipHelix provides lossless compression, archiving, and storage-management functions for genomic sequencing data. Results depend on data, hardware, and deployment configuration.",
-      "compressionTechnique": {
-        "title": "ZipHelix compression technology",
-        "description": "Supports lossless compression for FASTQ and related data; actual compression and space savings depend on data characteristics and test conditions"
-      },
-      "dataManagement": {
-        "title": "Intelligent data management",
-        "description": "Supports automated archiving and backup alongside configured access-control and recovery policies"
-      },
-      "cloudDeployment": {
-        "title": "Cloud deployment",
-        "description": "Supports local, private, and hybrid cloud deployment options"
-      }
-    },
-    "features": {
-      "title": "Core Technical Features",
-      "compression": {
-        "title": "Sequencing Data Compression",
-        "description": "ZipHelix provides lossless compression for FASTQ files; actual compression, space, and cost changes depend on data, hardware, and deployment conditions"
-      },
-      "automation": {
-        "title": "Automated Archiving",
-        "description": "ZipHelix embedded compression algorithm system can automatically perform batch data backup and archiving"
-      },
-      "storage": {
-        "title": "Object Storage Protection",
-        "description": "Data can be written to object storage with configured redundancy and recovery policies, reducing single-disk data-loss risk; recovery depends on deployment and backup state"
-      },
-      "flexible": {
-        "title": "Multiple Configurations",
-        "description": "Multiple configurations to meet different scenario requirements"
-      }
-    },
-    "solutions": {
-      "title": "Multiple Data Analysis Integrated Solutions",
-      "items": [
-        {
-          "title": "GLSofort® Cloud Data Analysis",
-          "description": "Combined with cloud analysis platform, providing complete data processing and interpretation services"
-        },
-        {
-          "title": "Secondary Analysis + Tertiary Interpretation + Data Compression System",
-          "description": "Full-process data analysis solution, complete service from raw data to final reports"
-        },
-        {
-          "title": "Secondary Analysis + Data Compression System",
-          "description": "Efficient solution focused on data analysis and compression storage"
-        },
-        {
-          "title": "Tertiary Interpretation + Data Compression System",
-          "description": "Professional solution combining data interpretation with compression storage"
-        }
-      ]
-    },
-    "advantages": {
-      "title": "Product Advantages",
-      "items": [
-        {
-          "title": "Support Multiple Data Types and Species",
-          "description": "Can be configured for multiple sequencing formats and species; refer to product documentation for the supported list",
-          "icon": "Database"
-        },
-        {
-          "title": "Independent Operation Without Reference Database",
-          "description": "Independent operation without external database dependencies",
-          "icon": "Shield"
-        },
-        {
-          "title": "Customized Archiving Function",
-          "description": "Customized data archiving strategies according to requirements",
-          "icon": "Settings"
-        },
-        {
-          "title": "Lossless Compression",
-          "description": "Maintains data consistency when compression and decompression verification succeeds",
-          "icon": "Archive"
-        },
-        {
-          "title": "Reduced Transfer Volume",
-          "description": "Smaller files can reduce network transfer volume; actual speed depends on the network and storage environment",
-          "icon": "Zap"
-        },
-        {
-          "title": "Transparent Process",
-          "description": "Clear and visible operation process and status monitoring",
-          "icon": "Eye"
-        },
-        {
-          "title": "Accelerated Analysis Speed",
-          "description": "Optimized data structure improves analysis efficiency",
-          "icon": "Clock"
-        },
-        {
-          "title": "Preserved NGS Quality Information",
-          "description": "Lossless compression and decompression do not change original quality scores when consistency checks pass",
-          "icon": "TrendingUp"
-        },
-        {
-          "title": "No Lock-in",
-          "description": "Open data formats, avoiding vendor lock-in",
-          "icon": "Unlock"
-        },
-        {
-          "title": "Easy IT Deployment",
-          "description": "Simplified deployment process, reducing IT maintenance costs",
-          "icon": "Server"
-        },
-        {
-          "title": "Cost Savings",
-          "description": "Can reduce some storage usage; actual cost changes depend on data volume and deployment",
-          "icon": "DollarSign"
-        }
-      ]
-    },
-    "specifications": {
-      "title": "Technical Specifications",
-      "compression": {
-        "title": "Compression Performance",
-        "items": [
-          "Compression Method: Lossless",
-          "Compression Rate: Depends on data and test conditions",
-          "Space and Cost Changes: Subject to deployment assessment",
-          "Supported Formats: FASTQ, BAM, SAM, etc."
-        ]
-      },
-      "system": {
-        "title": "System Configuration",
-        "items": [
-          "Processor: High-performance multi-core CPU",
-          "Memory: 64GB-512GB optional",
-          "Storage: SSD+HDD hybrid storage",
-          "Network: 10 Gigabit Ethernet interface"
-        ]
-      },
-      "deployment": {
-        "title": "Deployment Options",
-        "items": [
-          "On-premise deployment",
-          "Private cloud deployment",
-          "Hybrid cloud deployment",
-          "SaaS service model"
-        ]
-      }
-    },
-    "applications": {
-      "title": "Application Scenarios",
-      "hospital": {
-        "title": "Medical Institutions",
-        "description": "Providing efficient gene data storage and management solutions for hospitals and testing centers",
-        "features": [
-          "Large-capacity data storage",
-          "Fast data retrieval",
-          "Data security protection",
-          "Cost control"
-        ]
-      },
-      "research": {
-        "title": "Research Institutes",
-        "description": "Providing professional data management and analysis platforms for research institutions",
-        "features": [
-          "Massive data processing",
-          "Long-term data preservation",
-          "Multi-project management",
-          "Collaborative sharing"
-        ]
-      },
-      "biotech": {
-        "title": "Biotechnology Companies",
-        "description": "Providing flexible data processing solutions for biotechnology enterprises",
-        "features": [
-          "Elastic scaling",
-          "Custom development",
-          "API interfaces",
-          "Cloud integration"
-        ]
-      }
-    },
-    "workflow": {
-      "title": "Workflow",
-      "steps": [
-        {
-          "title": "Data Collection",
-          "description": "Automatically acquire raw data generated by sequencers"
-        },
-        {
-          "title": "Real-time Compression",
-          "description": "Real-time lossless compression using innovative algorithms"
-        },
-        {
-          "title": "Secure Storage",
-          "description": "Write to object storage with configured permissions, redundancy, and backup policies"
-        },
-        {
-          "title": "Intelligent Archiving",
-          "description": "Automatic archiving according to policies, optimizing storage costs"
-        },
-        {
-          "title": "Fast Retrieval",
-          "description": "Support fast data query and extraction"
-        }
-      ]
-    },
-    "cta": {
-      "title": "ZipHelix - Your Gene Data Storage Expert",
-      "subtitle": "Assess compression and archiving options based on data volume, format, and deployment environment",
-      "button": "Get Solution"
-    }
-  },
   "contact": {
     "hero": {
       "title": "Contact Us",
@@ -987,7 +762,7 @@
             "GLSofort® Analysis Platform",
             "Universal Sequencing Reaction Kit",
             "Health Screening",
-            "Data Compression System",
+            "LIMS Laboratory Management",
             "Other Service Consultation"
           ]
         },
@@ -1018,49 +793,85 @@
     }
   },
   "news": {
-    "search": {
-      "placeholder": "Search news..."
-    },
-    "hero": {
-      "title": "News & Updates",
-      "subtitle": "Stay updated with GenomeLight's latest developments, industry insights, and technological advances in the genetic testing field."
-    },
-    "categories": {
-      "all": "All",
-      "company": "Company News",
-      "industry": "Industry News",
-      "technology": "Technology",
-      "research": "Research"
-    },
-    "featured": {
-      "title": "Featured News",
-      "items": []
-    },
-    "recent": {
-      "title": "Latest News",
-      "items": []
-    },
-    "pagination": {
-      "previous": "Previous",
-      "next": "Next",
-      "page": "Page {page}"
-    },
-    "readMore": "Read More",
-    "backToList": "Back to List",
-    "relatedNews": "Related News",
-    "share": "Share",
-    "noResults": "No related news available",
-    "newsletter": {
-      "title": "Subscribe to our Newsletter",
-      "description": "Get the latest updates and industry insights delivered straight to your inbox.",
-      "placeholder": "Enter your email address",
-      "subscribe": "Subscribe"
-    },
-    "review": {
-      "title": "Content review in progress",
-      "description": "Previous sample updates have been taken offline to avoid publishing items without verified sources, dates, or accountable authorship. Future content will be published after factual review with a publication date and author or source.",
-      "home": "Return Home",
-      "contact": "Contact the Team"
+    "article": {
+      "category": "Product Update",
+      "date": "July 15, 2026",
+      "readingTime": "5 min read",
+      "title": "Clinical Phenotype-to-HPO Conversion: GLSofort® AI Update",
+      "lead": "The updated GLSofort® converts clinical language into standard HPO terms and organizes associated diseases, candidate genes, and phenotype-match information for a more efficient and consistent genetics-analysis entry point.",
+      "navigation": {
+        "label": "Article navigation",
+        "upgrades": "Three updates",
+        "workflow": "Workflow",
+        "value": "Core value"
+      },
+      "images": {
+        "workflowAlt": "GLSofort AI interface extracting HPO terms from clinical notes",
+        "workflowCaption": "GLSofort® HPO (AI) demonstration: standard HPO terms are extracted from a complete clinical description and can be copied into the next analysis step.",
+        "geneAlt": "GLSofort HPO-associated gene ranking and phenotype matching interface",
+        "geneCaption": "The associated-gene view brings together candidate genes, phenotype match scores, and mapped HPO terms for further review."
+      },
+      "upgrades": {
+        "title": "Moving from keyword matching to clinical semantics",
+        "description": "The update addresses three key stages of phenotype normalization and reduces repetitive work involved in looking up HPO terms one by one.",
+        "items": [
+          {
+            "title": "Semantic understanding",
+            "description": "Multi-model capabilities interpret clinical descriptions beyond preset keywords and map varied or conversational wording to standard HPO terms."
+          },
+          {
+            "title": "Batch extraction",
+            "description": "A complete clinical note can be processed at once to identify phenotype entities and return the relevant HPO codes without repeated entry."
+          },
+          {
+            "title": "Associated evidence",
+            "description": "Alongside HPO terms, the workflow organizes related diseases, candidate genes, and phenotype-match information as leads for professional analysis."
+          }
+        ]
+      },
+      "workflow": {
+        "title": "From clinical notes to structured analysis leads",
+        "description": "Phenotype text, HPO normalization, and associated information can be reviewed in one workflow before moving into downstream analysis.",
+        "steps": [
+          "Enter the patient's clinical findings or a complete clinical note.",
+          "Run the HPO (AI) tool to identify and normalize phenotypes.",
+          "Review HPO results, associated genes, and phenotype-match information.",
+          "Copy or download the results for downstream variant analysis and professional review."
+        ]
+      },
+      "case": {
+        "title": "Organizing a complex multisystem phenotype",
+        "description": "The source article demonstrates a case involving recurrent fractures, blue sclera, dental wear, hearing loss, and other multisystem findings. The tool gathers the related HPO terms and presents candidate genes with match information, helping analysts structure leads from a long clinical description.",
+        "note": "The example demonstrates the product workflow. Outputs must still be reviewed against the source record, laboratory data, applicable guidance, and qualified professional judgment."
+      },
+      "value": {
+        "title": "What the update changes in the workflow",
+        "description": "The role of AI is to bring normalization, retrieval, and evidence organization into a reviewable state sooner, not to replace professional judgment.",
+        "items": [
+          {
+            "title": "Efficiency",
+            "description": "In the source demonstration, phenotype organization moved from roughly 10-15 minutes to about 30 seconds. Actual time depends on text length, system configuration, and review requirements."
+          },
+          {
+            "title": "Consistency",
+            "description": "Different clinical writing styles can be mapped to the standard HPO framework, reducing the effect of wording variation during retrieval."
+          },
+          {
+            "title": "Reviewability",
+            "description": "HPO terms, candidate genes, and match information appear together so analysts can verify each item, add evidence, and document their reasoning."
+          }
+        ]
+      },
+      "responsible": {
+        "title": "Scope of assisted analysis",
+        "description": "GLSofort® supports data organization and assisted analysis; it does not independently provide a medical diagnosis or treatment recommendation. Qualified professionals must review outputs with clinical information, test quality, and applicable requirements."
+      },
+      "cta": {
+        "title": "Explore GLSofort® AI-assisted analysis",
+        "description": "Contact the team to discuss HPO conversion and a workflow suitable for your project.",
+        "button": "Contact the Team"
+      },
+      "source": "Read the original WeChat article"
     }
   },
   "about": {
@@ -1068,7 +879,21 @@
       "title": "Company Introduction",
       "companyName": "Genomelight (Chongqing) Biotechnology Co., LTD. (Genome Light)",
       "description1": "Located in Chongqing Hi-tech Development Zone, we are a high-tech life health enterprise driven by precision medical services and AI big data technology, innovating future medical models.",
-      "description2": "The company focuses on interpretation, annotation, and analysis of next-generation sequencing (NGS) data across whole genome (WGS), whole exome (WES), and targeted Gene Panel workflows. Products and services support healthcare organizations, research teams, and personal health contexts; qualified professionals must review outputs within the project's scope and relevant clinical information."
+      "description2": "Founded in 2021, GenomeLight focuses on integrated next-generation sequencing (NGS) solutions. The company brings together sequencing reagents for NextSeq 500/550, GLSofort® genomic analysis and assisted interpretation, LIMS laboratory information management, and professional technical services for healthcare organizations, research teams, and medical laboratories. Testing, analysis, and interpretation outputs require professional review within their intended scope.",
+      "facts": [
+        {
+          "title": "Founded in 2021",
+          "description": "Building product capabilities across sequencing, analysis, and laboratory digitalization."
+        },
+        {
+          "title": "Chongqing / Shenzhen",
+          "description": "Coordinated product development, project implementation, and customer support."
+        },
+        {
+          "title": "Integrated NGS",
+          "description": "Sequencing reagents, data analysis, professional review, and laboratory management."
+        }
+      ]
     },
     "culture": {
       "title": "Company Culture",
@@ -1095,78 +920,35 @@
     },
     "team": {
       "title": "Team Introduction",
-      "description": "Strong technical capabilities are the cornerstone supporting our high-quality products and services. Our core technology R&D team consists of senior scientists and engineers from home and abroad, including advanced talents in genetics, bioinformatics, and artificial intelligence. Our management team comprises experienced professionals who provide momentum for the company's development and operations.",
+      "description": "The team spans medical genetics, clinical molecular genetics, bioinformatics, AI, laboratory workflow, and implementation. Automated analysis and system tools enter real workflows through defined quality-control and professional-review checkpoints.",
       "members": {
         "liWenhui": {
-          "name": "Laura Li",
-          "title": "FACMGG PhD, CTO",
-          "description": "Trained under Nobel Prize winner in Physiology or Medicine and former President of Johns Hopkins University Daniel Nathans. Former Chief Scientist at Illumina, Founder of Breakthrough Genomics, Clinical Geneticist Molecular Biologist Scientist (CGMBS), PhD in Molecular Biology and Genetics from Johns Hopkins University, Postdoc at Caltech, Assistant Professor at USC, certified geneticist by the American College of Medical Genetics.",
+          "name": "Laura Li, PhD",
+          "title": "FACMGG, CTO",
+          "description": "PhD in molecular biology and genetics from Johns Hopkins University and postdoctoral training at Caltech, with more than 30 years of experience in cell biology, genomics, and clinical molecular genetics. Her work has included clinical laboratory leadership and genomic research in pediatric genetic disorders and cancer.",
           "experience": {
             "title": "Professional Experience",
             "items": [
-              "Director of California Clinical Laboratory",
-              "Director of Illumina Clinical Laboratory + Genetics Expert",
-              "Director of USC Genomics Laboratory",
-              "Associate Director of Molecular Pathology and Genetics, Head of Clinical Genetics Laboratory at Children's Hospital Los Angeles"
+              "Former Illumina clinical laboratory director and genetics specialist",
+              "Former director of the USC genomics laboratory",
+              "Former associate director of molecular pathology and genetics at Children's Hospital Los Angeles",
+              "Long-standing work across whole-genome, Gene Panel, and clinical molecular genetics workflows"
             ]
           },
           "achievements": {
-            "title": "Major Achievements",
+            "title": "Areas of Practice",
             "items": [
-              "Designed and developed NGS-based clinical disease detection methods",
-              "Designed and developed first-generation sequencing-based clinical genetic disease detection methods",
-              "Developed and validated first-generation sequencing-based clinical disease network electromagnetic field detection methods",
-              "Led genomic and biomarker research, establishing novel molecular diagnostic tests using genomics platforms"
-            ]
-          }
-        },
-        "liuYunwei": {
-          "name": "Yunwei Liu",
-          "title": "CEO, Co-founder & Chairman of GenomeLight",
-          "description": "Founder & Chairman of Genomelight, mentored by internationally renowned radiation chemist Professor Chen Wenxiu. Former Bayer executive with strong industrialization capabilities and rich market resources.",
-          "background": {
-            "title": "Educational Background",
-            "items": [
-              "Bachelor's and Master's degrees in Chemistry from Beijing Normal University",
-              "Mentored by internationally renowned radiation chemist Professor Chen Wenxiu",
-              "Bayer Executive EMBA at Swiss IMD Business School"
-            ]
-          },
-          "experience": {
-            "title": "Professional Experience",
-            "items": [
-              "Key positions at Chinese Academy of Sciences Radiation Chemistry, American ERM, Dutch DHV",
-              "CTO, Plant Manager, Asia-Pacific President at Bayer HQ, Bayer China, LANXESS, ArlanXeo, German CABB",
-              "Founded Chongqing Beiwei and Chongqing Deqiang Chemical",
-              "Strong industrialization capabilities and rich market resources"
-            ]
-          }
-        },
-        "wangJia": {
-          "name": "Jia Wang",
-          "title": "CIO, Co-founder & CIO of GenomeLight",
-          "description": "Chairman of Shenzhen Qianhai GaDe Capital. Collaborated with Illumina and Intel Innovation Acceleration to support R&D and growth of technology startups in genetic testing field.",
-          "background": {
-            "title": "Educational Background",
-            "items": [
-              "Clinical Medicine from Sun Yat-sen University",
-              "MBA from Tsinghua University Shenzhen Research Institute"
-            ]
-          },
-          "expertise": {
-            "title": "Professional Expertise",
-            "items": [
-              "Solid foundation in clinical medicine, industry, and finance",
-              "Collaboration experience with Illumina and Intel Innovation Acceleration",
-              "Supporting technology startups in genetic testing field development",
-              "Expertise in combining product, business model, technology, sales, market, and financing perspectives for comprehensive enterprise development"
+              "Development and validation of NGS-based clinical testing methods",
+              "Whole-genome review for rare and undiagnosed diseases",
+              "Genomic research in pediatric genetic disorders and cancer",
+              "Connecting genomics platforms with clinical laboratory workflows"
             ]
           }
         },
         "dingHongyue": {
           "name": "Hongyue Ding",
-          "title": "Master's from Chongqing Medical University",
-          "description": "Participated in the implementation of multiple national multi-center projects, hosted and completed advanced genetics training courses at multiple hospitals including Chongqing Children's Hospital and Sichuan West China Hospital. Long-term engagement in genetic disease diagnosis consultation, genetic counselor training, report interpretation and analysis.",
+          "title": "MSc, Chongqing Medical University / Genetic Counseling & Implementation",
+          "description": "Experienced in multicenter project implementation, genetics training, genetic counseling, and report interpretation, supporting hospitals and research teams across sample, analysis, review, and delivery workflows.",
           "experience": {
             "title": "Work Experience",
             "items": [
@@ -1199,6 +981,271 @@
       "title": "Contact Us",
       "description": "If you have trial and cooperation intentions, please don't hesitate to contact us.",
       "button": "Online Message"
+    },
+    "solution": {
+      "title": "An integrated solution around the NGS workflow",
+      "description": "From sequencing reactions to data analysis, professional review, and laboratory operations, modules can be combined around existing workflows, project scope, and deployment requirements.",
+      "link": "Explore the product",
+      "items": {
+        "reagent": {
+          "title": "Sequencing Reagents",
+          "description": "Sequencing-reaction reagents and chip configurations for NextSeq 500/550. Performance depends on product instructions, lot QC, and run conditions."
+        },
+        "glsofort": {
+          "title": "GLSofort® Platform",
+          "description": "WGS, WES, and Gene Panel processing, variant screening, evidence organization, and reporting workflows."
+        },
+        "lims": {
+          "title": "LIMS Management",
+          "description": "Connect samples, SOPs, experimental data, QC review, reports, and laboratory operations."
+        },
+        "services": {
+          "title": "Professional Services",
+          "description": "Support for project design, genetic counseling, report review, staff training, and system implementation."
+        }
+      }
+    },
+    "research": {
+      "title": "Research & Implementation Capabilities",
+      "description": "From bioinformatics and genetics review to laboratory-system delivery, the team organizes methods, data boundaries, quality checkpoints, and project documentation around each objective.",
+      "items": [
+        {
+          "title": "Bioinformatics",
+          "description": "Data processing, variant screening, and evidence organization for WGS, WES, and Gene Panel workflows."
+        },
+        {
+          "title": "Medical Genetics",
+          "description": "Professional review against applicable guidance, databases, and project information with clear limitations."
+        },
+        {
+          "title": "Research Support",
+          "description": "Method discussion, data analysis, and result organization for cohort, rare-disease, and multi-omics studies."
+        },
+        {
+          "title": "Training & Delivery",
+          "description": "Workflow mapping, system configuration, staff training, and implementation support for routine use."
+        }
+      ]
+    },
+    "cooperation": {
+      "title": "Ways to Work Together",
+      "description": "GenomeLight provides products, interfaces, and project support to healthcare organizations, research teams, medical laboratories, and third-party service providers. Scope, deliverables, and applicable requirements follow the project documents confirmed by both parties.",
+      "items": [
+        {
+          "title": "Healthcare Organizations",
+          "description": "Support for laboratory workflows, data analysis, professional review, and system integration."
+        },
+        {
+          "title": "Research Teams",
+          "description": "Data workflow design, analysis, and project collaboration around research objectives."
+        },
+        {
+          "title": "Medical Laboratories",
+          "description": "Sequencing reagents, LIMS, and quality-workflow implementation support."
+        },
+        {
+          "title": "Service Providers",
+          "description": "Interfaces, data processing, and delivery workflows within the authorized scope."
+        }
+      ]
+    }
+  },
+  "lims": {
+    "hero": {
+      "title": "LIMS Laboratory Information Management System",
+      "subtitle": "Designed for sequencing laboratories, hospital testing departments, and medical laboratories, connecting samples, tasks, SOPs, experimental data, QC review, and report release in one traceable workflow.",
+      "buttons": {
+        "consult": "Discuss Implementation",
+        "plans": "View Configurations"
+      }
+    },
+    "nav": {
+      "label": "LIMS page navigation",
+      "workflow": "Workflow",
+      "capabilities": "Capabilities",
+      "plans": "Configurations",
+      "dataAssets": "Local Data",
+      "deployment": "Deployment"
+    },
+    "workflow": {
+      "title": "Trace every sample from receipt to archive",
+      "description": "LIMS is more than an electronic notebook. It organizes tasks, data, and responsibility records around real laboratory operations so progress, exceptions, reviews, and deliverables remain visible in one workflow.",
+      "steps": [
+        {
+          "title": "Sample receipt",
+          "description": "Register samples, projects, and customer information with a unique identifier and receipt record."
+        },
+        {
+          "title": "Tasks and SOPs",
+          "description": "Assign tasks by project type and connect the applicable SOP, batch requirements, and responsible staff."
+        },
+        {
+          "title": "Experiment and data",
+          "description": "Record experimental steps, instrument runs, and key data while reducing repeated manual transcription."
+        },
+        {
+          "title": "Quality review",
+          "description": "Review QC checkpoints, exception handling, comments, and approval status in one place."
+        },
+        {
+          "title": "Report release",
+          "description": "Generate, review, and release reports through an approval workflow with version and responsibility records."
+        },
+        {
+          "title": "Archive and traceability",
+          "description": "Connect samples, tasks, data, reports, and audit logs for later retrieval and review."
+        }
+      ]
+    },
+    "capabilities": {
+      "title": "Quality systems, efficiency, and interoperability",
+      "description": "Bring information from spreadsheets, paper records, and isolated instruments into a unified view for daily operations, quality management, and assessment preparation.",
+      "items": [
+        {
+          "title": "Quality and audit records",
+          "description": "Support SOP versions, activity records, reviews, and audit logs that help laboratories build evidence around ISO 15189, CAP, CLIA, and related quality-system requirements."
+        },
+        {
+          "title": "Proficiency testing",
+          "description": "Track proficiency-testing tasks with reminders, status, and result archives to reduce missed steps and retain the full handling history."
+        },
+        {
+          "title": "Less duplicate entry",
+          "description": "Use workflow automation, instrument data collection, and report templates to reduce repeated entry. Actual efficiency depends on interfaces, configuration, and implementation scope."
+        },
+        {
+          "title": "System interoperability",
+          "description": "Standard interfaces and project-specific adaptation can support HIS, LIS, PACS, OA, and instrument connections, subject to the implementation plan."
+        }
+      ],
+      "note": "LIMS supports quality management and process traceability; it does not automatically confer certification. Certification depends on laboratory policies, staff execution, method validation, documentation, and assessment requirements."
+    },
+    "plans": {
+      "title": "Three configurations for different operating stages",
+      "description": "From the core laboratory workflow to integrated operations and hospital-wide connectivity, scope can be selected according to laboratory size, existing systems, interfaces, and data-security requirements.",
+      "items": [
+        {
+          "label": "CORE WORKFLOW",
+          "title": "Mini",
+          "description": "Focused on laboratory workflow management for organizations that first need to close the loop across samples, SOPs, data, and reports.",
+          "features": [
+            "Sample lifecycle management",
+            "Task assignment and standard SOPs",
+            "Instrument data collection",
+            "Report generation and review"
+          ]
+        },
+        {
+          "label": "INTEGRATED OPERATIONS",
+          "title": "Standard",
+          "description": "Adds MiniERP to the Mini configuration, extending laboratory workflow into materials, equipment, staff, and cost management.",
+          "features": [
+            "All Mini capabilities",
+            "Reagent, consumable, and inventory management",
+            "Equipment maintenance and staff dashboards",
+            "Cost records and operational analysis"
+          ]
+        },
+        {
+          "label": "HOSPITAL ECOSYSTEM",
+          "title": "Premium",
+          "description": "For large hospitals and laboratory groups requiring hospital-system integration, intranet deployment, and controlled data exchange.",
+          "features": [
+            "All Standard capabilities",
+            "HIS, LIS, PACS, and OA interfaces",
+            "Intranet-compatible and isolated deployment",
+            "Cross-system workflow automation"
+          ]
+        }
+      ]
+    },
+    "operations": {
+      "title": "Extend from laboratory workflow to operations",
+      "description": "The Standard and Premium configurations can combine MiniERP modules with laboratory tasks so materials, equipment, staff, and cost information do not sit apart from operational work.",
+      "items": [
+        {
+          "title": "Reagents and consumables",
+          "description": "Manage receipt, issue, lot, expiry, and inventory status, and connect records to laboratory tasks."
+        },
+        {
+          "title": "Instruments and equipment",
+          "description": "Record equipment status, maintenance schedules, calibration information, and use."
+        },
+        {
+          "title": "People and tasks",
+          "description": "View workload, progress, and role responsibility to support scheduling and collaboration."
+        },
+        {
+          "title": "Cost and analysis",
+          "description": "Aggregate materials, tasks, and operational records as structured inputs for costing and management analysis."
+        }
+      ]
+    },
+    "deployment": {
+      "title": "Fit existing systems and hospital networks",
+      "description": "Use interfaces, permissions, and deployment strategies to embed LIMS into the current laboratory environment. Interface availability, synchronization, and data scope should be confirmed before implementation.",
+      "imageAlt": "GenomeLight LIMS workflow connecting MiniERP, HIS, LIS, OA, ERP, and laboratory operations",
+      "imageCaption": "The GenomeLight LIMS workflow published in the product announcement, showing the relationship between core LIMS, MiniERP, and external systems.",
+      "items": [
+        {
+          "title": "Standard interfaces",
+          "description": "Project-based integration can support HIS, LIS, PACS, OA, ERP, and instruments to reduce repeated import and export."
+        },
+        {
+          "title": "Flexible deployment",
+          "description": "On-premise, isolated intranet, and other deployment options can be evaluated against network and data-security requirements."
+        },
+        {
+          "title": "Permissions and audit trail",
+          "description": "Role permissions, approval checkpoints, and activity logs support access control and process traceability."
+        }
+      ]
+    },
+    "faq": {
+      "title": "LIMS frequently asked questions",
+      "items": [
+        {
+          "title": "Which laboratories should consider LIMS?",
+          "description": "Sequencing laboratories, hospital testing departments, and medical laboratories that manage samples, SOPs, experimental data, QC, and reports can evaluate LIMS. Configuration depends on scale, workflow, interfaces, and quality-system requirements."
+        },
+        {
+          "title": "Can it connect to existing instruments and hospital systems?",
+          "description": "Standard interfaces and adaptation can support instruments as well as HIS, LIS, PACS, and OA. Direct connectivity depends on the other system interface, protocol, network, and authorization conditions."
+        },
+        {
+          "title": "Does deploying LIMS automatically satisfy certification requirements?",
+          "description": "No. LIMS can support SOPs, records, reviews, permissions, and audit logs, but certification still depends on the laboratory documentation system, staff execution, method validation, continual improvement, and formal assessment."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Plan your laboratory digital transformation",
+      "description": "Contact the team to evaluate a LIMS configuration against your current workflow, interfaces, and quality-management requirements.",
+      "button": "Contact the Team",
+      "source": "Read the product announcement"
+    },
+    "dataAssets": {
+      "title": "Turn local data into searchable, analyzable laboratory assets",
+      "description": "Within authorization and deployment boundaries, LIMS can organize samples, workflows, results, versions, and activity records as structured data for historical search, local statistics, and quality review.",
+      "items": [
+        {
+          "title": "Localized Data",
+          "description": "Store authorized data and records in the organization's environment according to the deployment plan, with location and retention agreed by the project."
+        },
+        {
+          "title": "Local Detection Frequency",
+          "description": "Connect with analysis systems to support authorized statistics on local detection frequency and historical records."
+        },
+        {
+          "title": "Historical Traceability",
+          "description": "Link samples, workflows, results, and versions for permission-based retrieval, review, and audit."
+        },
+        {
+          "title": "Visualization & Reports",
+          "description": "Generate statistical views and reports from structured data, with metrics configured to laboratory requirements."
+        }
+      ],
+      "note": "Local statistics support laboratory operations, quality management, and authorized research. They should not be interpreted without considering sample quality, methodology, and population context."
     }
   }
 }
